@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Room-Finish">
+<style>
+g{fill:none;stroke:#B07A1E;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+text{fill:#B07A1E;stroke:none;font:700 8px Arial;text-anchor:middle}
+.pulse,.rise,.slide,.draw,.reveal{transform-box:fill-box;transform-origin:center}
+@media(prefers-reduced-motion:no-preference){
+svg:hover .pulse{animation:pulse .7s ease-in-out infinite alternate}
+svg:hover .rise{animation:rise .8s ease-in-out infinite alternate}
+svg:hover .slide{animation:slide .8s ease-in-out infinite alternate}
+svg:hover .draw{stroke-dasharray:80;animation:draw 1.2s ease-in-out infinite alternate}
+svg:hover .reveal{animation:reveal 1.4s ease-in-out infinite}
+}
+@keyframes pulse{to{transform:scale(1.18)}}
+@keyframes rise{to{transform:translateY(-4px)}}
+@keyframes slide{to{transform:translateX(4px)}}
+@keyframes draw{to{stroke-dashoffset:80}}
+@keyframes reveal{0%,100%{opacity:.3}50%{opacity:1}}
+</style><g><rect x='9' y='9' width='36' height='46' rx='3'/><path d='M17 20h20M17 30h20M17 40h13'/><path class='pulse' d='M44 42l6 6 10-14'/></g></svg>

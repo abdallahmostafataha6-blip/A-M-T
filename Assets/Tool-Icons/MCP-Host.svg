@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MCP-Host">
+<style>
+g{fill:none;stroke:#287E88;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+text{fill:#287E88;stroke:none;font:700 8px Arial;text-anchor:middle}
+.pulse,.rise,.slide,.draw,.reveal{transform-box:fill-box;transform-origin:center}
+@media(prefers-reduced-motion:no-preference){
+svg:hover .pulse{animation:pulse .7s ease-in-out infinite alternate}
+svg:hover .rise{animation:rise .8s ease-in-out infinite alternate}
+svg:hover .slide{animation:slide .8s ease-in-out infinite alternate}
+svg:hover .draw{stroke-dasharray:80;animation:draw 1.2s ease-in-out infinite alternate}
+svg:hover .reveal{animation:reveal 1.4s ease-in-out infinite}
+}
+@keyframes pulse{to{transform:scale(1.18)}}
+@keyframes rise{to{transform:translateY(-4px)}}
+@keyframes slide{to{transform:translateX(4px)}}
+@keyframes draw{to{stroke-dashoffset:80}}
+@keyframes reveal{0%,100%{opacity:.3}50%{opacity:1}}
+</style><g><circle cx='31' cy='31' r='8'/><circle cx='12' cy='14' r='5'/><circle cx='50' cy='14' r='5'/><circle cx='12' cy='49' r='5'/><circle cx='50' cy='49' r='5'/><path d='M16 18l10 8m10 0 10-8M16 45l10-9m10 0 10 9'/><circle class='pulse' cx='31' cy='31' r='17'/></g></svg>

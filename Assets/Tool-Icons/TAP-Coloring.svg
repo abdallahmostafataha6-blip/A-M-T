@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TAP-Coloring">
+<style>
+g{fill:none;stroke:#B05B70;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+text{fill:#B05B70;stroke:none;font:700 8px Arial;text-anchor:middle}
+.pulse,.rise,.slide,.draw,.reveal{transform-box:fill-box;transform-origin:center}
+@media(prefers-reduced-motion:no-preference){
+svg:hover .pulse{animation:pulse .7s ease-in-out infinite alternate}
+svg:hover .rise{animation:rise .8s ease-in-out infinite alternate}
+svg:hover .slide{animation:slide .8s ease-in-out infinite alternate}
+svg:hover .draw{stroke-dasharray:80;animation:draw 1.2s ease-in-out infinite alternate}
+svg:hover .reveal{animation:reveal 1.4s ease-in-out infinite}
+}
+@keyframes pulse{to{transform:scale(1.18)}}
+@keyframes rise{to{transform:translateY(-4px)}}
+@keyframes slide{to{transform:translateX(4px)}}
+@keyframes draw{to{stroke-dashoffset:80}}
+@keyframes reveal{0%,100%{opacity:.3}50%{opacity:1}}
+</style><g><path d='M31 8a23 23 0 1 0 0 46h7a6 6 0 0 0 0-12h-3a4 4 0 0 1 0-8h7A12 12 0 0 0 31 8z'/><g class='pulse'><circle cx='20' cy='23' r='3'/><circle cx='31' cy='17' r='3'/><circle cx='42' cy='25' r='3'/></g></g></svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Create-Sheets">
+<style>
+g{fill:none;stroke:#2E7D5B;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+text{fill:#2E7D5B;stroke:none;font:700 8px Arial;text-anchor:middle}
+.pulse,.rise,.slide,.draw,.reveal{transform-box:fill-box;transform-origin:center}
+@media(prefers-reduced-motion:no-preference){
+svg:hover .pulse{animation:pulse .7s ease-in-out infinite alternate}
+svg:hover .rise{animation:rise .8s ease-in-out infinite alternate}
+svg:hover .slide{animation:slide .8s ease-in-out infinite alternate}
+svg:hover .draw{stroke-dasharray:80;animation:draw 1.2s ease-in-out infinite alternate}
+svg:hover .reveal{animation:reveal 1.4s ease-in-out infinite}
+}
+@keyframes pulse{to{transform:scale(1.18)}}
+@keyframes rise{to{transform:translateY(-4px)}}
+@keyframes slide{to{transform:translateX(4px)}}
+@keyframes draw{to{stroke-dashoffset:80}}
+@keyframes reveal{0%,100%{opacity:.3}50%{opacity:1}}
+</style><g><rect x='11' y='8' width='35' height='45' rx='3'/><path d='M19 19h19M19 28h19M19 37h13'/><path class='rise' d='M48 39v14m-6-6 6 6 6-6'/></g></svg>
