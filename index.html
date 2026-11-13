@@ -63,6 +63,52 @@ h1 span{color:var(--cyan)}
 .card h3{color:var(--cyan);margin-top:0}
 .card p{color:var(--muted);margin-bottom:0}
 .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .tools-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.tool-card{
+  background:var(--panel);
+  border:1px solid #ffffff18;
+  border-radius:12px;
+  overflow:hidden;
+  transition:.25s;
+}
+.tool-card:hover{
+  transform:translateY(-5px);
+  border-color:var(--cyan);
+}
+.tool-card img{
+  width:100%;
+  height:185px;
+  object-fit:cover;
+  display:block;
+}
+.tool-placeholder{
+  height:185px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#102838,#07536a);
+  color:var(--cyan);
+  font-size:42px;
+}
+.tool-info{padding:18px}
+.tool-info h3{margin:0 0 8px;font-size:18px}
+.tool-info p{color:var(--muted);font-size:14px;min-height:42px}
+.tool-info a{
+  display:inline-block;
+  color:var(--cyan);
+  font-weight:bold;
+  font-size:14px;
+}
+@media(max-width:850px){
+  .tools-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:550px){
+  .tools-grid{grid-template-columns:1fr}
+}
 .gallery img{
   width:100%;border-radius:10px;border:1px solid #ffffff25;
   display:block
