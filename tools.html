@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A-M-T Tools | 17 Revit Productivity Tools</title>
-<meta name="description" content="A-M-T (Architectural Modeling Toolkit) is a Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.">
+<meta name="description" content="Browse all 17 A-M-T Revit commands by workflow. Search the toolkit, filter ribbon panels, and open the guide for each command.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-m-t-tools.pages.dev/tools.html">
 <meta name="theme-color" content="#071824">
@@ -304,6 +304,25 @@ body { animation: amt-page-enter .45s ease-out both; }
   .amt-reveal { opacity: 1 !important; }
 }
 
+
+/* Tool finder */
+.tool-finder{max-width:920px;margin:0 auto 28px;padding:20px;background:#102838;border:1px solid var(--line);border-radius:13px}
+.tool-search-wrap{display:block}
+.tool-search-wrap input{width:100%;padding:14px 16px;border-radius:8px;border:1px solid #ffffff30;background:#071824;color:var(--text);font:inherit;outline:none}
+.tool-search-wrap input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px #16cce022}
+.tool-search-wrap input::placeholder{color:#8298a7}
+.tool-filters{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.tool-filter{border:1px solid #ffffff2b;border-radius:999px;background:#0a202d;color:var(--muted);padding:8px 13px;font:600 13px Arial, sans-serif;cursor:pointer;transition:all .2s ease}
+.tool-filter:hover,.tool-filter.active{background:#0b5366;border-color:#16cce0;color:#f3f8fc}
+.tool-filter span{display:inline-block;margin-left:5px;color:var(--cyan)}
+.tool-results{margin:12px 2px 0;color:var(--muted);font-size:13px}
+.tool-category{display:inline-block;margin:14px 18px 0;padding:4px 9px;border-radius:999px;background:#0b536633;border:1px solid #16cce044;color:#69e3ef;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+.tool-info{padding-top:10px}
+.tool-card[hidden]{display:none!important}
+.tool-empty{grid-column:1/-1;text-align:center;padding:38px 20px;background:var(--panel);border:1px dashed #ffffff35;border-radius:12px;color:var(--muted)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:550px){.tool-finder{padding:14px}.tool-filters{gap:7px}.tool-filter{font-size:12px;padding:7px 10px}}
+
 </style></head><body><header><div class="container"><nav>
 <a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
 <div class="navlinks">
@@ -312,12 +331,43 @@ body { animation: amt-page-enter .45s ease-out both; }
 </div></nav></div></header><main><div class="container page-heading"><h1>All 17 A-M-T Tools</h1></div><section class="section" id="tools">
     <div class="container">
       <div class="section-title">
-        <h2>Explore All 17 Tools</h2>
-        <p>Powerful tools designed to simplify your everyday Revit workflow.</p>
+        <h2>Find the right tool for the task</h2>
+        <p>Search all 17 commands or browse them by their A-M-T ribbon panel.</p>
       </div>
 
-      <div class="tools-grid">
+      <div class="tool-finder" aria-label="Find and filter tools">
+        <label class="tool-search-wrap"><span class="sr-only">Search tools</span><input id="toolSearch" type="search" placeholder="Search tools by name or task…" autocomplete="off"></label>
+        <div class="tool-filters" role="group" aria-label="Filter tools by ribbon panel">
+          <button class="tool-filter active" type="button" data-filter="all" aria-pressed="true">All tools <span>17</span></button>
+          <button class="tool-filter" type="button" data-filter="sheets">Sheets &amp; Views</button>
+          <button class="tool-filter" type="button" data-filter="export">Export</button>
+          <button class="tool-filter" type="button" data-filter="walls">Walls &amp; Structure</button>
+          <button class="tool-filter" type="button" data-filter="finishes">Finishes</button>
+          <button class="tool-filter" type="button" data-filter="settings">Settings</button>
+          <button class="tool-filter" type="button" data-filter="mcp">MCP</button>
+        </div>
+        <p class="tool-results" id="toolResults" aria-live="polite">Showing 17 of 17 tools</p>
+      </div>
+
+      <div class="tools-grid" id="toolsGrid">
         <article class="tool-card">
+          <span class="tool-category" data-category="mcp">MCP</span>
+          <span class="tool-category" data-category="settings">Settings</span>
+          <span class="tool-category" data-category="settings">Settings</span>
+          <span class="tool-category" data-category="finishes">Finishes</span>
+          <span class="tool-category" data-category="finishes">Finishes</span>
+          <span class="tool-category" data-category="finishes">Finishes</span>
+          <span class="tool-category" data-category="walls">Walls & Structure</span>
+          <span class="tool-category" data-category="walls">Walls & Structure</span>
+          <span class="tool-category" data-category="walls">Walls & Structure</span>
+          <span class="tool-category" data-category="walls">Walls & Structure</span>
+          <span class="tool-category" data-category="export">Export</span>
+          <span class="tool-category" data-category="sheets">Sheets & Views</span>
+          <span class="tool-category" data-category="sheets">Sheets & Views</span>
+          <span class="tool-category" data-category="sheets">Sheets & Views</span>
+          <span class="tool-category" data-category="sheets">Sheets & Views</span>
+          <span class="tool-category" data-category="sheets">Sheets & Views</span>
+          <span class="tool-category" data-category="sheets">Sheets & Views</span>
           <div class="tool-icon-panel"><img src="Assets/Tool-Icons/Renumber.svg" alt="Renumber icon"></div>
           <div class="tool-info">
             <h3>Renumber</h3>
@@ -478,6 +528,47 @@ body { animation: amt-page-enter .45s ease-out both; }
     <p>© 2026 A-M-T. All rights reserved.</p>
   </div>
 </footer>
+<script>
+(() => {
+  const grid = document.getElementById('toolsGrid');
+  const search = document.getElementById('toolSearch');
+  const result = document.getElementById('toolResults');
+  if (!grid || !search || !result) return;
+  const cards = [...grid.querySelectorAll('.tool-card')];
+  const buttons = [...document.querySelectorAll('.tool-filter')];
+  let activeFilter = 'all';
+  const empty = document.createElement('div');
+  empty.className = 'tool-empty';
+  empty.hidden = true;
+  empty.textContent = 'No tools match your search. Try another keyword or choose a different category.';
+  grid.appendChild(empty);
+  function update() {
+    const query = search.value.trim().toLowerCase();
+    let shown = 0;
+    cards.forEach(card => {
+      const category = card.querySelector('.tool-category')?.dataset.category || '';
+      const matchesCategory = activeFilter === 'all' || category === activeFilter;
+      const matchesQuery = card.innerText.toLowerCase().includes(query);
+      const visible = matchesCategory && matchesQuery;
+      card.hidden = !visible;
+      if (visible) shown++;
+    });
+    empty.hidden = shown !== 0;
+    result.textContent = `Showing ${shown} of ${cards.length} tools`;
+  }
+  buttons.forEach(button => button.addEventListener('click', () => {
+    activeFilter = button.dataset.filter;
+    buttons.forEach(item => {
+      const active = item === button;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+    update();
+  }));
+  search.addEventListener('input', update);
+  update();
+})();
+</script>
 <script>
 (() => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
