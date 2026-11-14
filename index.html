@@ -256,6 +256,54 @@ footer p{margin:5px 0}
 
 .page-heading{padding:38px 0 0;text-align:center}.page-heading h1{font-size:clamp(28px,4vw,40px);margin:0}
 .navlinks a{white-space:nowrap}.feature-card a{color:var(--cyan);font-weight:bold}
+
+/* A-M-T Motion System */
+@keyframes amt-page-enter {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes amt-slide-left {
+  from { opacity: 0; transform: translateX(-42px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes amt-slide-right {
+  from { opacity: 0; transform: translateX(42px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes amt-rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+body { animation: amt-page-enter .45s ease-out both; }
+.gallery-item, .tool-card, .feature-card, .doc, .contact-card {
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+  will-change: transform;
+}
+.gallery-item:hover, .tool-card:hover, .feature-card:hover, .doc:hover, .contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px #00000030;
+  border-color: #16cce080;
+}
+.tool-icon-panel img, .tool-card img, .brand img, .btn {
+  transition: transform .28s ease, filter .28s ease, box-shadow .28s ease;
+}
+.tool-card:hover .tool-icon-panel img { transform: scale(1.09) rotate(-3deg); }
+.brand:hover img { transform: rotate(-5deg) scale(1.06); }
+.btn:hover { transform: translateY(-3px) scale(1.02); }
+.amt-reveal { opacity: 0; }
+.amt-reveal.amt-visible { animation: amt-rise .65s cubic-bezier(.2,.7,.2,1) both; }
+.gallery-item.amt-from-left.amt-visible { animation: amt-slide-left .72s cubic-bezier(.2,.7,.2,1) both; }
+.gallery-item.amt-from-right.amt-visible { animation: amt-slide-right .72s cubic-bezier(.2,.7,.2,1) both; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  .amt-reveal { opacity: 1 !important; }
+}
+
 </style></head><body><header><div class="container"><nav>
 <a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
 <div class="navlinks">
@@ -275,4 +323,35 @@ footer p{margin:5px 0}
     <p>Developed by Abdallah Mostafa | Version 1.8.8</p>
     <p>© 2026 A-M-T. All rights reserved.</p>
   </div>
-</footer></body></html>
+</footer>
+<script>
+(() => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealSelectors = '.tool-card, .feature-card, .doc, .contact-card, .gallery-item, .section-title, .cta';
+  const items = [...document.querySelectorAll(revealSelectors)];
+  items.forEach((el, i) => {
+    el.classList.add('amt-reveal');
+    if (el.classList.contains('gallery-item')) {
+      el.classList.add(i % 2 === 0 ? 'amt-from-left' : 'amt-from-right');
+    }
+    const siblings = el.parentElement ? [...el.parentElement.children].filter(x => x.matches && x.matches(revealSelectors)) : [];
+    const index = Math.max(0, siblings.indexOf(el));
+    el.style.animationDelay = `${Math.min(index * 90, 450)}ms`;
+  });
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    items.forEach(el => el.classList.add('amt-visible'));
+    return;
+  }
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('amt-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+  items.forEach(el => observer.observe(el));
+})();
+</script>
+
+</body></html>
