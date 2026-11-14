@@ -2,16 +2,16 @@
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A-M-T Features | Revit &amp; BIM Automation</title>
-<meta name="description" content="A-M-T (Architectural Modeling Toolkit) is a Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.">
+<meta name="description" content="Explore A-M-T features for Revit: curtain wall and modeling automation, sheet and documentation workflows, finishes, project output and optional local MCP integration.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-m-t-tools.pages.dev/features.html">
 <meta name="theme-color" content="#071824">
 <meta property="og:type" content="website"><meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
-<meta property="og:title" content="A-M-T Features | Revit &amp; BIM Automation"><meta property="og:description" content="Explore A-M-T Revit tools for architectural modeling, BIM automation, documentation, and AI integration.">
+<meta property="og:title" content="A-M-T Features | Revit &amp; BIM Automation"><meta property="og:description" content="See how A-M-T streamlines modeling, documentation, finishes and connected AI workflows inside Revit.">
 <meta property="og:url" content="https://a-m-t-tools.pages.dev/features.html">
 <meta property="og:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="A-M-T Features | Revit &amp; BIM Automation">
-<meta name="twitter:description" content="Explore A-M-T Revit tools for architectural modeling and BIM automation.">
+<meta name="twitter:description" content="Explore A-M-T workflows for modeling, documentation, finishes and optional MCP integration.">
 <meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"A-M-T — Architectural Modeling Toolkit","alternateName":"A-M-T Revit Plugin","applicationCategory":"DesignApplication","operatingSystem":"Windows","softwareVersion":"1.8.8","description":"A Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.","url":"https://a-m-t-tools.pages.dev/","author":{"@type":"Person","name":"Abdallah Mostafa"},"downloadUrl":"https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest"}
@@ -304,33 +304,112 @@ body { animation: amt-page-enter .45s ease-out both; }
   .amt-reveal { opacity: 1 !important; }
 }
 
+
+/* Homepage + feature refresh */
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:10px auto 0}
+.stat-card{background:linear-gradient(145deg,#102838,#0b2636);border:1px solid var(--line);border-radius:12px;padding:22px;text-align:center}
+.stat-card strong{display:block;color:var(--cyan);font-size:clamp(25px,3vw,34px);line-height:1.2}
+.stat-card span{color:var(--muted);font-size:14px}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.intro-panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}
+.intro-panel h2,.showcase-copy h3{margin-top:0}
+.intro-panel p,.showcase-copy p{color:var(--muted)}
+.check-list{padding:0;list-style:none;display:grid;gap:10px}
+.check-list li:before{content:"✓";color:var(--cyan);font-weight:bold;margin-right:10px}
+.showcase-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.showcase-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
+.showcase-card:hover{transform:translateY(-5px);border-color:var(--cyan);box-shadow:0 14px 30px #0005}
+.showcase-card img{width:100%;height:205px;display:block;object-fit:cover;object-position:top}
+.showcase-copy{padding:18px}
+.showcase-copy h3{font-size:18px;margin-bottom:8px}
+.showcase-copy p{font-size:14px;min-height:66px;margin-bottom:12px}
+.showcase-copy a,.text-link{color:var(--cyan);font-weight:bold}
+.section-kicker{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+.hero h1{font-size:clamp(28px,4vw,42px);margin:0 0 8px}
+.hero p{max-width:760px}
+.feature-hero{padding:64px 0 28px;text-align:center}
+.feature-hero p{max-width:760px;margin:12px auto;color:var(--muted);font-size:17px}
+.feature-showcase{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;margin:34px 0}
+.feature-showcase:nth-child(even) .feature-image{order:2}
+.feature-image{width:100%;display:block;border-radius:12px;border:1px solid #ffffff25;box-shadow:0 16px 36px #0004}
+.feature-copy{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px}
+.feature-copy h2{margin:0 0 10px;color:var(--cyan);font-size:24px}
+.feature-copy p{color:var(--muted)}
+.feature-copy .tool-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tool-tags span{font-size:12px;color:#d8faff;background:#0b4051;border:1px solid #16cce044;border-radius:20px;padding:5px 10px}
+.center-cta{text-align:center;background:linear-gradient(120deg,#103347,#07536a);border:1px solid #16cce044;border-radius:15px;padding:42px 22px}
+.center-cta p{color:var(--muted)}
+@media(max-width:850px){.showcase-grid{grid-template-columns:1fr 1fr}.intro-grid,.feature-showcase{grid-template-columns:1fr}.feature-showcase:nth-child(even) .feature-image{order:0}}
+@media(max-width:600px){.stats-grid,.showcase-grid{grid-template-columns:1fr}.showcase-card img{height:auto;max-height:240px}.stat-card{padding:17px}}
+
 </style></head><body><header><div class="container"><nav>
 <a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
 <div class="navlinks">
 <a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a>
 <a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a><a href="contact.html">Contact</a>
-</div></nav></div></header><main><div class="container page-heading"><h1>A-M-T Features</h1></div><section class="section" id="features">
-    <div class="container">
-      <div class="section-title">
-        <h2>Powerful Tools. Smarter Workflows.</h2>
-        <p>Everything you need to improve your Revit production workflow.</p>
-      </div>
-      <div class="features">
-        <div class="feature-card">
-          <h3>Modeling &amp; Automation</h3>
-          <p>Automate curtain walls, sheet creation, wall operations, room workflows and repetitive modeling tasks.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Documentation</h3>
-          <p>Improve documentation with automated dimensions, tags, printing, schedules and view organization.</p>
-        </div>
-        <div class="feature-card">
-          <h3>AI Integration</h3>
-          <p>Connect supported AI clients to Revit through the A-M-T MCP integration.</p>
-        </div>
+</div></nav></div></header>
+<main>
+  <section class="feature-hero container">
+    <span class="section-kicker">Architectural Modeling Toolkit</span>
+    <h1>A-M-T Features</h1>
+    <p>Purpose-built Revit workflows for architectural modeling, documentation, finishes and connected design processes.</p>
+    <a class="btn" href="tools.html">Explore All 17 Tools</a>
+  </section>
+
+  <section class="section container">
+    <div class="feature-showcase">
+      <img class="feature-image" src="Assets/Screenshots/06-Curtain-Wall-Output.png" alt="Curtain wall views and documentation generated in Revit" loading="lazy">
+      <div class="feature-copy">
+        <span class="section-kicker">Modeling automation</span>
+        <h2>Automate complex modeling workflows</h2>
+        <p>Handle repetitive architectural operations with focused tools for curtain walls, wall positioning, parts, joins and threshold creation. The goal is to reduce manual repetition while keeping the workflow inside Revit.</p>
+        <div class="tool-tags"><span>Curtain Wall</span><span>Master &amp; Parts</span><span>Snap Walls to Grid</span><span>Join in Views</span><span>Create Threshold</span></div>
+        <p><a class="text-link" href="tools.html">Browse modeling tools →</a></p>
       </div>
     </div>
-  </section></main><footer>
+
+    <div class="feature-showcase">
+      <img class="feature-image" src="Assets/Screenshots/08-Create-Sheets-Result.png" alt="Sheets created and populated by A-M-T" loading="lazy">
+      <div class="feature-copy">
+        <span class="section-kicker">Documentation &amp; sheets</span>
+        <h2>Make documentation more consistent</h2>
+        <p>Organize views and sheets, automate sheet creation, apply tags and dimensions, and streamline printing. These tools are designed to help teams repeat documentation tasks with fewer manual steps.</p>
+        <div class="tool-tags"><span>Create Sheets</span><span>Renumber</span><span>Plan Tags &amp; Dims</span><span>Print</span><span>Column Dims</span></div>
+        <p><a class="text-link" href="tools.html">Browse documentation tools →</a></p>
+      </div>
+    </div>
+
+    <div class="feature-showcase">
+      <img class="feature-image" src="Assets/Screenshots/03-Print-PDF-DWG.png" alt="A-M-T PDF and DWG printing workflow" loading="lazy">
+      <div class="feature-copy">
+        <span class="section-kicker">Production &amp; output</span>
+        <h2>Support everyday project delivery</h2>
+        <p>Use focused utilities for printing, wet area views, finish data and room finish workflows. A-M-T brings these production tasks into one consistent ribbon.</p>
+        <div class="tool-tags"><span>Wet Area Views</span><span>Finishes by Room</span><span>Room Finish</span><span>Print PDF / DWG</span></div>
+        <p><a class="text-link" href="tools.html">See the complete toolkit →</a></p>
+      </div>
+    </div>
+
+    <div class="feature-showcase">
+      <img class="feature-image" src="Assets/Screenshots/04-MCP-Host.png" alt="A-M-T MCP Host configuration in Revit" loading="lazy">
+      <div class="feature-copy">
+        <span class="section-kicker">AI integration</span>
+        <h2>Connect AI clients through a local MCP bridge</h2>
+        <p>The optional MCP Host provides a local bridge for supported AI clients. You can choose how Revit asks for approval before model changes, including a read-only mode.</p>
+        <div class="tool-tags"><span>MCP Host</span><span>Local Bridge</span><span>Permission Controls</span></div>
+        <p><a class="text-link" href="tools.html">Learn about MCP Host →</a></p>
+      </div>
+    </div>
+
+    <div class="center-cta">
+      <h2>One toolkit. Practical workflows across your Revit day.</h2>
+      <p>Explore all 17 tools and open the individual command guides.</p>
+      <a class="btn" href="tools.html">Explore All Tools</a>
+      <a class="btn secondary" href="documentation.html">View Guides</a>
+    </div>
+  </section>
+</main>
+<footer>
   <div class="container">
     <strong>A-M-T — Model. Document. Automate.</strong>
     <p>Developed by Abdallah Mostafa | Version 1.8.8</p>
@@ -340,7 +419,7 @@ body { animation: amt-page-enter .45s ease-out both; }
 <script>
 (() => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const revealSelectors = '.tool-card, .feature-card, .doc, .contact-card, .gallery-item, .section-title, .cta';
+  const revealSelectors = '.tool-card, .feature-card, .doc, .contact-card, .gallery-item, .section-title, .cta, .showcase-card, .feature-showcase, .stat-card, .intro-panel, .center-cta';
   const items = [...document.querySelectorAll(revealSelectors)];
   items.forEach((el, i) => {
     el.classList.add('amt-reveal');
