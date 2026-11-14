@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A-M-T Features | Revit &amp; BIM Automation</title>
+<meta name="description" content="A-M-T (Architectural Modeling Toolkit) is a Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://a-m-t-tools.pages.dev/features.html">
+<meta name="theme-color" content="#071824">
+<meta property="og:type" content="website"><meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
+<meta property="og:title" content="A-M-T Features | Revit &amp; BIM Automation"><meta property="og:description" content="Explore A-M-T Revit tools for architectural modeling, BIM automation, documentation, and AI integration.">
+<meta property="og:url" content="https://a-m-t-tools.pages.dev/features.html">
+<meta property="og:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="A-M-T Features | Revit &amp; BIM Automation">
+<meta name="twitter:description" content="Explore A-M-T Revit tools for architectural modeling and BIM automation.">
+<meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A-M-T — Architectural Modeling Toolkit","alternateName":"A-M-T Revit Plugin","applicationCategory":"DesignApplication","operatingSystem":"Windows","softwareVersion":"1.8.8","description":"A Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.","url":"https://a-m-t-tools.pages.dev/","author":{"@type":"Person","name":"Abdallah Mostafa"},"downloadUrl":"https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest"}
+</script>
+<style>
+:root{
+  --bg:#071824;
+  --panel:#102838;
+  --cyan:#16cce0;
+  --text:#f3f8fc;
+  --muted:#a8bbc8;
+  --line:#ffffff18;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,90%);margin:auto}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#071824ed;
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(12px);
+}
+nav{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:23px;
+  font-weight:bold;
+  flex-shrink:0;
+}
+.brand img{width:45px;height:45px;object-fit:contain}
+.navlinks{
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+  color:var(--muted);
+  font-size:14px;
+}
+.navlinks a:hover{color:var(--cyan)}
+
+.hero{padding:85px 0 75px;text-align:center}
+.hero-banner{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:14px;
+  border:1px solid #ffffff20;
+  margin:0 auto 28px;
+}
+.hero p{
+  color:var(--muted);
+  font-size:18px;
+  max-width:700px;
+  margin:20px auto 30px;
+}
+.btn{
+  display:inline-block;
+  padding:13px 25px;
+  border-radius:7px;
+  background:var(--cyan);
+  color:#061923;
+  font-weight:bold;
+  margin:6px;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #16cce044}
+.btn.secondary{
+  background:transparent;
+  color:var(--text);
+  border:1px solid #ffffff50;
+}
+
+.section{padding:75px 0}
+.section-title{text-align:center;margin-bottom:42px}
+.section-title h2{font-size:34px;margin:0 0 8px}
+.section-title p{color:var(--muted);margin:0}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.feature-card{
+  background:var(--panel);
+  padding:25px;
+  border:1px solid var(--line);
+  border-radius:12px;
+}
+.feature-card h3{color:var(--cyan);margin-top:0}
+.feature-card p{color:var(--muted);margin-bottom:0}
+
+/* Tool cards and icon panels */
+.tools-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+.tool-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.tool-card:hover{
+  transform:translateY(-5px);
+  border-color:var(--cyan);
+  box-shadow:0 12px 28px #00000025;
+}
+.tool-icon-panel{
+  height:185px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:linear-gradient(135deg,#102838 0%,#0b3548 55%,#07536a 100%);
+  background-size:150% 150%;
+  transition:background-position .45s ease,background-color .45s ease;
+}
+.tool-card:hover .tool-icon-panel{
+  background-position:100% 100%;
+}
+.tool-icon-panel img{
+  display:block;
+  width:112px;
+  height:112px;
+  object-fit:contain;
+  transition:transform .4s ease, filter .4s ease;
+}
+
+.tool-card:hover .tool-icon-panel img{
+  animation: iconFloat .9s ease-in-out infinite alternate;
+  filter:drop-shadow(0 8px 12px #16cce055);
+}
+
+@keyframes iconFloat{
+  0%{
+    transform:translateY(0) rotate(-3deg) scale(1.08);
+  }
+  100%{
+    transform:translateY(-12px) rotate(4deg) scale(1.2);
+  }
+}.tool-info{padding:18px}
+.tool-info h3{margin:0 0 8px;font-size:18px}
+.tool-info p{
+  color:var(--muted);
+  font-size:14px;
+  min-height:42px;
+}
+.tool-info a{
+  display:inline-block;
+  color:var(--cyan);
+  font-weight:bold;
+  font-size:14px;
+}
+.tool-info a:hover{text-decoration:underline}
+
+/* Screenshot gallery */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.gallery-item img{
+  width:100%;
+  border-radius:10px;
+  border:1px solid #ffffff25;
+  display:block;
+}
+.gallery-item h3{font-size:17px;margin:10px 0 0}
+
+.docs{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:15px;
+}
+.doc{
+  background:var(--panel);
+  padding:20px;
+  border-radius:9px;
+  border:1px solid var(--line);
+}
+.doc a{color:var(--cyan);font-weight:bold}
+.doc p{color:var(--muted);margin-bottom:0}
+
+.cta{
+  background:linear-gradient(120deg,#103347,#07536a);
+  padding:55px 25px;
+  border-radius:15px;
+  text-align:center;
+}
+.cta p{color:var(--muted)}
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 0;
+  color:var(--muted);
+  text-align:center;
+}
+footer p{margin:5px 0}
+
+@media(max-width:850px){
+  .tools-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .features{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  nav{padding:12px 0;align-items:flex-start;flex-direction:column}
+  .navlinks{gap:14px;font-size:13px}
+  .brand{font-size:20px}
+  .gallery,.docs{grid-template-columns:1fr}
+  .hero{padding:55px 0}
+  .section{padding:55px 0}
+  .section-title h2{font-size:28px}
+}
+@media(max-width:550px){
+  .tools-grid{grid-template-columns:1fr}
+  .tool-icon-panel{height:170px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    scroll-behavior:auto!important;
+    transition:none!important;
+    animation:none!important;
+  }
+}
+
+.page-heading{padding:38px 0 0;text-align:center}.page-heading h1{font-size:clamp(28px,4vw,40px);margin:0}
+.navlinks a{white-space:nowrap}.feature-card a{color:var(--cyan);font-weight:bold}
+</style></head><body><header><div class="container"><nav>
+<a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
+<div class="navlinks">
+<a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a>
+<a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a><a href="contact.html">Contact</a>
+</div></nav></div></header><main><div class="container page-heading"><h1>A-M-T Features</h1></div><section class="section" id="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>Powerful Tools. Smarter Workflows.</h2>
+        <p>Everything you need to improve your Revit production workflow.</p>
+      </div>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Modeling &amp; Automation</h3>
+          <p>Automate curtain walls, sheet creation, wall operations, room workflows and repetitive modeling tasks.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Documentation</h3>
+          <p>Improve documentation with automated dimensions, tags, printing, schedules and view organization.</p>
+        </div>
+        <div class="feature-card">
+          <h3>AI Integration</h3>
+          <p>Connect supported AI clients to Revit through the A-M-T MCP integration.</p>
+        </div>
+      </div>
+    </div>
+  </section></main><footer>
+  <div class="container">
+    <strong>A-M-T — Model. Document. Automate.</strong>
+    <p>Developed by Abdallah Mostafa | Version 1.8.8</p>
+    <p>© 2026 A-M-T. All rights reserved.</p>
+  </div>
+</footer></body></html>
