@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renumber Guide | A-M-T Revit Toolkit</title>
+<meta name="description" content="Learn how to renumber Revit elements and sheets with the A-M-T Renumber command. Configure scope, filters, sorting, prefixes, numbering and preview results.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://a-m-t-tools.pages.dev/renumber-guide.html">
+<meta name="theme-color" content="#071824">
+<style>
+:root{--bg:#071824;--panel:#102838;--panel2:#0c2230;--cyan:#16cce0;--text:#f3f8fc;--muted:#a8bbc8;--line:#ffffff20}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+.container{width:min(1080px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#071824ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-size:23px;font-weight:bold}
+.brand-mark{width:44px;height:44px;border:1px solid var(--cyan);border-radius:8px;display:grid;place-items:center;color:var(--cyan);font-size:12px}
+.navlinks{display:flex;gap:24px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.navlinks a:hover,.text-link:hover{color:var(--cyan)}
+.hero{padding:64px 0 42px;text-align:center}
+.eyebrow{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(34px,5vw,52px);line-height:1.15;margin:12px 0}
+.hero p,.muted{color:var(--muted)}
+.hero p{max-width:760px;margin:14px auto 24px;font-size:18px}
+.pills{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.pill{border:1px solid #16cce055;background:#0b3445;color:#b9f5fb;border-radius:30px;padding:7px 14px;font-size:13px}
+.btn{display:inline-block;background:var(--cyan);color:#061923;font-weight:bold;padding:12px 20px;border-radius:8px;margin:6px}
+.btn.secondary{background:transparent;color:var(--text);border:1px solid #ffffff45}
+.section{padding:38px 0}
+.section-title{margin-bottom:22px}
+.section-title h2{font-size:30px;margin:0 0 7px}
+.section-title p{color:var(--muted);margin:0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px;margin:18px 0}
+.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center}
+.callout{background:#0c3444;border:1px solid #16cce055;border-radius:10px;padding:16px;color:#d8faff}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.step{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:18px}
+.step b{display:block;color:var(--cyan);font-size:13px;letter-spacing:1px;margin-bottom:5px}
+figure{margin:18px 0 0}
+figure img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid #ffffff2b;cursor:zoom-in}
+figcaption{font-size:14px;color:var(--muted);margin-top:9px}
+.field-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.field{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:15px}
+.field h3{font-size:16px;color:var(--cyan);margin:0 0 5px}
+.field p{margin:0;color:var(--muted);font-size:14px}
+table{width:100%;border-collapse:collapse;margin:15px 0;background:var(--panel2);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:12px 15px;border-bottom:1px solid var(--line)}
+th{color:var(--cyan);font-size:13px}
+td{color:var(--muted)}
+.notice{border-left:3px solid var(--cyan);padding:12px 16px;background:#0c2c3b;color:var(--muted);border-radius:0 8px 8px 0}
+footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--muted);margin-top:42px}
+.lightbox{display:none;position:fixed;inset:0;background:#020b12ed;z-index:50;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:95vw;max-height:90vh;object-fit:contain;border:1px solid #ffffff30;border-radius:8px}
+.lightbox button{position:absolute;top:20px;right:24px;background:#153244;color:white;border:1px solid #ffffff55;border-radius:50%;width:44px;height:44px;font-size:24px;cursor:pointer}
+@media(max-width:760px){nav{align-items:flex-start;flex-direction:column;padding:12px 0}.navlinks{gap:14px}.intro-grid,.field-grid,.steps{grid-template-columns:1fr}.panel{padding:18px}.section-title h2{font-size:25px}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="brand" href="index.html"><span class="brand-mark">A-M-T</span><span>A-M-T</span></a>
+<div class="navlinks"><a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a><a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a><a href="contact.html">Contact</a></div>
+</nav></div></header>
+
+<main class="container">
+<section class="hero">
+<div class="eyebrow">A-M-T Command Guide · 01</div>
+<h1>Renumber</h1>
+<p>Renumber Revit elements and sheets using a consistent sequence. Configure the target scope, choose how items are filtered and sorted, define the numbering format, and preview the result before applying changes.</p>
+<div class="pills"><span class="pill">Element Numbering</span><span class="pill">Sheet Numbering</span><span class="pill">Preview Before Apply</span></div>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>How the command works</h2><p>A simple workflow from choosing the target to applying the new sequence.</p></div>
+<div class="steps">
+<div class="step"><b>01 · SELECT</b>Choose the scope: Entire Project, Active View, or Current Selection.</div>
+<div class="step"><b>02 · CONFIGURE</b>Set filter, sorting, target parameter, prefix, start, step and suffix.</div>
+<div class="step"><b>03 · PREVIEW & RUN</b>Review the Current / After list, then click Renumber to apply.</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>1. Renumber elements by parameter</h2><p>Use a parameter to sort elements and write a new sequential value.</p></div>
+<div class="intro-grid">
+<div class="panel">
+<h3>Choose the numbering scope</h3>
+<p class="muted">Select where the command should search for elements:</p>
+<ul class="muted">
+<li><b>Entire Project</b> — process matching elements throughout the project.</li>
+<li><b>Active View</b> — process matching elements visible in the active view.</li>
+<li><b>Current Selection</b> — process only the elements you selected in Revit.</li>
+</ul>
+<div class="callout">The number of elements found is displayed before you run the command.</div>
+</div>
+<figure><img src="Assets/Screenshots/renumber-elements-preview.png" alt="A-M-T Renumber by Parameter dialog showing element numbering options" data-zoom><figcaption>Renumber by Parameter — example configuration for element numbering.</figcaption></figure>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>2. Configure the parameters</h2><p>Set the source parameter, sorting rule and destination parameter.</p></div>
+<div class="field-grid">
+<div class="field"><h3>Filter Parameter</h3><p>Select the parameter used to identify or filter the target elements.</p></div>
+<div class="field"><h3>Filter Method</h3><p>Choose the filtering method. The example shown uses No filter.</p></div>
+<div class="field"><h3>Filter Value</h3><p>Enter the value used by the selected filter method, when applicable.</p></div>
+<div class="field"><h3>Sort by Parameter</h3><p>Choose the parameter that determines the natural order of the elements.</p></div>
+<div class="field"><h3>Parameter to Write</h3><p>Choose the parameter that will receive the generated numbering values.</p></div>
+<div class="field"><h3>Number Format</h3><p>Define the prefix, starting value, increment, suffix and minimum digit count.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>3. Define the numbering format</h2><p>Control how each new value is constructed.</p></div>
+<div class="field-grid">
+<div class="field"><h3>Prefix</h3><p>Text placed before the number, for example <b>GR-</b>.</p></div>
+<div class="field"><h3>Start</h3><p>The first number in the sequence, for example <b>01</b>.</p></div>
+<div class="field"><h3>Step</h3><p>The increment applied between consecutive values. Example: 1.</p></div>
+<div class="field"><h3>Suffix</h3><p>Optional text placed after the number.</p></div>
+<div class="field"><h3>Minimum Digits</h3><p>Sets the minimum number of digits used for the numeric part.</p></div>
+</div>
+<figure><img src="Assets/Screenshots/renumber-elements-result.png" alt="A-M-T Renumber result dialog showing updated and failed counts" data-zoom><figcaption>After execution, the result window reports how many elements were updated and how many failed.</figcaption></figure>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>4. Renumber sheets</h2><p>The same command can also be used to create a consistent sequence for Revit Sheet Numbers.</p></div>
+<figure><img src="Assets/Screenshots/renumber-sheets-preview.png" alt="A-M-T Renumber preview configured for Revit sheet numbers" data-zoom><figcaption>Example: Sheet Number is used as the filter parameter, sorting parameter and destination parameter.</figcaption></figure>
+<div class="panel">
+<h3>Example configuration</h3>
+<table>
+<thead><tr><th>Setting</th><th>Example value</th></tr></thead>
+<tbody>
+<tr><td>Scope</td><td>Entire Project</td></tr>
+<tr><td>Filter Parameter</td><td>Sheet Number</td></tr>
+<tr><td>Filter Method</td><td>No filter</td></tr>
+<tr><td>Sort by Parameter</td><td>Sheet Number</td></tr>
+<tr><td>Parameter to Write</td><td>Sheet Number</td></tr>
+<tr><td>Prefix</td><td>A-</td></tr>
+<tr><td>Start</td><td>101</td></tr>
+<tr><td>Step</td><td>1</td></tr>
+</tbody>
+</table>
+<figure><img src="Assets/Screenshots/renumber-sheets-result.png" alt="Revit Project Browser after sheet renumbering" data-zoom><figcaption>Example result in the Project Browser after applying the new sheet sequence.</figcaption></figure>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>5. Preview before applying</h2><p>Always review the Current and After columns before confirming the operation.</p></div>
+<div class="panel">
+<table>
+<thead><tr><th>Current</th><th>After</th></tr></thead>
+<tbody>
+<tr><td>A-101</td><td>A-101</td></tr>
+<tr><td>A-101 (1)</td><td>A-102</td></tr>
+<tr><td>A-101 (1) (1)</td><td>A-103</td></tr>
+<tr><td>A-101 (1) (1) (1)</td><td>A-104</td></tr>
+</tbody>
+</table>
+<p class="notice">The table above illustrates the sequence visible in the supplied preview. The actual result depends on the selected scope, sort parameter and numbering settings.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>Run the command</h2></div>
+<div class="panel">
+<ol class="muted">
+<li>Click <b>Preview</b> to inspect the proposed changes.</li>
+<li>Check that the Current and After values follow the required sequence.</li>
+<li>Click <b>Renumber</b> to apply the new values.</li>
+<li>Review the completion message for Updated and Failed counts.</li>
+</ol>
+<div class="callout"><b>Tip:</b> Confirm that the chosen destination parameter is the one you intend to change before running the command.</div>
+</div>
+</section>
+
+<div style="text-align:center;padding:25px 0 55px">
+<a class="btn" href="tools.html">Back to All Tools</a>
+<a class="btn secondary" href="Documentation/Command-Guides/AMT_Renumber_Command_Guide_EN.pdf">Open PDF Guide</a>
+</div>
+</main>
+<footer><div class="container"><strong>A-M-T — Model. Document. Automate.</strong><p>Developed by Abdallah Mostafa | Version 1.8.8</p><p>© 2026 A-M-T. All rights reserved.</p></div></footer>
+
+<div class="lightbox" id="lightbox" aria-label="Expanded screenshot"><button type="button" aria-label="Close">×</button><img src="" alt="Expanded screenshot"></div>
+<script>
+const lightbox=document.getElementById('lightbox');
+const lightboxImage=lightbox.querySelector('img');
+document.querySelectorAll('[data-zoom]').forEach(img=>img.addEventListener('click',()=>{
+  lightboxImage.src=img.src; lightboxImage.alt=img.alt; lightbox.classList.add('open');
+}));
+lightbox.addEventListener('click',()=>lightbox.classList.remove('open'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lightbox.classList.remove('open')});
+</script>
+</body>
+</html>
