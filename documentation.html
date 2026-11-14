@@ -2,16 +2,16 @@
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A-M-T Documentation | Guides &amp; Installation</title>
-<meta name="description" content="A-M-T (Architectural Modeling Toolkit) is a Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.">
+<meta name="description" content="Browse A-M-T Revit documentation, installation instructions, the quick user guide, and 17 individual command guides for architectural BIM workflows.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-m-t-tools.pages.dev/documentation.html">
 <meta name="theme-color" content="#071824">
 <meta property="og:type" content="website"><meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
-<meta property="og:title" content="A-M-T Documentation | Guides &amp; Installation"><meta property="og:description" content="Explore A-M-T Revit tools for architectural modeling, BIM automation, documentation, and AI integration.">
+<meta property="og:title" content="A-M-T Documentation | Guides &amp; Installation"><meta property="og:description" content="Find installation help, the A-M-T quick guide, and 17 individual Revit command guides.">
 <meta property="og:url" content="https://a-m-t-tools.pages.dev/documentation.html">
 <meta property="og:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="A-M-T Documentation | Guides &amp; Installation">
-<meta name="twitter:description" content="Explore A-M-T Revit tools for architectural modeling and BIM automation.">
+<meta name="twitter:description" content="Installation help, the A-M-T quick guide, and 17 individual Revit command guides.">
 <meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"A-M-T — Architectural Modeling Toolkit","alternateName":"A-M-T Revit Plugin","applicationCategory":"DesignApplication","operatingSystem":"Windows","softwareVersion":"1.8.8","description":"A Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.","url":"https://a-m-t-tools.pages.dev/","author":{"@type":"Person","name":"Abdallah Mostafa"},"downloadUrl":"https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest"}
@@ -304,37 +304,170 @@ body { animation: amt-page-enter .45s ease-out both; }
   .amt-reveal { opacity: 1 !important; }
 }
 
+
+/* Documentation page refresh */
+.docs-hero{padding:58px 0 24px;text-align:center}
+.docs-hero .eyebrow{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.docs-hero h1{font-size:clamp(30px,4vw,44px);margin:8px 0}
+.docs-hero p{max-width:720px;margin:10px auto 0;color:var(--muted);font-size:17px}
+.docs-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px auto 0}
+.docs-stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+.docs-stat strong{display:block;color:var(--cyan);font-size:24px}
+.docs-stat span{color:var(--muted);font-size:13px}
+.docs-section-head{margin-bottom:24px}
+.docs-section-head .eyebrow{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.docs-section-head h2{font-size:28px;margin:4px 0}
+.docs-section-head p{color:var(--muted);margin:0}
+.docs-primary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.docs-primary-card{position:relative;background:linear-gradient(145deg,#102838,#0b2a3a);border:1px solid var(--line);border-radius:14px;padding:25px;min-height:205px;display:flex;flex-direction:column;align-items:flex-start}
+.docs-primary-card .doc-icon{width:44px;height:44px;border-radius:10px;background:#0c5367;color:var(--cyan);display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+.docs-primary-card h3{font-size:19px;margin:0 0 7px}
+.docs-primary-card p{color:var(--muted);font-size:14px;margin:0 0 18px;max-width:480px}
+.docs-primary-card a{color:var(--cyan);font-weight:700;margin-top:auto}
+.docs-command-panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px}
+.docs-command-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.docs-command-top h3{margin:0;font-size:21px}
+.docs-command-top p{color:var(--muted);margin:4px 0 0;font-size:14px}
+.docs-command-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.docs-command-list span{display:block;padding:11px 13px;border:1px solid var(--line);border-radius:8px;background:#0a202e;color:var(--text);font-size:13px}
+
+.docs-command-list span:before{content:"✓";color:var(--cyan);margin-right:8px}
+.docs-note{color:var(--muted);font-size:13px;margin:16px 0 0}
+.docs-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.docs-step{border-left:2px solid var(--cyan);padding:5px 0 5px 16px}
+.docs-step strong{display:block;margin-bottom:4px}
+.docs-step span{color:var(--muted);font-size:14px}
+.docs-faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.docs-faq details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.docs-faq summary{font-weight:700;cursor:pointer}
+.docs-faq details p{color:var(--muted);font-size:14px;margin:10px 0 0}
+.docs-cta{background:linear-gradient(120deg,#103347,#07536a);border:1px solid #16cce044;border-radius:15px;text-align:center;padding:38px 22px}
+.docs-cta p{color:var(--muted)}
+@media(max-width:800px){.docs-command-list{grid-template-columns:repeat(2,minmax(0,1fr))}.docs-steps{grid-template-columns:1fr}}
+@media(max-width:600px){.docs-stats,.docs-primary-grid,.docs-faq{grid-template-columns:1fr}.docs-command-list{grid-template-columns:1fr}.docs-hero{padding-top:42px}}
+
 </style></head><body><header><div class="container"><nav>
 <a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
 <div class="navlinks">
 <a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a>
 <a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a><a href="contact.html">Contact</a>
-</div></nav></div></header><main><div class="container page-heading"><h1>A-M-T Documentation</h1></div><section class="section" id="documentation">
-    <div class="container">
-      <div class="section-title">
-        <h2>Documentation &amp; Guides</h2>
-        <p>Everything you need to install and use A-M-T.</p>
-      </div>
-      <div class="docs">
-        <div class="doc">
-          <a href="Documentation/AMT_1.8.8_Installation_Guide_Annotated.pdf">Installation Guide (PDF)</a>
-          <p>Illustrated step-by-step installation instructions.</p>
-        </div>
-        <div class="doc">
-          <a href="Documentation/AMT_1.8.8_Quick_Guide.pdf">Quick User Guide</a>
-          <p>An overview of the A-M-T toolkit and its commands.</p>
-        </div>
-        <div class="doc">
-          <a href="Documentation/Installation-Guide.md">Online Installation Guide</a>
-          <p>Installation instructions directly on the website.</p>
-        </div>
-        <div class="doc">
-          <a href="Documentation/Command-Guides/">Individual Command Guides</a>
-          <p>Detailed documentation for all 17 commands.</p>
-        </div>
-      </div>
+</div></nav></div></header>
+<main>
+  <section class="docs-hero container">
+    <span class="eyebrow">A-M-T Knowledge Center</span>
+    <h1>Documentation &amp; Guides</h1>
+    <p>Find the right guide to install A-M-T, get familiar with the toolkit, and follow the workflow for each command.</p>
+    <div class="docs-stats">
+      <div class="docs-stat"><strong>17</strong><span>Individual command guides</span></div>
+      <div class="docs-stat"><strong>1.8.8</strong><span>Documented toolkit version</span></div>
+      <div class="docs-stat"><strong>PDF + Online</strong><span>Guides and installation help</span></div>
     </div>
-  </section></main><footer>
+  </section>
+
+  <section class="section container">
+    <div class="docs-section-head">
+      <span class="eyebrow">Start here</span>
+      <h2>Essential guides</h2>
+      <p>Choose the guide that matches what you want to do.</p>
+    </div>
+    <div class="docs-primary-grid">
+      <article class="docs-primary-card">
+        <div class="doc-icon">↓</div>
+        <h3>Installation Guide</h3>
+        <p>Illustrated, step-by-step instructions to install A-M-T and get it ready to use in Revit.</p>
+        <a href="Documentation/AMT_1.8.8_Installation_Guide_Annotated.pdf" target="_blank" rel="noopener">Open Installation Guide (PDF) →</a>
+      </article>
+      <article class="docs-primary-card">
+        <div class="doc-icon">▤</div>
+        <h3>Quick User Guide</h3>
+        <p>A concise introduction to the A-M-T toolkit, its commands, and the available workflows.</p>
+        <a href="Documentation/AMT_1.8.8_Quick_Guide.pdf" target="_blank" rel="noopener">Open Quick Guide (PDF) →</a>
+      </article>
+      <article class="docs-primary-card">
+        <div class="doc-icon">⌘</div>
+        <h3>Online Installation Guide</h3>
+        <p>Read the installation instructions as a text document directly from the project documentation.</p>
+        <a href="Documentation/Installation-Guide.md" target="_blank" rel="noopener">Read Online Guide →</a>
+      </article>
+      <article class="docs-primary-card">
+        <div class="doc-icon">▦</div>
+        <h3>Command Guides</h3>
+        <p>Detailed individual PDF guides covering the 17 commands included in A-M-T.</p>
+        <span>Browse Command Guides →</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="docs-section-head">
+      <span class="eyebrow">Command library</span>
+      <h2>Explore the 17 command guides</h2>
+      <p>The collection below lists all 17 documented commands. Open the guide collection to choose the matching PDF.</p>
+    </div>
+    <div class="docs-command-panel">
+      <div class="docs-command-top">
+        <div><h3>A-M-T Command Library</h3><p>17 tools · Individual PDF documentation</p></div>
+        <a class="btn" href="Documentation/Command-Guides/" target="_blank" rel="noopener">Open All PDF Guides</a>
+      </div>
+      <div class="docs-command-list">
+        <span>Renumber</span>
+        <span>Create Sheets</span>
+        <span>Wet Area Views</span>
+        <span>Curtain Wall</span>
+        <span>Master &amp; Parts</span>
+        <span>Snap Walls to Grid</span>
+        <span>CW Types</span>
+        <span>Join in Views</span>
+        <span>Plan Tags &amp; Dims</span>
+        <span>Print</span>
+        <span>Column Dims</span>
+        <span>Finishes by Room</span>
+        <span>Room Finish</span>
+        <span>Create Threshold</span>
+        <span>Language</span>
+        <span>TAP Coloring</span>
+        <span>MCP Host</span>
+      </div>
+      <p class="docs-note">Open the Command Guides collection above to access the individual PDF files.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="docs-section-head">
+      <span class="eyebrow">Suggested path</span>
+      <h2>New to A-M-T?</h2>
+      <p>Follow this simple sequence to get started.</p>
+    </div>
+    <div class="docs-steps">
+      <div class="docs-step"><strong>01 · Install</strong><span>Follow the illustrated Installation Guide.</span></div>
+      <div class="docs-step"><strong>02 · Get familiar</strong><span>Use the Quick User Guide to explore the toolkit.</span></div>
+      <div class="docs-step"><strong>03 · Learn a command</strong><span>Open the individual guide for the tool you want to use.</span></div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="docs-section-head">
+      <span class="eyebrow">Help</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="docs-faq">
+      <details><summary>Where should I start if A-M-T is not installed?</summary><p>Start with the illustrated Installation Guide, then use the Quick User Guide to become familiar with the toolkit.</p></details>
+      <details><summary>Where can I find instructions for a specific command?</summary><p>Open the Command Guides collection and select the PDF matching the command name.</p></details>
+      <details><summary>Are the command guides separate from the Quick Guide?</summary><p>Yes. The Quick Guide provides an overview, while the Command Guides contain individual documentation for the 17 commands.</p></details>
+      <details><summary>Which version do these guides cover?</summary><p>The Installation Guide and Quick Guide linked here are the A-M-T 1.8.8 documents.</p></details>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="docs-cta">
+      <h2>Need the latest A-M-T release?</h2>
+      <p>Visit the official releases page to download the current version.</p>
+      <a class="btn" href="https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest" target="_blank" rel="noopener">Download A-M-T</a>
+      <a class="btn secondary" href="tools.html">Explore All Tools</a>
+    </div>
+  </section>
+</main>
+<footer>
   <div class="container">
     <strong>A-M-T — Model. Document. Automate.</strong>
     <p>Developed by Abdallah Mostafa | Version 1.8.8</p>
@@ -344,7 +477,7 @@ body { animation: amt-page-enter .45s ease-out both; }
 <script>
 (() => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const revealSelectors = '.tool-card, .feature-card, .doc, .contact-card, .gallery-item, .section-title, .cta';
+  const revealSelectors = '.tool-card, .feature-card, .doc, .contact-card, .gallery-item, .section-title, .cta, .docs-primary-card, .docs-command-panel, .docs-step, .docs-faq details, .docs-stat';
   const items = [...document.querySelectorAll(revealSelectors)];
   items.forEach((el, i) => {
     el.classList.add('amt-reveal');
