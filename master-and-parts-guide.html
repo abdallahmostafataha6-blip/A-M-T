@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Master &amp; Parts Guide | A-M-T Revit Toolkit</title>
-<meta name="description" content="Step-by-step visual guide to creating master and dependent PART floor plan views with A-M-T in Autodesk Revit.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://a-m-t-tools.pages.dev/master-and-parts-guide.html">
-<meta name="theme-color" content="#071824">
+<meta content="Step-by-step visual guide to creating master and dependent PART floor plan views with A-M-T in Autodesk Revit." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://a-m-t-tools.pages.dev/master-and-parts-guide.html" rel="canonical"/>
+<meta content="#071824" name="theme-color"/>
 <style>
 :root{--bg:#071824;--panel:#102838;--panel2:#0c2230;--cyan:#16cce0;--text:#f3f8fc;--muted:#a8bbc8;--line:#ffffff20}
 *{box-sizing:border-box}
@@ -52,13 +53,29 @@ footer{border-top:1px solid var(--line);margin-top:36px;padding:25px 0;text-alig
 .lightbox button{position:absolute;top:18px;right:20px;border-radius:50%;padding:8px 14px;font-size:24px}
 @media(max-width:760px){.workflow{grid-template-columns:1fr}.explain-row,.explain-row.reverse{grid-template-columns:1fr}.explain-row.reverse .visual{order:0}.field-list{grid-template-columns:1fr}.field-list div:nth-last-child(2){border-bottom:1px solid var(--line)}}
 </style>
-</head>
+<style id="amt-consistent-guide-layout">
+:root{--bg:#071824;--panel:#102838;--panel2:#0c2230;--cyan:#16cce0;--text:#f3f8fc;--muted:#a8bbc8;--line:#ffffff20}
+body{background:var(--bg)!important;color:var(--text)!important;font:16px/1.65 Arial,Helvetica,sans-serif!important}
+.container{width:min(1080px,92%)!important;margin:auto!important}
+.panel{background:var(--panel)!important;border:1px solid var(--line)!important;border-radius:14px!important;padding:24px!important}
+.section{padding:32px 0!important}
+.explain-row{display:grid!important;grid-template-columns:1.08fr .92fr!important;gap:24px!important;align-items:center!important;margin:24px 0 34px!important}
+.explain-row.reverse{grid-template-columns:.92fr 1.08fr!important}
+.explain-row.reverse .visual{order:2}
+.visual img,.large-figure img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;border-radius:10px!important;border:1px solid var(--line)!important;cursor:zoom-in}
+.large-figure{margin:0!important;width:100%!important}
+.large-figure figcaption,.caption{color:var(--muted)!important;font-size:14px!important;margin-top:9px!important}
+.screenshot-explanation{min-height:190px;display:flex;flex-direction:column;justify-content:center}
+.screenshot-explanation h3{color:var(--cyan)!important;margin:0 0 10px!important}
+.screenshot-explanation p{color:var(--muted)!important;margin:0!important}
+.gallery{display:block!important}
+@media(max-width:760px){.explain-row,.explain-row.reverse{grid-template-columns:1fr!important}.explain-row.reverse .visual{order:0}}
+</style></head>
 <body>
 <header><div class="container"><nav>
 <a class="brand" href="index.html">A-M-T</a>
 <div class="links"><a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a><a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a><a href="contact.html">Contact</a></div>
 </nav></div></header>
-
 <main class="container">
 <section class="hero">
 <div class="eyebrow">A-M-T Command Guide · 05</div>
@@ -66,7 +83,6 @@ footer{border-top:1px solid var(--line);margin-top:36px;padding:25px 0;text-alig
 <p>Create a master floor plan and coordinated dependent PART views to divide large plans into manageable drawing areas.</p>
 <span class="pill">Sheets &amp; Views</span><span class="pill">Scope Box Workflow</span><span class="pill">Visual Walkthrough</span>
 </section>
-
 <section class="section">
 <div class="panel">
 <h2>How the command works</h2>
@@ -78,7 +94,6 @@ footer{border-top:1px solid var(--line);margin-top:36px;padding:25px 0;text-alig
 </div>
 </div>
 </section>
-
 <section class="section">
 <h2>1. Configure Master &amp; Parts</h2>
 <p>Open the command from the A-M-T ribbon and configure the source plan and the views to be generated.</p>
@@ -94,7 +109,7 @@ footer{border-top:1px solid var(--line);margin-top:36px;padding:25px 0;text-alig
 <div class="note">Before running the command, prepare the source Floor Plan views and Scope Boxes. Their extents should match the areas you want to split into PART views.</div>
 </div>
 <div class="visual">
-<img src="Assets/Screenshots/05-Master-and-Parts-01.png" alt="Master and Parts command configuration dialog" data-zoom>
+<img alt="Master and Parts command configuration dialog" data-zoom="" src="Assets/Screenshots/05-Master-and-Parts-01.png"/>
 <div class="caption">Master &amp; Parts — configuration dialog, screenshot 01.</div>
 </div>
 </div>
@@ -110,7 +125,6 @@ footer{border-top:1px solid var(--line);margin-top:36px;padding:25px 0;text-alig
 <p style="margin-top:14px">Use a consistent naming convention for the Scope Boxes. The master Scope Box is identified by a name containing the configured master key.</p>
 </div>
 </section>
-
 <section class="section">
 <h2>2. Review the command result</h2>
 <p>After running Create, inspect the completion message and then verify the generated views and their Scope Box extents in the Project Browser and drawing area.</p>
@@ -126,12 +140,11 @@ footer{border-top:1px solid var(--line);margin-top:36px;padding:25px 0;text-alig
 <div class="note">The final result depends on Scope Box names and geometry. Always inspect the generated view extents before using the views in a production sheet package.</div>
 </div>
 <div class="visual">
-<img src="Assets/Screenshots/05-Master-and-Parts-02.png" alt="Master and Parts command completion message" data-zoom>
+<img alt="Master and Parts command completion message" data-zoom="" src="Assets/Screenshots/05-Master-and-Parts-02.png"/>
 <div class="caption">Master &amp; Parts — command completion message, screenshot 02.</div>
 </div>
 </div>
 </section>
-
 <section class="section">
 <div class="result">
 <h2>Expected result</h2>
@@ -142,7 +155,7 @@ footer{border-top:1px solid var(--line);margin-top:36px;padding:25px 0;text-alig
 </section>
 </main>
 <footer><div class="container"><strong>A-M-T — Model. Document. Automate.</strong><p>Developed by Abdallah Mostafa | Version 1.8.8</p></div></footer>
-<div class="lightbox" id="lightbox"><button type="button" aria-label="Close">×</button><img src="" alt="Expanded screenshot"></div>
+<div class="lightbox" id="lightbox"><button aria-label="Close" type="button">×</button><img alt="Expanded screenshot" src=""/></div>
 <script>
 const lb=document.getElementById('lightbox'), lbImg=lb.querySelector('img');
 document.querySelectorAll('[data-zoom]').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src;lb.classList.add('open')}));
