@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download A-M-T | Architectural Modeling Toolkit</title>
+  <meta name="description" content="Download the latest A-M-T release for Autodesk Revit. Explore version information, installation guidance and toolkit details.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://a-m-t-tools.pages.dev/download.html">
+  <meta name="theme-color" content="#071824">
+  <style>
+    :root{--bg:#071824;--panel:#102838;--panel2:#0b2636;--cyan:#16cce0;--text:#f3f8fc;--muted:#a8bbc8;--line:#ffffff18}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,90%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#071824ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-size:23px;font-weight:bold;flex-shrink:0}
+    .brand img{width:45px;height:45px;object-fit:contain}
+    .navlinks{display:flex;flex-wrap:wrap;gap:25px;color:var(--muted);font-size:14px}
+    .navlinks a{white-space:nowrap}.navlinks a:hover,.navlinks a.active{color:var(--cyan)}
+    .hero{padding:76px 0 48px;text-align:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid #16cce044;border-radius:999px;background:#0b536633;color:#7beaf3;font-size:12px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase}
+    h1{font-size:clamp(34px,5vw,54px);line-height:1.12;margin:18px 0 14px}
+    .hero p{max-width:720px;margin:0 auto;color:var(--muted);font-size:18px}
+    .download-panel{max-width:850px;margin:34px auto 0;padding:30px;background:linear-gradient(145deg,#102f40,#0b2636 70%);border:1px solid #16cce044;border-radius:18px;box-shadow:0 22px 60px #0004;text-align:left}
+    .release-top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
+    .release-label{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:1.4px;text-transform:uppercase}
+    .release-title{font-size:25px;font-weight:bold;margin:4px 0}
+    .release-sub{color:var(--muted);font-size:14px}
+    .version-pill{white-space:nowrap;padding:7px 12px;border:1px solid #16cce055;background:#073747;border-radius:8px;color:#8af1f7;font-weight:bold}
+    .download-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:25px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 23px;border-radius:8px;background:var(--cyan);color:#061923;font-weight:bold;transition:transform .2s,box-shadow .2s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #16cce044}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid #ffffff45}
+    .release-note{margin:14px 0 0;color:#91a8b7;font-size:12px}
+    .meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px auto 0;max-width:850px}
+    .meta-card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:17px;text-align:center}
+    .meta-card strong{display:block;color:var(--cyan);font-size:22px}
+    .meta-card span{color:var(--muted);font-size:13px}
+    .section{padding:64px 0}
+    .section-heading{text-align:center;margin-bottom:32px}
+    .section-heading h2{font-size:30px;margin:0 0 7px}
+    .section-heading p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:23px}
+    .card-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:10px;background:#0b536633;color:var(--cyan);font-size:21px;margin-bottom:15px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:step}
+    .step{position:relative;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:22px}
+    .step:before{counter-increment:step;content:"0" counter(step);display:block;color:var(--cyan);font-size:13px;font-weight:bold;letter-spacing:1px;margin-bottom:12px}
+    .step h3{margin:0 0 7px;font-size:17px}
+    .step p{margin:0;color:var(--muted);font-size:14px}
+    .note{max-width:850px;margin:22px auto 0;padding:17px 19px;border-left:3px solid var(--cyan);background:#0b2b3a;border-radius:0 9px 9px 0;color:var(--muted);font-size:14px}
+    .final-cta{padding:38px 24px;text-align:center;border:1px solid #16cce044;border-radius:15px;background:linear-gradient(120deg,#103347,#07536a)}
+    .final-cta h2{margin:0 0 8px}.final-cta p{color:var(--muted);margin:0 0 20px}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);text-align:center;font-size:14px}
+    footer p{margin:5px 0}
+    @media(max-width:800px){.cards,.steps{grid-template-columns:1fr 1fr}}
+    @media(max-width:700px){nav{padding:12px 0;align-items:flex-start;flex-direction:column}.navlinks{gap:14px;font-size:13px}.brand{font-size:20px}.hero{padding:52px 0 30px}.section{padding:48px 0}.download-panel{padding:22px}.release-top{flex-direction:column}.meta-grid{grid-template-columns:1fr}.section-heading h2{font-size:26px}}
+    @media(max-width:520px){.cards,.steps{grid-template-columns:1fr}.download-actions .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+<header><div class="container"><nav>
+  <a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
+  <div class="navlinks">
+    <a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a>
+    <a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a>
+    <a class="active" href="download.html" aria-current="page">Download</a><a href="contact.html">Contact</a>
+  </div>
+</nav></div></header>
+
+<main>
+  <section class="hero container">
+    <span class="eyebrow">A-M-T for Autodesk Revit</span>
+    <h1>Your Revit workflow.<br>One powerful toolkit.</h1>
+    <p>Get the latest A-M-T release and bring practical modeling, documentation and productivity tools together in one dedicated Revit add-in.</p>
+
+    <div class="download-panel">
+      <div class="release-top">
+        <div>
+          <div class="release-label">Latest release</div>
+          <div class="release-title">A-M-T — Architectural Modeling Toolkit</div>
+          <div class="release-sub">17 integrated tools for architectural BIM workflows.</div>
+        </div>
+        <span class="version-pill">Version 1.8.8</span>
+      </div>
+      <div class="download-actions">
+        <a class="btn" href="https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest/download/A-M-T-Setup-1.8.8.exe" target="_blank" rel="noopener noreferrer">↓&nbsp; Download Latest Release</a>
+        <a class="btn secondary" href="https://github.com/abdallahmostafataha6-blip/A-M-T" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+      </div>
+      <p class="release-note">The download button opens the latest published release on GitHub. Review the release assets and notes before installing.</p>
+    </div>
+
+    <div class="meta-grid">
+      <div class="meta-card"><strong>17</strong><span>Integrated Revit tools</span></div>
+      <div class="meta-card"><strong>1.8.8</strong><span>Current website version</span></div>
+      <div class="meta-card"><strong>Windows</strong><span>Operating system</span></div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-heading">
+      <span class="eyebrow">Inside the toolkit</span>
+      <h2>Designed for everyday BIM production</h2>
+      <p>Focused commands that help reduce repetitive work across common architectural workflows.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">⌗</div><h3>Modeling &amp; Walls</h3><p>Tools for wall alignment, curtain wall workflows, joining operations and structural documentation tasks.</p></article>
+      <article class="card"><div class="card-icon">▤</div><h3>Sheets &amp; Views</h3><p>Organize views, create sheets and streamline drawing preparation and annotation workflows.</p></article>
+      <article class="card"><div class="card-icon">◈</div><h3>Finishes &amp; Settings</h3><p>Dedicated commands for room finishes, thresholds, language settings and visual organization.</p></article>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-heading">
+      <span class="eyebrow">Getting started</span>
+      <h2>Install A-M-T in a few steps</h2>
+      <p>Use the published release package and follow the installation information provided with it.</p>
+    </div>
+    <div class="steps">
+      <article class="step"><h3>Download the release</h3><p>Open the latest GitHub release and download the installation package listed under its release assets.</p></article>
+      <article class="step"><h3>Follow the package instructions</h3><p>Review any included README or installation notes and follow the steps supplied with that release.</p></article>
+      <article class="step"><h3>Open Autodesk Revit</h3><p>Launch Revit and look for the A-M-T ribbon tab. If it does not appear, check the release notes and installation guidance.</p></article>
+    </div>
+    <div class="note"><strong>Compatibility:</strong> A-M-T is a Windows add-in for Autodesk Revit. Check the latest release notes and package details for the Revit versions supported by that release.</div>
+  </section>
+
+  <section class="section container">
+    <div class="final-cta">
+      <h2>Ready to work smarter in Revit?</h2>
+      <p>Download the latest release or explore all 17 tools before getting started.</p>
+      <a class="btn" href="https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest/download/A-M-T-Setup-1.8.8.exe" target="_blank" rel="noopener noreferrer">Download A-M-T</a>
+      <a class="btn secondary" href="tools.html">Explore All 17 Tools</a>
+    </div>
+  </section>
+</main>
+<footer><div class="container">
+  <strong>A-M-T — Model. Document. Automate.</strong>
+  <p>Developed by Abdallah Mostafa | Version 1.8.8</p>
+  <p>© 2026 A-M-T. All rights reserved.</p>
+</div></footer>
+</body>
+</html>
