@@ -9,6 +9,13 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-m-t-tools.pages.dev/documentation.html">
 <meta name="theme-color" content="#071824">
+<meta property="og:type" content="website"><meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
+<meta property="og:title" content="A-M-T Documentation | Guides &amp; Installation"><meta property="og:description" content="Find installation help, the A-M-T quick guide, and 17 individual Revit command guides.">
+<meta property="og:url" content="https://a-m-t-tools.pages.dev/documentation.html">
+<meta property="og:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="A-M-T Documentation | Guides &amp; Installation">
+<meta name="twitter:description" content="Installation help, the A-M-T quick guide, and 17 individual Revit command guides.">
+<meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"A-M-T — Architectural Modeling Toolkit","alternateName":"A-M-T Revit Plugin","applicationCategory":"DesignApplication","operatingSystem":"Windows","softwareVersion":"1.8.8","description":"A Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.","url":"https://a-m-t-tools.pages.dev/","author":{"@type":"Person","name":"Abdallah Mostafa"},"downloadUrl":"https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest"}
 </script>
@@ -342,22 +349,12 @@ body { animation: amt-page-enter .45s ease-out both; }
 @media(max-width:800px){.docs-command-list{grid-template-columns:repeat(2,minmax(0,1fr))}.docs-steps{grid-template-columns:1fr}}
 @media(max-width:600px){.docs-stats,.docs-primary-grid,.docs-faq{grid-template-columns:1fr}.docs-command-list{grid-template-columns:1fr}.docs-hero{padding-top:42px}}
 
-</style>
-  <!-- Open Graph: link preview for LinkedIn and other social platforms -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
-  <meta property="og:title" content="A-M-T Documentation | Guides &amp; Installation">
-  <meta property="og:description" content="Browse A-M-T Revit documentation, installation instructions, the quick user guide, and 17 individual command guides for architectural BIM workflows.">
-  <meta property="og:url" content="https://a-m-t-tools.pages.dev/documentation.html">
-  <meta property="og:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
-  <meta property="og:image:secure_url" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
-  <meta property="og:image:alt" content="A-M-T — Architectural Modeling Toolkit for Autodesk Revit">
-  <meta property="og:locale" content="en_US">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="A-M-T Documentation | Guides &amp; Installation">
-  <meta name="twitter:description" content="Browse A-M-T Revit documentation, installation instructions, the quick user guide, and 17 individual command guides for architectural BIM workflows.">
-  <meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
-</head><body><header><div class="container"><nav>
+
+.docs-command-list a{display:block;padding:11px 13px;border:1px solid var(--line);border-radius:8px;background:#0a202e;color:var(--text);font-size:13px;text-decoration:none;transition:border-color .2s ease,color .2s ease,transform .2s ease}
+.docs-command-list a:before{content:"↗";color:var(--cyan);margin-right:8px}
+.docs-command-list a:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
+
+</style></head><body><header><div class="container"><nav>
 <a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
 <div class="navlinks">
 <a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a>
@@ -398,13 +395,13 @@ body { animation: amt-page-enter .45s ease-out both; }
         <div class="doc-icon">⌘</div>
         <h3>Online Installation Guide</h3>
         <p>Read the installation instructions as a text document directly from the project documentation.</p>
-        <a href="Documentation/Installation-Guide.md" target="_blank" rel="noopener">Read Online Guide →</a>
+        <a href="installation-guide.html">Read Online Guide →</a>
       </article>
       <article class="docs-primary-card">
         <div class="doc-icon">▦</div>
         <h3>Command Guides</h3>
         <p>Detailed individual PDF guides covering the 17 commands included in A-M-T.</p>
-        <span>Browse Command Guides →</span>
+        <a href="#command-library">Browse Command Guides →</a>
       </article>
     </div>
   </section>
@@ -415,30 +412,30 @@ body { animation: amt-page-enter .45s ease-out both; }
       <h2>Explore the 17 command guides</h2>
       <p>The collection below lists all 17 documented commands. Open the guide collection to choose the matching PDF.</p>
     </div>
-    <div class="docs-command-panel">
+    <div class="docs-command-panel" id="command-library">
       <div class="docs-command-top">
         <div><h3>A-M-T Command Library</h3><p>17 tools · Individual PDF documentation</p></div>
-        <a class="btn" href="Documentation/Command-Guides/" target="_blank" rel="noopener">Open All PDF Guides</a>
+        <a class="btn" href="#command-guide-links">Browse All 17 Online Guides</a>
       </div>
-      <div class="docs-command-list">
-        <span>Renumber</span>
-        <span>Create Sheets</span>
-        <span>Wet Area Views</span>
-        <span>Curtain Wall</span>
-        <span>Master &amp; Parts</span>
-        <span>Snap Walls to Grid</span>
-        <span>CW Types</span>
-        <span>Join in Views</span>
-        <span>Plan Tags &amp; Dims</span>
-        <span>Print</span>
-        <span>Column Dims</span>
-        <span>Finishes by Room</span>
-        <span>Room Finish</span>
-        <span>Create Threshold</span>
-        <span>Language</span>
-        <span>TAP Coloring</span>
-        <span>MCP Host</span>
-      </div>
+      <div class="docs-command-list" id="command-guide-links">
+<a href="renumber-guide.html">Renumber</a>
+<a href="create-sheets-guide.html">Create Sheets</a>
+<a href="wet-area-views-guide.html">Wet Area Views</a>
+<a href="curtain-wall-guide.html">Curtain Wall</a>
+<a href="master-and-parts-guide.html">Master &amp; Parts</a>
+<a href="snap-walls-to-grid-guide.html">Snap Walls to Grid</a>
+<a href="cw-types-guide.html">CW Types</a>
+<a href="join-in-views-guide.html">Join in Views</a>
+<a href="plan-tags-and-dims-guide.html">Plan Tags &amp; Dims</a>
+<a href="print-guide.html">Print</a>
+<a href="column-dims-guide.html">Column Dims</a>
+<a href="finishes-by-room-guide.html">Finishes by Room</a>
+<a href="room-finish-guide.html">Room Finish</a>
+<a href="create-threshold-guide.html">Create Threshold</a>
+<a href="language-guide.html">Language</a>
+<a href="tap-coloring-guide.html">TAP Coloring</a>
+<a href="mcp-host-guide.html">MCP Host</a>
+</div>
       <p class="docs-note">Open the Command Guides collection above to access the individual PDF files.</p>
     </div>
   </section>
