@@ -9,6 +9,13 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://a-m-t-tools.pages.dev/gallery.html">
 <meta name="theme-color" content="#071824">
+<meta property="og:type" content="website"><meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
+<meta property="og:title" content="A-M-T Gallery | Revit Tool Screenshots"><meta property="og:description" content="Explore A-M-T Revit tools for architectural modeling, BIM automation, documentation, and AI integration.">
+<meta property="og:url" content="https://a-m-t-tools.pages.dev/gallery.html">
+<meta property="og:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="A-M-T Gallery | Revit Tool Screenshots">
+<meta name="twitter:description" content="Explore A-M-T Revit tools for architectural modeling and BIM automation.">
+<meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"A-M-T — Architectural Modeling Toolkit","alternateName":"A-M-T Revit Plugin","applicationCategory":"DesignApplication","operatingSystem":"Windows","softwareVersion":"1.8.8","description":"A Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.","url":"https://a-m-t-tools.pages.dev/","author":{"@type":"Person","name":"Abdallah Mostafa"},"downloadUrl":"https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest"}
 </script>
@@ -302,35 +309,49 @@ body { animation: amt-page-enter .45s ease-out both; }
 
 
 
-/* Gallery image lightbox - isolated styles */
+
+/* Gallery image lightbox - stable viewport preview */
 .gallery-open{display:block;cursor:zoom-in;overflow:hidden;border-radius:10px}
 .gallery-open img{display:block;width:100%;height:auto;border-radius:10px;transition:transform .3s ease,filter .3s ease}
 .gallery-open:hover img{transform:scale(1.025);filter:brightness(1.06)}
-#amt-gallery-lightbox{position:fixed!important;inset:0!important;z-index:2147483000!important;display:none;align-items:center;justify-content:center;padding:30px;background:rgba(2,10,16,.94);backdrop-filter:blur(8px)}
-#amt-gallery-lightbox.is-open{display:flex!important}
-#amt-gallery-lightbox .amt-preview-image{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;max-width:94vw!important;max-height:88vh!important;width:auto!important;height:auto!important;object-fit:contain;border:1px solid #16cce080;border-radius:10px;box-shadow:0 20px 70px #0009}
-#amt-gallery-lightbox .amt-preview-error{color:#fff;background:#102838;padding:22px 28px;border:1px solid #16cce0;border-radius:10px}
-#amt-gallery-lightbox .amt-close{position:absolute;top:18px;right:24px;width:44px;height:44px;border:1px solid #ffffff70;border-radius:50%;background:#102838;color:#fff;font-size:28px;line-height:1;cursor:pointer}
+#amt-gallery-lightbox{
+  position:fixed;inset:0;z-index:2147483000;
+  display:none;align-items:center;justify-content:center;
+  width:100vw;height:100vh;height:100dvh;
+  padding:24px;overflow:hidden;
+  background:rgba(2,10,16,.96);backdrop-filter:blur(8px);
+}
+#amt-gallery-lightbox.is-open{display:flex}
+#amt-gallery-lightbox .amt-preview-slot{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;height:100%;min-width:0;min-height:0;overflow:hidden;
+}
+#amt-gallery-lightbox .amt-preview-image{
+  display:block;visibility:visible;opacity:1;
+  max-width: min(94vw, 1600px);max-height: min(90vh, 90dvh);
+  width:auto;height:auto;object-fit:contain;
+  border:1px solid #16cce080;border-radius:10px;
+  box-shadow:0 20px 70px #0009;
+}
+#amt-gallery-lightbox .amt-preview-loading,
+#amt-gallery-lightbox .amt-preview-error{
+  color:#fff;background:#102838;padding:22px 28px;
+  border:1px solid #16cce0;border-radius:10px;text-align:center;
+}
+#amt-gallery-lightbox .amt-close{
+  position:absolute;top:18px;right:24px;z-index:2;
+  width:44px;height:44px;border:1px solid #ffffff70;border-radius:50%;
+  background:#102838;color:#fff;font-size:28px;line-height:1;cursor:pointer;
+}
 #amt-gallery-lightbox .amt-close:hover{background:#16cce0;color:#061923}
-body.amt-lightbox-open{overflow:hidden}
-@media(max-width:600px){#amt-gallery-lightbox{padding:12px}#amt-gallery-lightbox .amt-preview-image{max-width:96vw!important;max-height:82vh!important}}
+body.amt-lightbox-open{overflow:hidden!important}
+@media(max-width:600px){
+  #amt-gallery-lightbox{padding:12px}
+  #amt-gallery-lightbox .amt-preview-image{max-width:96vw;max-height:84vh;max-height:84dvh}
+  #amt-gallery-lightbox .amt-close{top:10px;right:10px}
+}
 @media(prefers-reduced-motion:reduce){.gallery-open img{transition:none}}
-</style></style>
-  <!-- Open Graph: link preview for LinkedIn and other social platforms -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
-  <meta property="og:title" content="A-M-T Gallery | Revit Tool Screenshots">
-  <meta property="og:description" content="A-M-T (Architectural Modeling Toolkit) is a Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.">
-  <meta property="og:url" content="https://a-m-t-tools.pages.dev/gallery.html">
-  <meta property="og:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
-  <meta property="og:image:secure_url" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
-  <meta property="og:image:alt" content="A-M-T — Architectural Modeling Toolkit for Autodesk Revit">
-  <meta property="og:locale" content="en_US">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="A-M-T Gallery | Revit Tool Screenshots">
-  <meta name="twitter:description" content="A-M-T (Architectural Modeling Toolkit) is a Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.">
-  <meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
-</head><body><header><div class="container"><nav>
+</style></head><body><header><div class="container"><nav>
 <a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
 <div class="navlinks">
 <a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a>
@@ -442,17 +463,19 @@ body.amt-lightbox-open{overflow:hidden}
   overlay.setAttribute('role', 'dialog');
   overlay.setAttribute('aria-modal', 'true');
   overlay.setAttribute('aria-label', 'Gallery image preview');
-  overlay.innerHTML = '<button class="amt-close" type="button" aria-label="Close image preview">&times;</button><div class="amt-preview-slot"></div>';
+  overlay.innerHTML = '<button class="amt-close" type="button" aria-label="Close image preview">&times;</button><div class="amt-preview-slot"><div class="amt-preview-loading">Loading image…</div></div>';
   document.body.appendChild(overlay);
 
   const slot = overlay.querySelector('.amt-preview-slot');
   const closeButton = overlay.querySelector('.amt-close');
   let lastTrigger = null;
+  let previousScrollY = 0;
 
   function closePreview() {
     overlay.classList.remove('is-open');
     document.body.classList.remove('amt-lightbox-open');
-    slot.replaceChildren();
+    window.scrollTo(0, previousScrollY);
+    slot.innerHTML = '<div class="amt-preview-loading">Loading image…</div>';
     if (lastTrigger) lastTrigger.focus();
   }
 
@@ -460,6 +483,7 @@ body.amt-lightbox-open{overflow:hidden}
     link.addEventListener('click', event => {
       event.preventDefault();
       lastTrigger = link;
+      previousScrollY = window.scrollY;
       const thumb = link.querySelector('img');
       const image = new Image();
       image.className = 'amt-preview-image';
@@ -471,18 +495,20 @@ body.amt-lightbox-open{overflow:hidden}
       image.onerror = () => {
         const message = document.createElement('div');
         message.className = 'amt-preview-error';
-        message.textContent = 'تعذر تحميل الصورة. افتحها مباشرة من هنا.';
+        message.textContent = 'تعذر تحميل الصورة. ';
         const direct = document.createElement('a');
         direct.href = link.href;
         direct.target = '_blank';
         direct.rel = 'noopener';
-        direct.textContent = 'فتح الصورة';
-        direct.style.cssText = 'display:block;color:#16cce0;margin-top:12px;text-align:center';
+        direct.textContent = 'فتح الصورة في نافذة جديدة';
+        direct.style.cssText = 'color:#16cce0';
         message.appendChild(direct);
         slot.replaceChildren(message);
       };
-      const source = (thumb && (thumb.currentSrc || thumb.src)) || link.href;
-      image.src = source;
+
+      // Use the original full-size asset, not the lazy-loaded thumbnail URL.
+      image.src = link.getAttribute('data-full') || link.href;
+      slot.innerHTML = '<div class="amt-preview-loading">Loading image…</div>';
       overlay.classList.add('is-open');
       document.body.classList.add('amt-lightbox-open');
       closeButton.focus();
@@ -496,8 +522,7 @@ body.amt-lightbox-open{overflow:hidden}
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && overlay.classList.contains('is-open')) closePreview();
   });
-})();
-</script>
+})();</script>
 
 
 </body></html>
