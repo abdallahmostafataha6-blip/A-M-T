@@ -31,6 +31,46 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
   <meta name="twitter:title" content="Column Dims Guide | A-M-T Revit Toolkit">
   <meta name="twitter:description" content="Learn how to create column dimensions to the nearest parallel grid in the active Revit plan view with A-M-T Column Dims.">
   <meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
+
+<style>
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.96)!important;backdrop-filter:blur(12px)}
+html{scroll-padding-top:90px}
+.language-switch{display:inline-flex;align-items:center;gap:7px;margin-inline-start:14px;white-space:nowrap}
+.language-switch button{background:transparent;border:1px solid #16cce055;color:#a8bbc8;border-radius:6px;padding:6px 10px;cursor:pointer;font-weight:700}
+.language-switch button.active{background:#16cce0;color:#061923;border-color:#16cce0}
+html[dir="rtl"] body{text-align:right}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{direction:rtl}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{flex-direction:row}
+html[dir="rtl"] .hero,html[dir="rtl"] .section-title,html[dir="rtl"] footer{text-align:center}
+html[dir="rtl"] .notice{border-left:0;border-right:3px solid var(--cyan);border-radius:8px 0 0 8px}
+html[dir="rtl"] th,html[dir="rtl"] td{text-align:right}
+@media(max-width:760px){.language-switch{margin:4px 0 0}}
+</style>
+<script id="amt-bilingual">
+(function(){
+const dict={"Home": "الرئيسية", "Features": "المميزات", "Tools": "الأدوات", "Gallery": "معرض الصور", "Documentation": "التوثيق", "Download": "تحميل", "Contact": "تواصل معنا", "View Guide →": "عرض الدليل ←", "Read more →": "اقرأ المزيد ←", "View on GitHub ↗": "عرض المشروع على GitHub ↗", "All 17 A-M-T Tools": "جميع أدوات A-M-T الـ17", "17 Revit Productivity Tools": "17 أداة لزيادة الإنتاجية في Revit", "Find the right tool for the task": "اعثر على الأداة المناسبة لمهمتك", "Search tools": "ابحث في الأدوات", "All tools": "كل الأدوات", "Showing 17 of 17 tools": "عرض 17 من 17 أداة", "Sheets & Views": "اللوحات والمشاهد", "Walls & Structure": "الحوائط والإنشاء", "Finishes": "التشطيبات", "Settings": "الإعدادات", "Export": "التصدير", "Contact A-M-T": "تواصل مع A-M-T", "Get in touch for questions, feedback, and collaboration.": "تواصل معنا للاستفسارات والملاحظات والتعاون.", "Phone": "الهاتف", "Email": "البريد الإلكتروني", "LinkedIn": "لينكدإن", "Start here": "ابدأ من هنا", "Essential guides": "الأدلة الأساسية", "Command Guides": "أدلة الأوامر", "Command library": "مكتبة الأوامر", "Explore All 17 Tools": "استكشف الأدوات الـ17", "Latest release": "أحدث إصدار", "Inside the toolkit": "محتويات الحزمة", "Getting started": "البدء", "Compatibility:": "التوافق:", "How the command works": "طريقة عمل الأمر", "Visual walkthrough": "شرح مرئي", "Configure the threshold settings": "اضبط إعدادات العتبة", "Create": "إنشاء", "Cancel": "إلغاء", "Next": "التالي", "OK": "موافق", "Renumber": "إعادة الترقيم", "Create Sheets": "إنشاء اللوحات", "Wet Area Views": "مشاهد المناطق الرطبة", "Curtain Wall": "الحائط الساتر", "Master & Parts": "العناصر والأجزاء", "Snap Walls to Grid": "محاذاة الحوائط مع المحاور", "CW Types": "أنواع الحوائط الساترة", "Join in Views": "وصل العناصر في المشاهد", "Plan Tags & Dims": "تاجات وأبعاد المساقط", "Print": "طباعة", "Column Dims": "أبعاد الأعمدة", "Finishes by Room": "تشطيبات الغرف", "Room Finish": "تشطيب الغرفة", "Create Threshold": "إنشاء العتبة", "Language": "اللغة", "TAP Coloring": "تلوين تبويبات الملفات", "MCP Host": "خادم MCP", "Modeling automation": "أتمتة النمذجة", "Documentation & sheets": "التوثيق واللوحات", "Production & output": "الإنتاج والإخراج", "Your Revit workflow.": "سير عملك في Revit.", "One powerful toolkit.": "حزمة واحدة قوية.", "Download Latest Release": "تحميل أحدث إصدار", "Browse Command Guides →": "تصفح أدلة الأوامر ←", "Open Installation Guide (PDF) →": "فتح دليل التثبيت (PDF) ←", "Open Quick Guide (PDF) →": "فتح دليل المستخدم السريع (PDF) ←", "Online Installation Guide": "دليل التثبيت الإلكتروني", "Read Online Guide →": "قراءة الدليل الإلكتروني ←", "Version 1.8.8": "الإصدار 1.8.8", "Current website version": "إصدار الموقع الحالي", "Integrated Revit tools": "أدوات Revit متكاملة", "Operating system": "نظام التشغيل", "Windows": "ويندوز", "A-M-T — Model. Document. Automate.": "A-M-T — نمذج. وثّق. أتمت.", "Developed by Abdallah Mostafa": "تطوير عبدالله مصطفى", "All rights reserved.": "جميع الحقوق محفوظة.", "Select rooms": "اختر الغرف", "Configure views": "اضبط المشاهد", "Create documentation": "إنشاء التوثيق", "Review the creation report": "راجع تقرير الإنشاء", "Create types": "إنشاء الأنواع", "Dimension": "إنشاء الأبعاد", "First sheet number": "رقم اللوحة الأول", "Sheet name": "اسم اللوحة", "Title block type": "نوع التايتل بلوك", "Level": "المستوى", "Scope": "نطاق التطبيق", "Entire project": "المشروع بالكامل", "Active view": "المشهد الحالي", "Current selection": "العناصر المحددة", "Download the release": "تحميل الإصدار", "Follow the package instructions": "اتبع تعليمات الحزمة", "Open Autodesk Revit": "افتح Autodesk Revit"};
+const key='amt-site-language';
+function addSwitch(){
+ const nav=document.querySelector('nav'); if(!nav || nav.querySelector('.language-switch')) return;
+ const host=nav.querySelector('.navlinks, .links') || nav;
+ const box=document.createElement('div'); box.className='language-switch';box.setAttribute('role','group');box.setAttribute('aria-label','Language');
+ box.innerHTML='<button type="button" data-lang="en">EN</button><span aria-hidden="true">|</span><button type="button" data-lang="ar">عربي</button>';
+ host.appendChild(box);
+ box.addEventListener('click',e=>{const b=e.target.closest('button[data-lang]');if(b)setLang(b.dataset.lang)});
+}
+let originals=[];
+function collect(){if(originals.length)return;const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;while(n=walker.nextNode()){const t=n.nodeValue.trim();if(t && dict[t]) originals.push([n,n.nodeValue,t]);}}
+function setLang(lang){
+ collect(); const ar=lang==='ar';
+ originals.forEach(([node,raw,trim])=>{if(node.isConnected)node.nodeValue=ar?raw.replace(trim,dict[trim]):raw});
+ document.documentElement.lang=ar?'ar':'en';document.documentElement.dir=ar?'rtl':'ltr';
+ document.querySelectorAll('.language-switch button').forEach(b=>{b.classList.toggle('active',b.dataset.lang===lang);b.setAttribute('aria-pressed',b.dataset.lang===lang?'true':'false')});
+ try{localStorage.setItem(key,lang)}catch(e){}
+}
+document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{lang=localStorage.getItem(key)||'en'}catch(e){}setLang(lang)});
+})();
+</script>
+
 </head><body>
 <header><div class="container"><nav><a class="brand" href="index.html"><span class="brand-mark">A-M-T</span><span>A-M-T</span></a><div class="navlinks"><a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a><a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a><a href="download.html">Download</a><a href="contact.html">Contact</a></div></nav></div></header>
 <main class="container">
