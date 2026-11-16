@@ -361,12 +361,28 @@ body { animation: amt-page-enter .45s ease-out both; }
   .hero-actions .btn{min-width:190px}
 }
 
+
+.language-switch{display:flex;align-items:center;gap:7px;flex-shrink:0;color:var(--muted);font-size:13px}
+.lang-btn{border:1px solid transparent;background:transparent;color:var(--muted);font:inherit;font-weight:700;padding:7px 9px;border-radius:7px;cursor:pointer}
+.lang-btn:hover,.lang-btn.active{color:var(--cyan);border-color:#16cce055;background:#0b344533}
+nav{flex-wrap:wrap}
+@media(max-width:700px){.language-switch{align-self:flex-end;margin-top:-4px}}
+html[dir="rtl"] body{font-family:Tahoma,Arial,sans-serif}
+html[dir="rtl"] .intro-panel,html[dir="rtl"] .feature-copy,html[dir="rtl"] .tool-info,html[dir="rtl"] .showcase-copy{text-align:right}
+html[dir="rtl"] .check-list li:before{margin-right:0;margin-left:10px}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .hero-actions{direction:rtl}
+.brand{direction:ltr}
+
 </style></head><body><header><div class="container"><nav>
 <a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
 <div class="navlinks">
 <a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a>
 <a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a><a href="download.html">Download</a><a href="contact.html">Contact</a>
-</div></nav></div></header>
+<div class="language-switch" role="group" aria-label="Language">
+<button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+<span aria-hidden="true">|</span>
+<button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">عربي</button>
+</div></div></nav></div></header>
 <main>
   <section class="hero container">
     <img class="hero-banner" src="Assets/A-M-T-Website-Hero.png" alt="A-M-T Architectural Modeling Toolkit for Revit">
@@ -472,6 +488,41 @@ body { animation: amt-page-enter .45s ease-out both; }
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
   items.forEach(el => observer.observe(el));
+})();
+</script>
+
+
+<script id="amt-language-system">
+(() => {
+ const translations = {"Home": "الرئيسية", "Features": "المميزات", "Tools": "الأدوات", "Gallery": "معرض الصور", "Documentation": "التوثيق", "Download": "تحميل", "Contact": "تواصل معنا", "Automate Repetitive Revit Work. Focus on Design.": "أتمت أعمال Revit المتكررة وركّز على التصميم.", "A-M-T brings practical architectural modeling, documentation and productivity tools together in one Revit add-in — helping BIM teams spend less time on repetitive tasks and more time delivering coordinated work.": "يجمع A-M-T أدوات عملية للنمذجة المعمارية والتوثيق ورفع الإنتاجية داخل إضافة واحدة لبرنامج Revit، لمساعدة فرق BIM على تقليل المهام المتكررة والتركيز على تقديم أعمال منسقة.", "View on GitHub ↗": "عرض المشروع على GitHub ↗", "Download A-M-T": "تحميل A-M-T", "Explore 17 Tools": "استكشف 17 أداة", "Integrated Revit tools": "أداة متكاملة لـ Revit", "Current A-M-T version": "إصدار A-M-T الحالي", "Modeling · Documentation · Automation": "النمذجة · التوثيق · الأتمتة", "Built for production": "مصمم لبيئة العمل الفعلية", "Less repetitive work. More reliable workflows.": "مهام متكررة أقل وسير عمل أكثر موثوقية.", "A-M-T is designed around everyday architectural BIM tasks: organizing views and sheets, automating curtain wall documentation, managing finishes, and streamlining model operations.": "صُمم A-M-T لمهام BIM المعمارية اليومية، مثل تنظيم الـ Views والـ Sheets، وأتمتة توثيق Curtain Walls، وإدارة التشطيبات، وتسهيل عمليات النموذج.", "Reduce repetitive manual steps in Revit": "تقليل الخطوات اليدوية المتكررة في Revit", "Keep documentation workflows more consistent": "الحفاظ على اتساق أعمال التوثيق", "Access focused tools from one dedicated ribbon": "الوصول إلى الأدوات من شريط أدوات موحد", "Discover what A-M-T can do →": "اكتشف إمكانيات A-M-T ←", "Featured workflows": "سير العمل المميز", "See A-M-T in action": "شاهد A-M-T أثناء العمل", "A closer look at three workflows that help turn repetitive tasks into guided operations.": "نظرة أقرب على ثلاثة مسارات عمل تحوّل المهام المتكررة إلى عمليات منظمة.", "Curtain Wall Automation": "أتمتة Curtain Wall", "Generate coordinated curtain wall views and sheets from selected types, with templates and naming settings.": "إنشاء Views وSheets منسقة للـ Curtain Walls وفق الأنواع المحددة والقوالب وإعدادات التسمية.", "Explore tools →": "استكشف الأدوات ←", "Automated Sheet Creation": "إنشاء Sheets تلقائيًا", "Create organized sheets and place views through a repeatable workflow instead of building each sheet manually.": "إنشاء Sheets منظمة ووضع الـ Views من خلال خطوات قابلة للتكرار بدلًا من إعداد كل Sheet يدويًا.", "AI Integration with MCP": "التكامل مع الذكاء الاصطناعي عبر MCP", "Connect a supported AI client to the local A-M-T bridge and choose how model changes are approved.": "ربط عميل ذكاء اصطناعي مدعوم بجسر A-M-T المحلي وتحديد آلية الموافقة على تغييرات النموذج.", "Explore integration →": "استكشف التكامل ←", "Start exploring": "ابدأ الاستكشاف", "Bring your Revit workflow together with A-M-T.": "اجمع مهام Revit اليومية في مكان واحد مع A-M-T.", "Explore the complete toolkit, browse the guides, or get the latest release.": "استكشف الأدوات، وتصفح الأدلة، أو احصل على أحدث إصدار.", "View All Tools": "عرض كل الأدوات", "Read Documentation": "قراءة التوثيق", "A-M-T — Model. Document. Automate.": "A-M-T — نمذجة. توثيق. أتمتة.", "Developed by Abdallah Mostafa | Version 1.8.8": "تطوير: عبد الله مصطفى | الإصدار 1.8.8", "© 2026 A-M-T. All rights reserved.": "© 2026 A-M-T. جميع الحقوق محفوظة."};
+ const reverse = Object.fromEntries(Object.entries(translations).map(([en,ar])=>[ar,en]));
+ const buttons = [...document.querySelectorAll('.lang-btn')];
+ const originalTitle = document.title;
+ function apply(lang) {
+   const ar = lang === 'ar';
+   document.documentElement.lang = ar ? 'ar' : 'en';
+   document.documentElement.dir = ar ? 'rtl' : 'ltr';
+   document.title = ar ? 'A-M-T | إضافة Revit للنمذجة المعمارية وأتمتة BIM' : originalTitle;
+   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+   let n;
+   while ((n = walker.nextNode())) {
+     if (!n.parentElement || n.parentElement.closest('script,style,noscript')) continue;
+     const t = n.nodeValue.trim();
+     if (!t) continue;
+     const replacement = ar ? translations[t] : reverse[t];
+     if (replacement) n.nodeValue = n.nodeValue.replace(t, replacement);
+   }
+   buttons.forEach(b => {
+     const active = b.dataset.lang === lang;
+     b.classList.toggle('active', active);
+     b.setAttribute('aria-pressed', active ? 'true' : 'false');
+   });
+   try { localStorage.setItem('amt-site-language', lang); } catch(e) {}
+ }
+ buttons.forEach(b => b.addEventListener('click', () => apply(b.dataset.lang)));
+ let lang = 'en';
+ try { lang = localStorage.getItem('amt-site-language') || 'en'; } catch(e) {}
+ apply(lang);
 })();
 </script>
 
