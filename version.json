@@ -1,0 +1,15 @@
+{
+  "version": "1.8.14",
+  "released": "2026-11-22",
+  "notes": [
+    "Check for Updates button",
+    "Dimensions: one continuous dimension per room side"
+  ],
+  "notes_ar": [
+    "زرار التحقق من التحديثات",
+    "الأبعاد: بُعد واحد متصل لكل جهة من الغرفة"
+  ],
+  "installer": "https://a-m-t-tools.pages.dev/downloads/A-M-T-Setup-1.8.14.exe",
+  "sha256": "d65e1e7b0db7a3f3597f4d26301d72fb6a42e0e7759ac7774886ce7a2372717e",
+  "size": 1946112
+}

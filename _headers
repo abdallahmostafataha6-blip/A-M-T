@@ -1,0 +1,5 @@
+/version.json
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/downloads/*
+  Cache-Control: public, max-age=3600
