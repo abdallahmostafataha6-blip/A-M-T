@@ -3,3 +3,6 @@
 
 /downloads/*
   Cache-Control: public, max-age=3600
+
+/amt-release.js
+  Cache-Control: public, max-age=3600

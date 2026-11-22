@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
  <a class="btn secondary" href="Documentation/Command-Guides/AMT_Create_Sheets_Guide_EN.pdf">Open PDF Guide</a>
 </div>
 </main>
-<footer><div class="container"><strong>A-M-T — Model. Document. Automate.</strong><p>Developed by Abdallah Mostafa | Version 1.8.8</p><p>© 2026 A-M-T. All rights reserved.</p></div></footer>
+<footer><div class="container"><strong>A-M-T — Model. Document. Automate.</strong><p>Developed by Abdallah Mostafa | <span data-amt="version-text">Version 1.8.8</span></p><p>© 2026 A-M-T. All rights reserved.</p></div></footer>
 
 <div class="lightbox" id="lightbox" aria-label="Expanded screenshot"><button type="button" aria-label="Close">×</button><img src="" alt="Expanded screenshot"></div>
 <script>
@@ -276,5 +276,6 @@ document.querySelectorAll('[data-zoom]').forEach(img=>img.addEventListener('clic
 lightbox.addEventListener('click',()=>lightbox.classList.remove('open'));
 document.addEventListener('keydown',e=>{if(e.key==='Escape')lightbox.classList.remove('open')});
 </script>
+<script src="amt-release.js" defer></script>
 </body>
 </html>

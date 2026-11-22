@@ -139,10 +139,10 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
           <div class="release-title">A-M-T — Architectural Modeling Toolkit</div>
           <div class="release-sub">17 integrated tools for architectural BIM workflows.</div>
         </div>
-        <span class="version-pill">Version 1.8.14</span>
+        <span class="version-pill" data-amt="version-text">Version 1.8.14</span>
       </div>
       <div class="download-actions">
-        <a class="btn" href="https://a-m-t-tools.pages.dev/downloads/A-M-T-Setup-1.8.14.exe" target="_blank" rel="noopener noreferrer">↓&nbsp; Download Latest Release</a>
+        <a class="btn" data-amt="download" href="https://a-m-t-tools.pages.dev/downloads/A-M-T-Setup-1.8.14.exe" target="_blank" rel="noopener noreferrer">↓&nbsp; Download Latest Release</a>
         <a class="btn secondary" href="https://github.com/abdallahmostafataha6-blip/A-M-T" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
       </div>
       <p class="release-note">The download button opens the latest published release on GitHub. Review the release assets and notes before installing.</p>
@@ -150,8 +150,20 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
 
     <div class="meta-grid">
       <div class="meta-card"><strong>17</strong><span>Integrated Revit tools</span></div>
-      <div class="meta-card"><strong>1.8.14</strong><span>Current website version</span></div>
+      <div class="meta-card"><strong data-amt="version">1.8.14</strong><span>Current website version</span></div>
       <div class="meta-card"><strong>Windows</strong><span>Operating system</span></div>
+    </div>
+  </section>
+
+  <section class="section container" style="padding-top:0">
+    <div class="section-heading">
+      <span class="eyebrow">From GitHub Releases</span>
+      <h2 data-amt="release-title" style="font-size:30px;margin:14px 0 6px">A-M-T 1.8.14</h2>
+      <p><span data-amt="release-date">2026-11-22</span> &nbsp;·&nbsp; <span data-amt="release-size">1.9 MB</span></p>
+    </div>
+    <div class="card" style="max-width:850px;margin:0 auto">
+      <div data-amt="notes" style="line-height:1.75;color:var(--muted);font-size:14px">A powerful Revit automation plugin designed to streamline architectural workflows and improve BIM productivity.</div>
+      <p style="margin-top:16px"><a data-amt="release-url" href="https://github.com/abdallahmostafataha6-blip/A-M-T/releases/tag/V.1.8.14" target="_blank" rel="noopener noreferrer">View release on GitHub ↗</a></p>
     </div>
   </section>
 
@@ -186,15 +198,16 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
     <div class="final-cta">
       <h2>Ready to work smarter in Revit?</h2>
       <p>Download the latest release or explore all 17 tools before getting started.</p>
-      <a class="btn" href="https://a-m-t-tools.pages.dev/downloads/A-M-T-Setup-1.8.14.exe" target="_blank" rel="noopener noreferrer">Download A-M-T</a>
+      <a class="btn" data-amt="download" href="https://a-m-t-tools.pages.dev/downloads/A-M-T-Setup-1.8.14.exe" target="_blank" rel="noopener noreferrer">Download A-M-T</a>
       <a class="btn secondary" href="tools.html">Explore All 17 Tools</a>
     </div>
   </section>
 </main>
 <footer><div class="container">
   <strong>A-M-T — Model. Document. Automate.</strong>
-  <p>Developed by Abdallah Mostafa | Version 1.8.14</p>
+  <p>Developed by Abdallah Mostafa | <span data-amt="version-text">Version 1.8.14</span></p>
   <p>© 2026 A-M-T. All rights reserved.</p>
 </div></footer>
+<script src="amt-release.js" defer></script>
 </body>
 </html>

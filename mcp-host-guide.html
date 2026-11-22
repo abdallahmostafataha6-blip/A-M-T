@@ -117,11 +117,12 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
 <div class="panel"><p>The connected-client example shows <strong>Automatic</strong> permissions selected. The client explains that this allows model changes to be executed directly without approval prompts. Use this mode only when you intentionally want that behavior.</p><ul><li>For controlled work, the dialog's recommended option asks before every create, edit, and delete.</li><li>For query-only assistance, choose Read-only to block model changes.</li><li>Before asking the AI client to work, verify the correct Revit project and active view are open.</li><li>Review the requested action and the resulting model in Revit.</li></ul></div></section>
 <section class="section" id="video-demo"><h2>Watch MCP Host in Action</h2><p>See the local bridge connection and AI-client interaction demonstrated alongside Revit.</p><div class="panel"><video controls playsinline preload="metadata" style="width:100%;max-height:680px;background:#020b12;border-radius:12px"><source src="Assets/Videos/17-MCP-Host-Demo.mp4" type="video/mp4"/>Your browser does not support video playback.</video></div></section>
 <section class="section"><div class="panel"><h2>Before connecting</h2><ul><li>Confirm the A-M-T MCP bridge is enabled and its status is ON.</li><li>Choose a permission mode that matches the level of model access you intend to grant.</li><li>Use the client configuration shown by your own MCP Host dialog.</li><li>Confirm that the AI client reports a successful connection and loaded tools.</li><li>Keep the intended Revit project open and inspect model changes after execution.</li></ul><a class="btn secondary" href="tools.html">Back to All Tools</a></div></section>
-</main><footer><div class="container"><strong>A-M-T — Model. Document. Automate.</strong><p>Developed by Abdallah Mostafa | Version 1.8.8</p></div></footer>
+</main><footer><div class="container"><strong>A-M-T — Model. Document. Automate.</strong><p>Developed by Abdallah Mostafa | <span data-amt="version-text">Version 1.8.8</span></p></div></footer>
 <div class="lightbox" id="lightbox"><button aria-label="Close" type="button">×</button><img alt="Expanded screenshot" src=""/></div>
 <script>
 const lb=document.getElementById('lightbox'), lbImg=lb.querySelector('img');
 document.querySelectorAll('[data-zoom]').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src;lb.classList.add('open')}));
 lb.addEventListener('click',e=>{if(e.target===lb||e.target.tagName==='BUTTON')lb.classList.remove('open')});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
-</script></body></html>
+</script><script src="amt-release.js" defer></script>
+</body></html>

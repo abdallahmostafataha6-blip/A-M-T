@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
   <section class="section container">
     <div class="stats-grid">
       <div class="stat-card"><strong>17</strong><span>Integrated Revit tools</span></div>
-      <div class="stat-card"><strong>1.8.8</strong><span>Current A-M-T version</span></div>
+      <div class="stat-card"><strong data-amt="version">1.8.8</strong><span>Current A-M-T version</span></div>
       <div class="stat-card"><strong>BIM</strong><span>Modeling · Documentation · Automation</span></div>
     </div>
   </section>
@@ -506,7 +506,7 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
 <footer>
   <div class="container">
     <strong>A-M-T — Model. Document. Automate.</strong>
-    <p>Developed by Abdallah Mostafa | Version 1.8.8</p>
+    <p>Developed by Abdallah Mostafa | <span data-amt="version-text">Version 1.8.8</span></p>
     <p>© 2026 A-M-T. All rights reserved.</p>
   </div>
 </footer>
@@ -575,4 +575,5 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
 })();
 </script>
 
+<script src="amt-release.js" defer></script>
 </body></html>

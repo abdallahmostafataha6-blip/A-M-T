@@ -416,7 +416,7 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
     <p>Find the right guide to install A-M-T, get familiar with the toolkit, and follow the workflow for each command.</p>
     <div class="docs-stats">
       <div class="docs-stat"><strong>17</strong><span>Individual command guides</span></div>
-      <div class="docs-stat"><strong>1.8.8</strong><span>Documented toolkit version</span></div>
+      <div class="docs-stat"><strong data-amt="version">1.8.8</strong><span>Documented toolkit version</span></div>
       <div class="docs-stat"><strong>PDF + Online</strong><span>Guides and installation help</span></div>
     </div>
   </section>
@@ -527,7 +527,7 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
 <footer>
   <div class="container">
     <strong>A-M-T — Model. Document. Automate.</strong>
-    <p>Developed by Abdallah Mostafa | Version 1.8.8</p>
+    <p>Developed by Abdallah Mostafa | <span data-amt="version-text">Version 1.8.8</span></p>
     <p>© 2026 A-M-T. All rights reserved.</p>
   </div>
 </footer>
@@ -561,4 +561,5 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
 })();
 </script>
 
+<script src="amt-release.js" defer></script>
 </body></html>

@@ -124,11 +124,12 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
 </section>
 <section class="section" id="video-demo"><h2>Watch Create Threshold in Action</h2><p class="muted">Follow the complete command workflow inside Autodesk Revit.</p><div class="panel"><video controls="" playsinline="" preload="metadata" style="width:100%;max-height:680px;background:#020b12;border-radius:12px"><source src="Assets/Videos/14-Create-Threshold-Demo.mp4" type="video/mp4"/>Your browser does not support video playback.</video></div></section>
 <section class="section"><div class="panel"><h2>Before you run the command</h2><ul><li>Confirm that the required floor type is available in the project.</li><li>Set the minimum door width to match your project requirements.</li><li>Choose the correct processing scope before creating thresholds.</li><li>Review the result report and inspect the generated floors in plan.</li></ul><a class="btn secondary" href="tools.html">Back to All Tools</a></div></section>
-</main><footer><div class="container"><strong>A-M-T — Model. Document. Automate.</strong><p>Developed by Abdallah Mostafa | Version 1.8.8</p></div></footer>
+</main><footer><div class="container"><strong>A-M-T — Model. Document. Automate.</strong><p>Developed by Abdallah Mostafa | <span data-amt="version-text">Version 1.8.8</span></p></div></footer>
 <div class="lightbox" id="lightbox"><button aria-label="Close" type="button">×</button><img alt="Expanded screenshot" src=""/></div>
 <script>
 const lb=document.getElementById('lightbox'), lbImg=lb.querySelector('img');
 document.querySelectorAll('[data-zoom]').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src;lb.classList.add('open')}));
 lb.addEventListener('click',e=>{if(e.target===lb||e.target.tagName==='BUTTON')lb.classList.remove('open')});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
-</script></body></html>
+</script><script src="amt-release.js" defer></script>
+</body></html>

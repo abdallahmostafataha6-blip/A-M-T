@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
 <a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a><a href="download.html">Download</a><a href="contact.html">Contact</a>
 </div></nav></div></header>
 <main class="container">
-<span class="eyebrow">A-M-T Knowledge Center · Version 1.8.8</span>
+<span class="eyebrow">A-M-T Knowledge Center · <span data-amt="version-text">Version 1.8.8</span></span>
 <h1>Online Installation Guide</h1>
 <p class="intro">Follow these four steps to install A-M-T, choose optional AI integration components, and verify that the add-in is available in Autodesk Revit.</p>
 <section class="step"><div class="step-label">STEP 01 — SELECT REVIT VERSIONS</div><ol><li>1. Select every Revit version installed on this computer. Multiple versions can be selected.</li><li>2. The example shows Revit 2024 and 2025 selected; 2023 and 2026 are not selected.</li><li>3. Close Revit before installing. The installer notes that selected A-M-T files will be replaced.</li><li>4. Installation is per-user; the installer states that administrator access is not required.</li></ol></section><section class="step"><div class="step-label">STEP 02 — CHOOSE AI CLIENTS</div><ol><li>1. This option is optional. Enable it only if you want the installer to install/configure supported AI clients and the local A-M-T MCP bridge.</li><li>2. Available client choices shown: ChatGPT + Codex, Claude Desktop, DeepSeek Harness, OpenCode and Cursor.</li><li>3. Required runtimes shown: Python and .NET SDK 8. Node.js is required only for OpenCode.</li><li>4. If AI integration is already installed and configured, leave the main checkbox off and continue.</li></ol></section><section class="step"><div class="step-label">STEP 03 — INSTALLATION COMPLETE</div><ol><li>1. The confirmation dialog reports: “A-M-T 1.8.8 installed successfully.”</li><li>2. The installer progress area shows Installation complete and a full progress bar.</li><li>3. The dialog displays the local MCP server script location. Keep this path for troubleshooting if needed.</li><li>4. In this run, AI client installation was left unchecked because it was already installed.</li></ol></section><section class="step"><div class="step-label">STEP 04 — VERIFY THE A-M-T RIBBON IN REVIT</div><ol><li>1. Open Autodesk Revit after installation and locate the A-M-T tab in the ribbon.</li><li>2. Confirm that the expected tool groups are visible: Sheets &amp; Views, Export, Walls &amp; Structure, Finishes, Settings and MCP.</li><li>3. The screenshot shows the A-M-T tab loaded in Autodesk Revit 2025.</li></ol></section>
@@ -98,5 +98,6 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
 </div>
 </main>
 <footer><div class="container">A-M-T · Architectural Modeling Toolkit</div></footer>
+<script src="amt-release.js" defer></script>
 </body>
 </html>
