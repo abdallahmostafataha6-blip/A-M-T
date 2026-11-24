@@ -38,8 +38,12 @@ footer .footer-links{margin-top:6px;font-size:.92em}
 footer .footer-links a{color:#7fdbe9;text-decoration:none}
 footer .footer-links a:hover{text-decoration:underline}
 
-/* RTL header: Home on the right, brand on the right (older page styles force left-to-right) */
-html[dir="rtl"] header nav{direction:rtl!important}
+/* Header: the same in both languages (not mirrored): logo on the left, language switch at the far right,
+   page links just before it. Arabic links read right to left inside their group. */
+header nav{direction:ltr!important;display:flex!important;align-items:center!important}
+header nav .brand{order:0!important}
+header nav .navlinks,header nav .links{order:1!important;margin-left:auto!important;margin-right:0!important}
+header nav .language-switch{order:2!important;margin-left:22px!important;margin-right:0!important}
 html[dir="rtl"] header nav .navlinks,html[dir="rtl"] header nav .links{direction:rtl!important}
 html[dir="rtl"] .amt-doc .eyebrow,html[dir="rtl"] .amt-doc .lead{text-align:right}
 .amt-doc .eyebrow{display:inline-block;color:#16cce0;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
