@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>دليل MCP Host | أدوات A-M-T لبرنامج Revit</title>
+<meta name="description" content="دليل مرئي لتفعيل جسر MCP المحلي في A-M-T، واختيار صلاحيات تعديل النموذج، وربط تطبيق ذكاء اصطناعي بـ Revit."/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#071824"/>
+<style>
+:root{--bg:#071824;--panel:#102838;--panel2:#0c2230;--cyan:#16cce0;--text:#f3f8fc;--muted:#a8bbc8;--line:#ffffff20}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Arial,Helvetica,sans-serif}
+.container{width:min(1080px,92%);margin:auto}header{background:#071824ed;border-bottom:1px solid var(--line)}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.brand{font-size:22px;font-weight:bold;color:var(--text);text-decoration:none}.links{display:flex;gap:18px;flex-wrap:wrap}.links a{color:var(--muted);text-decoration:none;font-size:14px}
+.hero{padding:54px 0 28px;text-align:center}.eyebrow{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(34px,5vw,48px);line-height:1.15;margin:10px 0}h2{font-size:28px;margin:0 0 8px}h3{color:var(--cyan)}p{color:var(--muted)}
+.pill{display:inline-block;padding:6px 12px;border-radius:24px;border:1px solid #16cce055;background:#0b3445;color:#b9f5fb;font-size:13px;margin:4px}
+.section{padding:32px 0}.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}
+.explain-row{display:grid;grid-template-columns:1.08fr .92fr;gap:24px;align-items:center;margin:24px 0 34px}
+.explain-row.reverse{grid-template-columns:.92fr 1.08fr}.explain-row.reverse .visual{order:2}
+.large-figure{margin:0;width:100%;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px}
+.large-figure img{display:block;width:100%;height:auto;border-radius:8px;cursor:zoom-in}
+figcaption,.caption{color:var(--muted);font-size:14px;margin-top:9px}
+.screenshot-explanation{min-height:190px;display:flex;flex-direction:column;justify-content:center}
+.screenshot-explanation h3{margin:0 0 10px}.screenshot-explanation p{margin:0 0 10px}
+.notice{padding:16px;border:1px solid #16cce055;border-radius:10px;color:var(--muted);background:#0c3444}
+.btn{display:inline-block;background:var(--cyan);color:#061923;font-weight:bold;padding:11px 18px;border-radius:8px;text-decoration:none;margin:5px}
+.btn.secondary{background:transparent;color:var(--text);border:1px solid #ffffff45}
+footer{border-top:1px solid var(--line);margin-top:38px;padding:25px 0;text-align:center;color:var(--muted)}
+.lightbox{display:none;position:fixed;inset:0;background:#020b12ed;z-index:20;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lightbox.open{display:flex}.lightbox img{max-width:95vw;max-height:90vh;object-fit:contain}.lightbox button{position:absolute;top:18px;right:20px;border-radius:50%;padding:8px 14px;font-size:24px}
+ul,ol{color:var(--muted)}li{margin:7px 0}strong{color:var(--text)}
+@media(max-width:760px){nav{padding:12px 0}.explain-row,.explain-row.reverse{grid-template-columns:1fr}.explain-row.reverse .visual{order:0}}
+
+.brand{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:750;letter-spacing:.2px}
+.brand img{width:42px;height:42px;display:block;object-fit:contain;border-radius:7px}
+.links a{transition:color .2s ease}
+.links a:hover,.links a[aria-current="page"]{color:var(--cyan)}
+@media(max-width:760px){
+  nav{align-items:center}
+  .brand{font-size:20px}
+  .brand img{width:38px;height:38px}
+  .links{width:100%;gap:10px 16px;padding:2px 0 8px}
+}
+</style>
+<style>
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.96)!important;backdrop-filter:blur(12px)}
+html{scroll-padding-top:90px}
+.language-switch{display:inline-flex;align-items:center;gap:7px;margin-inline-start:14px;white-space:nowrap}
+.language-switch button{background:transparent;border:1px solid #16cce055;color:#a8bbc8;border-radius:6px;padding:6px 10px;cursor:pointer;font-weight:700}
+.language-switch button.active{background:#16cce0;color:#061923;border-color:#16cce0}
+html[dir="rtl"] body{text-align:right}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{direction:ltr!important}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{flex-direction:row!important}
+html[dir="rtl"] .hero,html[dir="rtl"] .section-title,html[dir="rtl"] footer{text-align:center}
+html[dir="rtl"] .notice{border-left:0;border-right:3px solid var(--cyan);border-radius:8px 0 0 8px}
+html[dir="rtl"] th,html[dir="rtl"] td{text-align:right}
+@media(max-width:760px){.language-switch{margin:4px 0 0}}
+
+/* Stable navigation: keep the header layout LTR in both site languages */
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.97)!important;backdrop-filter:blur(12px)}
+header nav{direction:ltr!important;flex-direction:row!important; text-align:left!important}
+header nav .brand{direction:ltr!important;order:0!important}
+header nav .navlinks,header nav .links{direction:ltr!important;flex-direction:row!important;order:1!important}
+header nav .language-switch{direction:ltr!important;unicode-bidi:isolate!important;margin-inline-start:14px!important}
+html{scroll-padding-top:90px}
+@media(max-width:760px){header nav{align-items:center!important;flex-direction:row!important;flex-wrap:wrap!important}header nav .navlinks,header nav .links{flex-direction:row!important;flex-wrap:wrap!important}}
+</style>
+<link rel="canonical" href="https://a-m-t-tools.pages.dev/ar/guides/mcp-host.html">
+<link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/mcp-host.html">
+<link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/mcp-host.html">
+<link rel="alternate" hreflang="x-default" href="https://a-m-t-tools.pages.dev/guides/mcp-host.html">
+<link rel="stylesheet" href="/amt-site.css">
+</head><body>
+<header><div class="container"><nav><a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ A-M-T"><img src="/Assets/A-M-T-LOGO.png" alt="شعار A-M-T"/><span>A-M-T</span></a><div class="links"><a href="/ar/">الرئيسية</a><a href="/ar/features.html">المميزات</a><a href="/ar/tools.html">الأدوات</a><a href="/ar/gallery.html">المعرض</a><a href="/ar/documentation.html">التوثيق</a><a href="/ar/download.html">تحميل</a><a href="/ar/contact.html">تواصل معنا</a></div><div class="language-switch" role="group" aria-label="اللغة"><a href="/guides/mcp-host.html" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><a href="/ar/guides/mcp-host.html" hreflang="ar" class="active" aria-current="true">عربي</a></div></nav></div></header>
+<main class="container">
+<section class="hero"><div class="eyebrow">دليل أوامر A-M-T · 17</div><h1>MCP Host</h1><p>اربط تطبيق ذكاء اصطناعي بجسر MCP المحلي في A-M-T، وتحكم في طريقة الموافقة على تغييرات نموذج Revit.</p><span class="pill">التكامل عبر MCP</span><span class="pill">جسر محلي</span><span class="pill">صلاحيات تعديل النموذج</span></section>
+<section class="section"><div class="panel"><h2>طريقة عمل الأمر</h2><p>يشغّل MCP Host جسر MCP المحلي في A-M-T أو يوقفه. بعد تشغيل الجسر، يستطيع تطبيق ذكاء اصطناعي متوافق الاتصال بجلسة Revit وتحميل أدوات A-M-T المتاحة. ويمكنك اختيار سياسة الصلاحيات التي يطبقها Revit قبل أي تعديل على النموذج.</p><ol><li>فعّل جسر A-M-T MCP.</li><li>اختر طريقة الموافقة على عمليات الإنشاء والتعديل والحذف.</li><li>استخدم بيانات الاتصال وإعدادات التطبيق المعروضة لربط تطبيق ذكاء اصطناعي.</li><li>تأكد أن التطبيق متصل وحمّل أدوات A-M-T قبل أن تطلب منه أي عمل.</li></ol><div class="notice"><strong>مهم:</strong> الوصول عبر MCP قد يتيح أدوات تعدّل نموذج Revit النشط. اختر وضع الصلاحيات بعناية وراجع أي تغييرات مقترحة على النموذج.</div></div></section>
+<section class="section"><h2>شغّل جسر MCP المحلي</h2>
+<div class="explain-row"><div class="visual"><figure class="large-figure"><img alt="نافذة MCP Host من A-M-T مع تفعيل الجسر وحالة الاستماع المحلية" data-zoom src="/Assets/Screenshots/17-MCP-Host-01.png"/><figcaption>إعدادات MCP Host — حالة الجسر وسياسات الصلاحيات وبيانات اتصال التطبيقات</figcaption></figure></div>
+<div class="panel screenshot-explanation"><h3>01 · فعّل الجسر</h3><p><strong>Enable A-M-T MCP bridge</strong> يشغّل الجسر المحلي أو يوقفه. عند التفعيل، يؤكد سطر الحالة أنه ON ويستمع على العنوان المحلي الظاهر في النافذة.</p><p>يوضح المثال أن الجسر يستمع على <strong>http://127.0.0.1:48885</strong>. هذا عنوان محلي على الجهاز الذي يعمل عليه Revit، وليس موقعًا عامًا على الإنترنت.</p><p>عند إيقاف الجسر، لا يستطيع التطبيق استخدام هذا الاتصال المحلي. بعد تغيير الإعداد، تأكد أن سطر الحالة يعرض الوضع الذي تريده.</p></div></div>
+</section>
+<section class="section"><h2>اختر صلاحيات تعديل النموذج</h2>
+<div class="panel"><p>يتحكم قسم <strong>Model Change Permissions</strong> في متى يسألك Revit قبل أن تعدّل أداة MCP النموذج.</p>
+<ul>
+<li><strong>Read-only</strong> — يسمح بالاستعلامات ويمنع كل تعديلات النموذج.</li>
+<li><strong>Ask before every create, edit, and delete</strong> — يطلب الموافقة على كل عملية من هذه العمليات. وهو الخيار المُعلَّم بـ <strong>Recommended</strong> في النافذة.</li>
+<li><strong>Ask before deletion only</strong> — الإنشاء والتعديل يتمان تلقائيًا، والحذف يحتاج موافقة.</li>
+<li><strong>Ask before creation and edits</strong> — الحذف يتم تلقائيًا، والإنشاء والتعديل يحتاجان موافقة.</li>
+<li><strong>Automatic</strong> — لا يسأل أبدًا قبل تعديل النموذج.</li>
+</ul>
+<div class="notice"><strong>سلوك خاص في Revit API:</strong> توضح النافذة أن أداة C# API الكاملة تطلب الموافقة دائمًا في كل الأوضاع عدا Automatic، لأن الكود الحر لا يمكن تصنيفه بدقة كتعديل أو حذف. ووضع Read-only يمنعها تمامًا.</div>
+</div></section>
+<section class="section"><h2>اربط تطبيق ذكاء اصطناعي</h2>
+<div class="explain-row reverse"><div class="visual"><figure class="large-figure"><img alt="تطبيق ذكاء اصطناعي متصل بخادم A-M-T MCP مع تحميل الأدوات وبيانات جلسة Revit" data-zoom src="/Assets/Screenshots/17-MCP-Host-02.png"/><figcaption>تطبيق ذكاء اصطناعي متصل — خادم MCP متصل وأدوات A-M-T محمّلة</figcaption></figure></div>
+<div class="panel screenshot-explanation"><h3>02 · تحقق من اتصال التطبيق</h3><p>في قسم <strong>Connect an AI Client</strong>، تعرض النافذة نوع الاتصال، وعنوان الجسر المحلي، ومكان ملف الخادم، ومنطقة <strong>Client configuration (JSON)</strong>.</p><p>استخدم الإعدادات التي توفرها نافذة MCP Host في تطبيق الذكاء الاصطناعي الذي تريد ربطه. تختلف خطوات الإعداد حسب كل تطبيق، لذلك اتبع طريقة إعداد MCP الخاصة به بدلًا من نسخ إعدادات من جهاز آخر.</p><p>يوضح المثال على اليمين أن التطبيق اتصل بنجاح وحمّل الأدوات من <strong>amt-revit integration</strong>، ويعرض أيضًا ملف Revit النشط وإصدار Revit والـ View الحالي.</p></div></div>
+</section>
+<section class="section"><h2>افهم اختيار الصلاحيات عمليًا</h2>
+<div class="panel"><p>مثال التطبيق المتصل يوضح اختيار صلاحيات <strong>Automatic</strong>. ويشرح التطبيق أن ذلك يسمح بتنفيذ تغييرات النموذج مباشرة دون طلب موافقة. استخدم هذا الوضع فقط إذا كنت تريد هذا السلوك عن قصد.</p><ul><li>للعمل المنضبط، الخيار الموصى به في النافذة يطلب الموافقة قبل كل إنشاء وتعديل وحذف.</li><li>للاستعلام فقط، اختر Read-only لمنع أي تعديل على النموذج.</li><li>قبل أن تطلب من تطبيق الذكاء الاصطناعي العمل، تأكد من فتح مشروع Revit والـ View الصحيحين.</li><li>راجع الإجراء المطلوب والنموذج الناتج في Revit.</li></ul></div></section>
+<section class="section"><h2>الحالة: الإصدارات وتطبيقات الذكاء الاصطناعي وآخر الطلبات</h2><div class="explain-row"><div class="visual"><figure class="large-figure"><img alt="حالة MCP Host مع الإصدارات وتطبيقات الذكاء الاصطناعي وآخر الطلبات" data-zoom loading="lazy" src="/Assets/Screenshots/17-MCP-Host-Status.png"/><figcaption>MCP Host — قسم الحالة</figcaption></figure></div><div class="panel screenshot-explanation"><h3>الإصدارات</h3><p>يعرض إصدار A-M-T المحمّل في Revit وإصدار ملف خادم MCP. يجب أن يتطابقا، وإلا فشغّل أحدث مثبّت لـ A-M-T.</p><h3>تطبيقات الذكاء الاصطناعي على هذا الجهاز</h3><p>يعرض Claude وCursor وCodex وGemini CLI وOpenCode، والخادم الذي يشغّله كل منها. علامة الصح تعني أنه يستخدم إصدار A-M-T هذا. يكتب زر <b>Fix AI app settings</b> إعداد A-M-T في كل تطبيق موجود، وبعدها أغلق كل تطبيق تمامًا (ومن الأيقونة بجوار الساعة أيضًا) وأعد فتحه.</p><h3>آخر الطلبات</h3><p>آخر 30 طلبًا من الذكاء الاصطناعي: الوقت، والأداة، والمدة، وأي خطأ. زر <b>Refresh</b> يحدّث القائمة.</p></div></div></section>
+<section class="section"><div class="panel"><h2>ما الذي يستطيع الذكاء الاصطناعي فعله</h2><div class="field-grid">
+<div class="field"><h3>قراءة دون كود</h3><p>الـ View المفتوح والعناصر المحددة، والـ Views، والعناصر بكل باراميتراتها، والاستعلامات بالفلاتر والصفحات، وحدود الغرف، وأبعاد الـ View، والتحذيرات، وصورة للـ View (مع تكبير على عنصر أو منطقة).</p></div>
+<div class="field"><h3>تعديل النموذج</h3><p>تعديل الباراميترات، وإنشاء الحوائط، وحذف العناصر، وتشغيل DIMS EX&amp;IN على View، أو تشغيل كود C# داخل Revit. كل تغيير يتبع اختيار الصلاحيات أعلاه.</p></div>
+<div class="field"><h3>عدة ملفات ونوافذ</h3><p>يمكن استهداف أي ملف مفتوح باسمه، ويتم العثور على كل نوافذ Revit تلقائيًا.</p></div>
+<div class="field"><h3>المهام الطويلة</h3><p>المهمة الطويلة تُرجع رقم مهمة، ويتم جلب نتيجتها لاحقًا، فلا ينتهي وقت أي طلب.</p></div>
+<div class="field"><h3>استهلاك أقل</h3><p>قائمة أدوات قصيرة، وملخصات قصيرة افتراضيًا، والقراءة المتكررة تُرجع "unchanged"، فيستهلك تطبيق الذكاء الاصطناعي جزءًا أقل من باقتك.</p></div>
+<div class="field"><h3>التحقق من الإصدار</h3><p>إذا كان إصدار خادم MCP مختلفًا عن إصدار A-M-T في Revit، يتم تنبيه الذكاء الاصطناعي إلى التحديث.</p></div>
+</div></div></section>
+<section class="section" id="video-demo"><h2>شاهد MCP Host أثناء العمل</h2><p>شاهد اتصال الجسر المحلي والتفاعل مع تطبيق الذكاء الاصطناعي بجانب Revit.</p><div class="panel"><video controls playsinline preload="metadata" style="width:100%;max-height:680px;background:#020b12;border-radius:12px"><source src="/Assets/Videos/17-MCP-Host-Demo.mp4" type="video/mp4"/>متصفحك لا يدعم تشغيل الفيديو.</video></div></section>
+<section class="section"><div class="panel"><h2>قبل الاتصال</h2><ul><li>تأكد أن جسر A-M-T MCP مفعّل وأن حالته ON.</li><li>اختر وضع صلاحيات يناسب مستوى الوصول الذي تريد منحه للنموذج.</li><li>استخدم إعدادات الاتصال التي تظهر في نافذة MCP Host الخاصة بك.</li><li>تأكد أن تطبيق الذكاء الاصطناعي يعرض اتصالًا ناجحًا وأن الأدوات تم تحميلها.</li><li>اترك مشروع Revit المطلوب مفتوحًا وافحص تغييرات النموذج بعد التنفيذ.</li></ul><a class="btn secondary" href="/ar/tools.html">العودة إلى كل الأدوات</a></div></section>
+</main><footer><div class="container"><strong>A-M-T — نمذجة. توثيق. أتمتة.</strong><p>تطوير عبدالله مصطفى | <span data-amt="version-text">الإصدار 1.9.1</span></p><p class="footer-links"><a href="/ar/changelog.html">سجل الإصدارات</a> · <a href="/ar/faq.html">الأسئلة الشائعة</a> · <a href="/ar/privacy.html">الخصوصية</a> · <a href="https://github.com/abdallahmostafataha6-blip/A-M-T/issues/new/choose">أبلغ عن مشكلة</a></p></div></footer>
+<div class="lightbox" id="lightbox"><button aria-label="إغلاق" type="button">×</button><img alt="صورة مكبّرة" src=""/></div>
+<script>
+const lb=document.getElementById('lightbox'), lbImg=lb.querySelector('img');
+document.querySelectorAll('[data-zoom]').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src;lb.classList.add('open')}));
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.tagName==='BUTTON')lb.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+</script><script src="/amt-release.js" defer></script>
+</body></html>

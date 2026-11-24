@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تحميل A-M-T | أدوات النمذجة المعمارية</title>
+  <meta name="description" content="حمّل أحدث إصدار من A-M-T لبرنامج Autodesk Revit، واطّلع على بيانات الإصدار وإرشادات التثبيت وتفاصيل الأدوات.">
+  <meta name="robots" content="index, follow">
+  
+  <meta name="theme-color" content="#071824">
+  <style>
+    :root{--bg:#071824;--panel:#102838;--panel2:#0b2636;--cyan:#16cce0;--text:#f3f8fc;--muted:#a8bbc8;--line:#ffffff18}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,90%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#071824ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-size:23px;font-weight:bold;flex-shrink:0}
+    .brand img{width:45px;height:45px;object-fit:contain}
+    .navlinks{display:flex;flex-wrap:wrap;gap:25px;color:var(--muted);font-size:14px}
+    .navlinks a{white-space:nowrap}.navlinks a:hover,.navlinks a.active{color:var(--cyan)}
+    .hero{padding:76px 0 48px;text-align:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid #16cce044;border-radius:999px;background:#0b536633;color:#7beaf3;font-size:12px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase}
+    h1{font-size:clamp(34px,5vw,54px);line-height:1.12;margin:18px 0 14px}
+    .hero p{max-width:720px;margin:0 auto;color:var(--muted);font-size:18px}
+    .download-panel{max-width:850px;margin:34px auto 0;padding:30px;background:linear-gradient(145deg,#102f40,#0b2636 70%);border:1px solid #16cce044;border-radius:18px;box-shadow:0 22px 60px #0004;text-align:left}
+    .release-top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
+    .release-label{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:1.4px;text-transform:uppercase}
+    .release-title{font-size:25px;font-weight:bold;margin:4px 0}
+    .release-sub{color:var(--muted);font-size:14px}
+    .version-pill{white-space:nowrap;padding:7px 12px;border:1px solid #16cce055;background:#073747;border-radius:8px;color:#8af1f7;font-weight:bold}
+    .download-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin:25px auto 0;width:100%;text-align:center;}
+    .download-actions .btn{margin:0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 23px;border-radius:8px;background:var(--cyan);color:#061923;font-weight:bold;transition:transform .2s,box-shadow .2s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #16cce044}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid #ffffff45}
+    .release-note{margin:14px auto 0;color:#91a8b7;font-size:12px;text-align:center;max-width:620px;}
+    .meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px auto 0;max-width:850px}
+    .meta-card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:17px;text-align:center}
+    .meta-card strong{display:block;color:var(--cyan);font-size:22px}
+    .meta-card span{color:var(--muted);font-size:13px}
+    .section{padding:64px 0}
+    .section-heading{text-align:center;margin-bottom:32px}
+    .section-heading h2{font-size:30px;margin:0 0 7px}
+    .section-heading p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:23px}
+    .card-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:10px;background:#0b536633;color:var(--cyan);font-size:21px;margin-bottom:15px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:step}
+    .step{position:relative;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:22px}
+    .step:before{counter-increment:step;content:"0" counter(step);display:block;color:var(--cyan);font-size:13px;font-weight:bold;letter-spacing:1px;margin-bottom:12px}
+    .step h3{margin:0 0 7px;font-size:17px}
+    .step p{margin:0;color:var(--muted);font-size:14px}
+    .note{max-width:850px;margin:22px auto 0;padding:17px 19px;border-left:3px solid var(--cyan);background:#0b2b3a;border-radius:0 9px 9px 0;color:var(--muted);font-size:14px}
+    .final-cta{padding:38px 24px;text-align:center;border:1px solid #16cce044;border-radius:15px;background:linear-gradient(120deg,#103347,#07536a)}
+    .final-cta h2{margin:0 0 8px}.final-cta p{color:var(--muted);margin:0 0 20px}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);text-align:center;font-size:14px}
+    footer p{margin:5px 0}
+    @media(max-width:800px){.cards,.steps{grid-template-columns:1fr 1fr}}
+    @media(max-width:700px){nav{padding:12px 0;align-items:flex-start;flex-direction:column}.navlinks{gap:14px;font-size:13px}.brand{font-size:20px}.hero{padding:52px 0 30px}.section{padding:48px 0}.download-panel{padding:22px}.release-top{flex-direction:column}.meta-grid{grid-template-columns:1fr}.section-heading h2{font-size:26px}}
+    @media(max-width:520px){.cards,.steps{grid-template-columns:1fr}.download-actions .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+
+<style>
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.96)!important;backdrop-filter:blur(12px)}
+html{scroll-padding-top:90px}
+.language-switch{display:inline-flex;align-items:center;gap:7px;margin-inline-start:14px;white-space:nowrap}
+.language-switch button{background:transparent;border:1px solid #16cce055;color:#a8bbc8;border-radius:6px;padding:6px 10px;cursor:pointer;font-weight:700}
+.language-switch button.active{background:#16cce0;color:#061923;border-color:#16cce0}
+html[dir="rtl"] body{text-align:right}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{direction:ltr!important}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{flex-direction:row!important}
+html[dir="rtl"] .hero,html[dir="rtl"] .section-title,html[dir="rtl"] footer{text-align:center}
+html[dir="rtl"] .notice{border-left:0;border-right:3px solid var(--cyan);border-radius:8px 0 0 8px}
+html[dir="rtl"] th,html[dir="rtl"] td{text-align:right}
+@media(max-width:760px){.language-switch{margin:4px 0 0}}
+
+/* Stable navigation: keep the header layout LTR in both site languages */
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.97)!important;backdrop-filter:blur(12px)}
+header nav{direction:ltr!important;flex-direction:row!important; text-align:left!important}
+header nav .brand{direction:ltr!important;order:0!important}
+header nav .navlinks,header nav .links{direction:ltr!important;flex-direction:row!important;order:1!important}
+header nav .language-switch{direction:ltr!important;unicode-bidi:isolate!important;margin-inline-start:14px!important}
+html{scroll-padding-top:90px}
+@media(max-width:760px){header nav{align-items:center!important;flex-direction:row!important;flex-wrap:wrap!important}header nav .navlinks,header nav .links{flex-direction:row!important;flex-wrap:wrap!important}}
+</style>
+<link rel="canonical" href="https://a-m-t-tools.pages.dev/ar/download.html">
+<link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/download.html">
+<link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/download.html">
+<link rel="alternate" hreflang="x-default" href="https://a-m-t-tools.pages.dev/download.html">
+<link rel="stylesheet" href="/amt-site.css">
+</head>
+<body>
+<header><div class="container"><nav>
+  <a class="brand" href="/ar/"><img src="/Assets/A-M-T-LOGO.png" alt="شعار A-M-T"><span>A-M-T</span></a>
+  <div class="navlinks">
+    <a href="/ar/">الرئيسية</a><a href="/ar/features.html">المميزات</a><a href="/ar/tools.html">الأدوات</a>
+    <a href="/ar/gallery.html">المعرض</a><a href="/ar/documentation.html">التوثيق</a>
+    <a class="active" href="/ar/download.html" aria-current="page">تحميل</a><a href="/ar/contact.html">تواصل معنا</a>
+  </div>
+<div class="language-switch" role="group" aria-label="اللغة"><a href="/download.html" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><a href="/ar/download.html" hreflang="ar" class="active" aria-current="true">عربي</a></div></nav></div></header>
+
+<main>
+  <section class="hero container">
+    <span class="eyebrow">A-M-T لبرنامج Autodesk Revit</span>
+    <h1>سير عملك في Revit.<br>حزمة واحدة قوية.</h1>
+    <p>حمّل أحدث إصدار من A-M-T واجمع أدوات النمذجة والتوثيق ورفع الإنتاجية في إضافة واحدة مخصصة لبرنامج Revit.</p>
+
+    <div class="download-panel">
+      <div class="release-top">
+        <div>
+          <div class="release-label">أحدث إصدار</div>
+          <div class="release-title">A-M-T — أدوات النمذجة المعمارية</div>
+          <div class="release-sub">17 أداة متكاملة لسير عمل BIM المعماري.</div>
+        </div>
+        <span class="version-pill" data-amt="version-text">الإصدار 1.9.1</span>
+      </div>
+      <div class="download-actions">
+        <a class="btn" data-amt="download" href="https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest">↓ حمّل أحدث إصدار</a>
+        <a class="btn secondary" href="https://github.com/abdallahmostafataha6-blip/A-M-T" target="_blank" rel="noopener noreferrer">عرض المشروع على GitHub ↗</a>
+      </div>
+      <p class="release-note">يحمّل الزر مثبّت أحدث إصدار على GitHub. الحجم: <span data-amt="release-size">2.6 ميجابايت</span> · مرات التحميل: <span data-amt="downloads">—</span> (كل الإصدارات: <span data-amt="downloads-total">—</span>)</p>
+      <p class="release-note">SHA-256: <span class="amt-sha" data-amt="sha256">موجود في صفحة الإصدار على GitHub</span></p>
+    </div>
+
+    <div class="meta-grid">
+      <div class="meta-card"><strong>17</strong><span>أدوات Revit متكاملة</span></div>
+      <div class="meta-card"><strong data-amt="version">1.9.1</strong><span>إصدار الموقع الحالي</span></div>
+      <div class="meta-card"><strong>Windows</strong><span>نظام التشغيل</span></div>
+    </div>
+  </section>
+
+  <section class="section container" style="padding-top:0">
+    <div class="section-heading">
+      <span class="eyebrow">من GitHub Releases</span>
+      <h2 data-amt="release-title" style="font-size:30px;margin:14px 0 6px">A-M-T V 1.9.1</h2>
+      <p><span data-amt="release-date">24 نوفمبر 2026</span> &nbsp;·&nbsp; <a href="/ar/changelog.html">كل الإصدارات</a></p>
+    </div>
+    <div class="card" style="max-width:850px;margin:0 auto">
+      <div data-amt="notes" style="line-height:1.75;color:var(--muted);font-size:14px"><p>ملاحظات الإصدار تُحمَّل من GitHub. إذا لم تظهر، افتح الإصدار على GitHub.</p></div>
+      <p style="margin-top:16px"><a data-amt="release-url" href="https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest" target="_blank" rel="noopener noreferrer">عرض الإصدار على GitHub ↗</a></p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-heading">
+      <span class="eyebrow">داخل الأدوات</span>
+      <h2>مصمم لإنتاج BIM اليومي</h2>
+      <p>أوامر مركزة تساعد على تقليل العمل المتكرر في مسارات العمل المعمارية الشائعة.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">⌗</div><h3>النمذجة والحوائط</h3><p>أدوات لمحاذاة الحوائط، والعمل على الحوائط الساترة، وعمليات الوصل، ومهام التوثيق الإنشائي.</p></article>
+      <article class="card"><div class="card-icon">▤</div><h3>الـ Sheets والـ Views</h3><p>نظّم الـ Views، وأنشئ الـ Sheets، وسهّل تجهيز اللوحات والتعليقات عليها.</p></article>
+      <article class="card"><div class="card-icon">◈</div><h3>التشطيبات والإعدادات</h3><p>أوامر مخصصة لتشطيب الغرف والعتبات وإعدادات اللغة والتنظيم المرئي.</p></article>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-heading">
+      <span class="eyebrow">البدء</span>
+      <h2>ثبّت A-M-T في خطوات قليلة</h2>
+      <p>استخدم حزمة الإصدار المنشورة واتبع تعليمات التثبيت المرفقة بها.</p>
+    </div>
+    <div class="steps">
+      <article class="step"><h3>حمّل ملف التثبيت</h3><p>حمّل A-M-T-Setup من الزر أعلاه. إذا ظهرت رسالة "Windows protected your PC"، اضغط More info ثم Run anyway: المثبّت آمن لكنه غير موقّع بشهادة مدفوعة.</p></article>
+      <article class="step"><h3>شغّل المثبّت</h3><p>أغلق Revit، واختر إصدارات Revit لديك، وتطبيقات الذكاء الاصطناعي التي تريد ربطها إن أردت. اتبع <a href="/ar/guides/installation.html">دليل التثبيت</a> في كل خطوة.</p></article>
+      <article class="step"><h3>افتح Autodesk Revit</h3><p>شغّل Revit وافتح تبويب A-M-T. يمكن تثبيت الإصدارات اللاحقة من داخل Revit عبر Check for Updates.</p></article>
+    </div>
+    <div class="note"><strong>التوافق:</strong> Windows 10 / 11 · Autodesk Revit 2023 و2024 و2025 و2026. مجاني للاستخدام. لديك مشكلة أو فكرة؟ اطّلع على <a href="/ar/faq.html">الأسئلة الشائعة</a> أو <a href="https://github.com/abdallahmostafataha6-blip/A-M-T/issues/new/choose">أبلغ عن مشكلة</a>.</div>
+  </section>
+
+  <section class="section container">
+    <div class="final-cta">
+      <h2>مستعد للعمل بذكاء أكبر في Revit؟</h2>
+      <p>حمّل أحدث إصدار أو استكشف الأدوات الـ17 قبل أن تبدأ.</p>
+      <a class="btn" data-amt="download" href="https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest">تحميل A-M-T</a>
+      <a class="btn secondary" href="/ar/tools.html">استكشف الأدوات الـ17</a>
+    </div>
+  </section>
+</main>
+<footer><div class="container">
+  <strong>A-M-T — نمذجة. توثيق. أتمتة.</strong>
+  <p>تطوير عبدالله مصطفى | <span data-amt="version-text">الإصدار 1.9.1</span></p>
+  <p>© 2026 A-M-T. جميع الحقوق محفوظة.</p>
+<p class="footer-links"><a href="/ar/changelog.html">سجل الإصدارات</a> · <a href="/ar/faq.html">الأسئلة الشائعة</a> · <a href="/ar/privacy.html">الخصوصية</a> · <a href="https://github.com/abdallahmostafataha6-blip/A-M-T/issues/new/choose">أبلغ عن مشكلة</a></p></div></footer>
+<script src="/amt-release.js" defer></script>
+</body>
+</html>

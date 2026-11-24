@@ -1,8 +1,227 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://a-m-t-tools.pages.dev/</loc></url>
-<url><loc>https://a-m-t-tools.pages.dev/features.html</loc></url>
-<url><loc>https://a-m-t-tools.pages.dev/tools.html</loc></url>
-<url><loc>https://a-m-t-tools.pages.dev/gallery.html</loc></url>
-<url><loc>https://a-m-t-tools.pages.dev/documentation.html</loc></url>
-<url><loc>https://a-m-t-tools.pages.dev/contact.html</loc></url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://a-m-t-tools.pages.dev/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/changelog.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/changelog.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/contact.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/contact.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/documentation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/documentation.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/documentation.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/documentation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/documentation.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/documentation.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/download.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/download.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/download.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/download.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/download.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/download.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/faq.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/faq.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/features.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/features.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/features.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/features.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/gallery.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/gallery.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/gallery.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/gallery.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/column-dims.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/column-dims.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/column-dims.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/column-dims.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/column-dims.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/column-dims.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/create-sheets.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/create-sheets.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/create-sheets.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/create-sheets.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/create-sheets.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/create-sheets.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/create-threshold.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/create-threshold.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/create-threshold.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/create-threshold.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/create-threshold.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/create-threshold.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/curtain-wall.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/curtain-wall.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/curtain-wall.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/curtain-wall.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/curtain-wall.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/curtain-wall.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/cw-types.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/cw-types.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/cw-types.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/cw-types.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/cw-types.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/cw-types.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/dims-ex-in.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/dims-ex-in.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/dims-ex-in.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/dims-ex-in.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/dims-ex-in.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/dims-ex-in.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/finishes-by-room.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/finishes-by-room.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/finishes-by-room.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/finishes-by-room.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/finishes-by-room.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/finishes-by-room.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/installation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/installation.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/installation.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/installation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/installation.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/installation.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/join-in-views.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/join-in-views.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/join-in-views.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/join-in-views.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/join-in-views.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/join-in-views.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/language.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/language.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/language.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/language.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/language.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/language.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/master-and-parts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/master-and-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/master-and-parts.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/master-and-parts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/master-and-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/master-and-parts.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/mcp-host.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/mcp-host.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/mcp-host.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/mcp-host.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/mcp-host.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/mcp-host.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/print.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/print.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/print.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/print.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/print.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/print.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/renumber.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/renumber.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/renumber.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/renumber.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/renumber.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/renumber.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/room-finish.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/room-finish.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/room-finish.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/room-finish.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/room-finish.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/room-finish.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/snap-walls-to-grid.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/snap-walls-to-grid.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/snap-walls-to-grid.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/snap-walls-to-grid.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/snap-walls-to-grid.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/snap-walls-to-grid.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/tap-coloring.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/tap-coloring.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/tap-coloring.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/tap-coloring.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/tap-coloring.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/tap-coloring.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/guides/wet-area-views.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/wet-area-views.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/wet-area-views.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/guides/wet-area-views.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/wet-area-views.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/wet-area-views.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/privacy.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/privacy.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/tools.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/tools.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/tools.html"/>
+  </url>
+  <url><loc>https://a-m-t-tools.pages.dev/ar/tools.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/tools.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/tools.html"/>
+  </url>
 </urlset>

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: FAQ & troubleshooting
+    url: https://a-m-t-tools.pages.dev/faq.html
+    about: Answers to the most common questions
+  - name: Contact
+    url: https://a-m-t-tools.pages.dev/contact.html
+    about: Email, phone and LinkedIn

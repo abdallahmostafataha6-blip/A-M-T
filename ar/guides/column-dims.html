@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل Column Dims | أدوات A-M-T لبرنامج Revit</title>
+<meta name="description" content="تعرّف على إنشاء أبعاد الأعمدة إلى أقرب محور موازٍ في مسقط Revit النشط باستخدام Column Dims من A-M-T.">
+<meta name="robots" content="index, follow"><meta name="theme-color" content="#071824">
+<style>
+:root{--bg:#071824;--panel:#102838;--panel2:#0c2230;--cyan:#16cce0;--text:#f3f8fc;--muted:#a8bbc8;--line:#ffffff20}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}.container{width:min(1080px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#071824ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-size:23px;font-weight:bold}.brand-mark{width:44px;height:44px;border:1px solid var(--cyan);border-radius:8px;display:grid;place-items:center;color:var(--cyan);font-size:12px}.navlinks{display:flex;gap:24px;flex-wrap:wrap;color:var(--muted);font-size:14px}.navlinks a:hover,.text-link:hover{color:var(--cyan)}
+.hero{padding:64px 0 42px;text-align:center}.eyebrow{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(34px,5vw,52px);line-height:1.15;margin:12px 0}.hero p,.muted{color:var(--muted)}.hero p{max-width:760px;margin:14px auto 24px;font-size:18px}.pills{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.pill{border:1px solid #16cce055;background:#0b3445;color:#b9f5fb;border-radius:30px;padding:7px 14px;font-size:13px}
+.section{padding:38px 0}.section-title{margin-bottom:22px}.section-title h2{font-size:30px;margin:0 0 7px}.section-title p{color:var(--muted);margin:0}.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px;margin:18px 0}.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center}.callout{background:#0c3444;border:1px solid #16cce055;border-radius:10px;padding:16px;color:#d8faff}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.step{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:18px}.step b{display:block;color:var(--cyan);font-size:13px;letter-spacing:1px;margin-bottom:5px}
+figure{margin:18px 0 0}figure img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid #ffffff2b;cursor:zoom-in}figcaption{font-size:14px;color:var(--muted);margin-top:9px}.field-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.field{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:15px}.field h3{font-size:16px;color:var(--cyan);margin:0 0 5px}.field p{margin:0;color:var(--muted);font-size:14px}.notice{border-left:3px solid var(--cyan);padding:12px 16px;background:#0c2c3b;color:var(--muted);border-radius:0 8px 8px 0}.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.result{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:18px}.result strong{display:block;color:var(--cyan);font-size:25px}.result span{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--muted);margin-top:42px}.btn{display:inline-block;background:var(--cyan);color:#061923;font-weight:bold;padding:12px 20px;border-radius:8px;margin:6px}.btn.secondary{background:transparent;color:var(--text);border:1px solid #ffffff45}.lightbox{display:none;position:fixed;inset:0;background:#020b12ed;z-index:50;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}.lightbox.open{display:flex}.lightbox img{max-width:95vw;max-height:90vh;object-fit:contain;border:1px solid #ffffff30;border-radius:8px}.lightbox button{position:absolute;top:20px;right:24px;background:#153244;color:white;border:1px solid #ffffff55;border-radius:50%;width:44px;height:44px;font-size:24px;cursor:pointer}
+@media(max-width:760px){nav{align-items:flex-start;flex-direction:column;padding:12px 0}.navlinks{gap:14px}.intro-grid,.field-grid,.steps,.result-grid{grid-template-columns:1fr}.panel{padding:18px}.section-title h2{font-size:25px}}
+</style>
+  <!-- Open Graph: link preview for LinkedIn and other social platforms -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
+  <meta property="og:title" content="دليل Column Dims | أدوات A-M-T لبرنامج Revit">
+  <meta property="og:description" content="تعرّف على إنشاء أبعاد الأعمدة إلى أقرب محور موازٍ في مسقط Revit النشط باستخدام Column Dims من A-M-T.">
+  <meta property="og:url" content="https://a-m-t-tools.pages.dev/ar/guides/column-dims.html">
+  <meta property="og:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
+  <meta property="og:image:secure_url" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
+  <meta property="og:image:alt" content="A-M-T — أدوات النمذجة المعمارية لبرنامج Autodesk Revit">
+  <meta property="og:locale" content="ar_EG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="دليل Column Dims | أدوات A-M-T لبرنامج Revit">
+  <meta name="twitter:description" content="تعرّف على إنشاء أبعاد الأعمدة إلى أقرب محور موازٍ في مسقط Revit النشط باستخدام Column Dims من A-M-T.">
+  <meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
+
+<style>
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.96)!important;backdrop-filter:blur(12px)}
+html{scroll-padding-top:90px}
+.language-switch{display:inline-flex;align-items:center;gap:7px;margin-inline-start:14px;white-space:nowrap}
+.language-switch button{background:transparent;border:1px solid #16cce055;color:#a8bbc8;border-radius:6px;padding:6px 10px;cursor:pointer;font-weight:700}
+.language-switch button.active{background:#16cce0;color:#061923;border-color:#16cce0}
+html[dir="rtl"] body{text-align:right}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{direction:ltr!important}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{flex-direction:row!important}
+html[dir="rtl"] .hero,html[dir="rtl"] .section-title,html[dir="rtl"] footer{text-align:center}
+html[dir="rtl"] .notice{border-left:0;border-right:3px solid var(--cyan);border-radius:8px 0 0 8px}
+html[dir="rtl"] th,html[dir="rtl"] td{text-align:right}
+@media(max-width:760px){.language-switch{margin:4px 0 0}}
+
+/* Stable navigation: keep the header layout LTR in both site languages */
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.97)!important;backdrop-filter:blur(12px)}
+header nav{direction:ltr!important;flex-direction:row!important; text-align:left!important}
+header nav .brand{direction:ltr!important;order:0!important}
+header nav .navlinks,header nav .links{direction:ltr!important;flex-direction:row!important;order:1!important}
+header nav .language-switch{direction:ltr!important;unicode-bidi:isolate!important;margin-inline-start:14px!important}
+html{scroll-padding-top:90px}
+@media(max-width:760px){header nav{align-items:center!important;flex-direction:row!important;flex-wrap:wrap!important}header nav .navlinks,header nav .links{flex-direction:row!important;flex-wrap:wrap!important}}
+</style>
+<link rel="canonical" href="https://a-m-t-tools.pages.dev/ar/guides/column-dims.html">
+<link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/column-dims.html">
+<link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/column-dims.html">
+<link rel="alternate" hreflang="x-default" href="https://a-m-t-tools.pages.dev/guides/column-dims.html">
+<link rel="stylesheet" href="/amt-site.css">
+</head><body>
+<header><div class="container"><nav><a class="brand" href="/ar/"><span class="brand-mark">A-M-T</span><span>A-M-T</span></a><div class="navlinks"><a href="/ar/">الرئيسية</a><a href="/ar/features.html">المميزات</a><a href="/ar/tools.html">الأدوات</a><a href="/ar/gallery.html">المعرض</a><a href="/ar/documentation.html">التوثيق</a><a href="/ar/download.html">تحميل</a><a href="/ar/contact.html">تواصل معنا</a></div><div class="language-switch" role="group" aria-label="اللغة"><a href="/guides/column-dims.html" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><a href="/ar/guides/column-dims.html" hreflang="ar" class="active" aria-current="true">عربي</a></div></nav></div></header>
+<main class="container">
+<section class="hero"><div class="eyebrow">دليل أوامر A-M-T · 11</div><h1>Column Dims</h1><p>إنشاء أبعاد تلقائية من مرجعي Left وFront في الأعمدة إلى أقرب محور موازٍ في مسقط Revit الحالي.</p><div class="pills"><span class="pill">الحوائط والإنشاء</span><span class="pill">مراجع المحاور</span><span class="pill">الأعمدة المرتبطة</span></div></section>
+<section class="section"><div class="section-title"><h2>طريقة عمل الأمر</h2><p>حدد مسافة خط البُعد، واختر ما إذا كانت الأعمدة المرتبطة مشمولة، ثم شغّل الأمر في مسقط.</p></div><div class="steps"><div class="step"><b>01 · افتح مسقطًا</b>فعّل مسقط Revit الذي تريد إنشاء أبعاد الأعمدة فيه.</div><div class="step"><b>02 · اضبط الخيارات</b>أدخل مسافة خط البُعد بالمليمتر وحدد ما إذا كنت تريد تضمين أعمدة اللينكات.</div><div class="step"><b>03 · إنشاء الأبعاد</b>اضغط Dimension وراجع تقرير الأبعاد المُنشأة والأعمدة التي تم تخطيها.</div></div></section>
+<section class="section"><div class="section-title"><h2>1. افتح نافذة Column dimensions</h2><p>ينشئ الأمر أبعادًا من مرجعي Left / Front في الأعمدة إلى أقرب محور موازٍ في الـ View الحالي.</p></div><div class="intro-grid"><div class="panel"><h3>ما الذي يستهدفه الأمر</h3><p class="muted">يعمل Column Dims من المسقط النشط وينشئ أبعادًا بين مراجع الأعمدة وأقرب محور موازٍ.</p><div class="callout">افتح المسقط المطلوب قبل تشغيل الأمر. تنبّه النافذة صراحةً: “Open a plan view first.”</div></div><figure><img src="/Assets/Screenshots/11-Column-Dims-01.png" alt="نافذة Column dimensions من A-M-T في مسقط Revit" data-zoom><figcaption>نافذة Column dimensions فوق مسقط Revit النشط.</figcaption></figure></div></section>
+<section class="section"><div class="section-title"><h2>2. اضبط خيارات الأبعاد</h2><p>تظهر إعدادتان فقط في نافذة الأمر.</p></div><div class="field-grid"><div class="field"><h3>Dimension line offset (mm)</h3><p>يحدد مسافة خط البُعد المُنشأ بالمليمتر. المثال المرفق يستخدم <b>900 mm</b>.</p></div><div class="field"><h3>Include columns from links</h3><p>عند التفعيل، تُضمَّن أعمدة النموذج المرتبط في عملية الأبعاد. الخيار مفعّل في المثال المرفق.</p></div></div><div class="panel"><p class="notice">يحدد وصف النافذة مرجعي Left / Front وأقرب محور موازٍ في الـ View الحالي. ويشير الأمر أيضًا إلى ضرورة فتح مسقط قبل التشغيل.</p></div></section>
+<section class="section"><div class="section-title"><h2>3. أنشئ الأبعاد</h2><p>اضغط <b>Dimension</b> لتنفيذ العملية على الـ View الحالي بالخيارات المختارة.</p></div><div class="intro-grid"><div class="panel"><h3>قبل الضغط على Dimension</h3><ul class="muted"><li>تأكد أن المسقط المطلوب هو النشط.</li><li>حدد مسافة خط البُعد المطلوبة.</li><li>فعّل الأعمدة المرتبطة أو ألغها حسب احتياج المشروع.</li></ul><p class="notice">يستخدم المثال مسافة 900 مم ويشمل أعمدة اللينكات.</p></div><figure><img src="/Assets/Screenshots/11-Column-Dims-01.png" alt="إعدادات Column Dims قبل التنفيذ" data-zoom><figcaption>مثال للإعدادات قبل تشغيل أمر الأبعاد.</figcaption></figure></div></section>
+<section class="section"><div class="section-title"><h2>4. راجع النتيجة في Revit</h2><p>تعرض نافذة الإنهاء عدد الأبعاد المُنشأة وعدد الأعمدة التي تم تخطيها.</p></div><div class="intro-grid"><figure><img src="/Assets/Screenshots/11-Column-Dims-02.png" alt="أبعاد الأعمدة المُنشأة في مسقط Revit مع تقرير الإنهاء" data-zoom><figcaption>مثال للنتيجة: الأبعاد ظاهرة في المسقط بجانب تقرير إنهاء الأمر.</figcaption></figure><div class="panel"><h3>مثال لتقرير التنفيذ</h3><div class="result-grid"><div class="result"><strong>7</strong><span>الأبعاد المُنشأة</span></div><div class="result"><strong>0</strong><span>الأعمدة التي تم تخطيها</span></div></div><p class="muted">في هذا المثال أنشأ الأمر سبعة أبعاد ولم يتخطَّ أي عمود. الأعداد عندك تعتمد على الـ View النشط والأعمدة المتاحة للأمر.</p></div></div></section>
+<section class="section" id="video-demo"><div class="section-title"><h2>شاهد Column Dims أثناء العمل</h2><p>تابع خطوات الأمر داخل Autodesk Revit.</p></div><div class="panel"><video controls playsinline preload="metadata" style="display:block;width:100%;max-height:680px;background:#020b12;border:1px solid #ffffff2b;border-radius:12px"><source src="/Assets/Videos/11-Column-Dims-Demo.mp4" type="video/mp4">متصفحك لا يدعم تشغيل الفيديو.</video></div></section>
+<section class="section"><div class="section-title"><h2>قائمة مراجعة تشغيل الأمر</h2></div><div class="panel"><ol class="muted"><li>افتح مسقط Revit المستهدف.</li><li>شغّل <b>Column dimensions</b>.</li><li>أدخل قيمة <b>Dimension line offset (mm)</b> المطلوبة.</li><li>اضبط <b>Include columns from links</b> حسب إعداد نموذجك.</li><li>اضغط <b>Dimension</b> وراجع تقرير الإنهاء.</li><li>افحص الأبعاد المُنشأة في المسقط.</li></ol><div class="callout"><b>نصيحة:</b> راجع الـ View النشط ومسافة خط البُعد قبل تشغيل الأمر، خاصة عند العمل مع نماذج إنشائية مرتبطة.</div></div></section>
+<div style="text-align:center;padding:25px 0 55px"><a class="btn" href="/ar/tools.html">العودة إلى كل الأدوات</a></div>
+</main><footer><div class="container"><strong>A-M-T — نمذجة. توثيق. أتمتة.</strong><p>تطوير عبدالله مصطفى | <span data-amt="version-text">الإصدار 1.9.1</span></p><p>© 2026 A-M-T. جميع الحقوق محفوظة.</p><p class="footer-links"><a href="/ar/changelog.html">سجل الإصدارات</a> · <a href="/ar/faq.html">الأسئلة الشائعة</a> · <a href="/ar/privacy.html">الخصوصية</a> · <a href="https://github.com/abdallahmostafataha6-blip/A-M-T/issues/new/choose">أبلغ عن مشكلة</a></p></div></footer>
+<div class="lightbox" id="lightbox" aria-label="صورة مكبّرة"><button type="button" aria-label="إغلاق">×</button><img src="" alt="صورة مكبّرة"></div><script>const lightbox=document.getElementById('lightbox');const lightboxImage=lightbox.querySelector('img');document.querySelectorAll('[data-zoom]').forEach(img=>img.addEventListener('click',()=>{lightboxImage.src=img.src;lightboxImage.alt=img.alt;lightbox.classList.add('open')}));lightbox.addEventListener('click',()=>lightbox.classList.remove('open'));document.addEventListener('keydown',e=>{if(e.key==='Escape')lightbox.classList.remove('open')});</script>
+<script src="/amt-release.js" defer></script>
+</body></html>

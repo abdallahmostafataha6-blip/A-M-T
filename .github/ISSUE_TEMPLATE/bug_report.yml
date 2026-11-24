@@ -1,0 +1,44 @@
+name: Report a problem
+description: Something in A-M-T does not work as expected
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting! / شكرًا إنك بلغت عن المشكلة!
+        Logs: DIMS EX&IN saves `A-M-T_Dims_log.txt` on the Desktop; other logs are in `%APPDATA%\A-M-T`.
+  - type: input
+    id: amt
+    attributes:
+      label: A-M-T version / نسخة A-M-T
+      description: Shown at the bottom of every A-M-T window (for example 1.9.1)
+    validations:
+      required: true
+  - type: dropdown
+    id: revit
+    attributes:
+      label: Revit version / نسخة ريفيت
+      options: ["2023", "2024", "2025", "2026"]
+    validations:
+      required: true
+  - type: input
+    id: tool
+    attributes:
+      label: Tool / الأداة
+      placeholder: DIMS EX&IN, Print, MCP Host, ...
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / إيه اللي حصل؟
+      description: What you did, what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log or error message / اللوج أو رسالة الخطأ
+      render: text
+  - type: markdown
+    attributes:
+      value: Screenshots can be pasted into the box above. / ممكن تلزق صور في الخانة اللي فوق.

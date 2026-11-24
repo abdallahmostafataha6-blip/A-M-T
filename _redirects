@@ -1,0 +1,23 @@
+# Old addresses keep working (guides moved to /guides/ in 1.9.1)
+/column-dims-guide.html /guides/column-dims.html 301
+/create-sheets-guide.html /guides/create-sheets.html 301
+/create-threshold-guide.html /guides/create-threshold.html 301
+/curtain-wall-guide.html /guides/curtain-wall.html 301
+/cw-types-guide.html /guides/cw-types.html 301
+/plan-tags-and-dims-guide.html /guides/dims-ex-in.html 301
+/finishes-by-room-guide.html /guides/finishes-by-room.html 301
+/installation-guide.html /guides/installation.html 301
+/join-in-views-guide.html /guides/join-in-views.html 301
+/language-guide.html /guides/language.html 301
+/master-and-parts-guide.html /guides/master-and-parts.html 301
+/mcp-host-guide.html /guides/mcp-host.html 301
+/print-guide.html /guides/print.html 301
+/renumber-guide.html /guides/renumber.html 301
+/room-finish-guide.html /guides/room-finish.html 301
+/snap-walls-to-grid-guide.html /guides/snap-walls-to-grid.html 301
+/tap-coloring-guide.html /guides/tap-coloring.html 301
+/wet-area-views-guide.html /guides/wet-area-views.html 301
+/guides/plan-tags-and-dims.html /guides/dims-ex-in.html 301
+# installers are published on GitHub Releases
+/downloads/* https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest 302
+/releases https://github.com/abdallahmostafataha6-blip/A-M-T/releases 302

@@ -7,7 +7,7 @@
 <title>A-M-T Documentation | Guides &amp; Installation</title>
 <meta name="description" content="Browse A-M-T Revit documentation, installation instructions, the quick user guide, and 17 individual command guides for architectural BIM workflows.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://a-m-t-tools.pages.dev/documentation.html">
+
 <meta name="theme-color" content="#071824">
 <meta property="og:type" content="website"><meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
 <meta property="og:title" content="A-M-T Documentation | Guides &amp; Installation"><meta property="og:description" content="Find installation help, the A-M-T quick guide, and 17 individual Revit command guides.">
@@ -17,7 +17,7 @@
 <meta name="twitter:description" content="Installation help, the A-M-T quick guide, and 17 individual Revit command guides.">
 <meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A-M-T — Architectural Modeling Toolkit","alternateName":"A-M-T Revit Plugin","applicationCategory":"DesignApplication","operatingSystem":"Windows","softwareVersion":"1.8.8","description":"A Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.","url":"https://a-m-t-tools.pages.dev/","author":{"@type":"Person","name":"Abdallah Mostafa"},"downloadUrl":"https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest"}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A-M-T — Architectural Modeling Toolkit","alternateName":"A-M-T Revit Plugin","applicationCategory":"DesignApplication","softwareVersion":"1.9.1","description":"A Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.","url":"https://a-m-t-tools.pages.dev/","author":{"@type":"Person","name":"Abdallah Mostafa"},"downloadUrl":"https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"isAccessibleForFree":true,"softwareRequirements":"Autodesk Revit 2023, 2024, 2025 or 2026","operatingSystem":"Windows 10, Windows 11","image":"https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png"}
 </script>
 <style>
 :root{
@@ -378,37 +378,17 @@ header nav .language-switch{direction:ltr!important;unicode-bidi:isolate!importa
 html{scroll-padding-top:90px}
 @media(max-width:760px){header nav{align-items:center!important;flex-direction:row!important;flex-wrap:wrap!important}header nav .navlinks,header nav .links{flex-direction:row!important;flex-wrap:wrap!important}}
 </style>
-<script id="amt-bilingual">
-(function(){
-const dict={"Run the command":"تنفيذ الأمر","A final checklist before using Create Sheets in your project.":"قائمة مراجعة أخيرة قبل استخدام أمر إنشاء اللوحات في مشروعك.","Prepare an existing reference sheet with the layout you want to reuse.":"جهّز لوحة مرجعية موجودة بالتنسيق الذي تريد إعادة استخدامه.","Open Create Sheets from the A-M-T ribbon.":"افتح أمر Create Sheets من شريط أدوات A-M-T.","Select the reference sheet and the view templates to process.":"حدد اللوحة المرجعية وقوالب المشاهد المطلوب معالجتها.","Set the optional exclusion and legend/dependent-view options.":"اضبط خيارات الاستبعاد الاختيارية وخيارات الـ Legends والمشاهد التابعة.","Click Next and enter the first sheet number for each template.":"اضغط Next وأدخل رقم اللوحة الأول لكل قالب.","Click Create Sheets, then review the completion report and inspect the generated sheets.":"اضغط Create Sheets، ثم راجع تقرير الإكمال وافحص اللوحات التي تم إنشاؤها.","Tip:":"نصيحة:","Test the workflow on a controlled project copy first, and verify the reference sheet layout and numbering convention before generating a large batch of sheets.":"اختبر سير العمل أولًا على نسخة من المشروع، وتأكد من تنسيق اللوحة المرجعية ونظام الترقيم قبل إنشاء عدد كبير من اللوحات.","Back to All Tools":"العودة إلى جميع الأدوات","Open PDF Guide":"فتح دليل PDF","Your browser does not support video playback.":"متصفحك لا يدعم تشغيل الفيديو.","Watch Create Sheets in Action":"شاهد أمر Create Sheets أثناء العمل","Follow the command workflow inside Autodesk Revit.":"تابع خطوات تنفيذ الأمر داخل Autodesk Revit.","Create Sheets":"إنشاء اللوحات","Cancel":"إلغاء","Next":"التالي","OK":"موافق","Sheets created":"اللوحات التي تم إنشاؤها","Views placed":"المشاهد التي تم وضعها","Issues":"المشكلات","What to verify":"ما يجب التحقق منه","Confirm the new sheets appear in the Project Browser.":"تأكد من ظهور اللوحات الجديدة في متصفح المشروع.","Check that the sheet numbers follow the intended sequence.":"تحقق من أن أرقام اللوحات تتبع التسلسل المطلوب.","Open representative sheets and verify the view placement and reused layout.":"افتح بعض اللوحات وتحقق من مواضع المشاهد والتنسيق المعاد استخدامه.","Check the completion report for any issues that may need attention.":"راجع تقرير الإكمال للتأكد من عدم وجود مشكلات تحتاج إلى معالجة.","Understand the result":"فهم النتائج","Review the creation report":"راجع تقرير الإنشاء","Create the sheets":"إنشاء اللوحات","Check the generated sheets in Revit":"افحص اللوحات التي تم إنشاؤها في Revit","1. Choose the reference sheet and view templates":"1. اختر اللوحة المرجعية وقوالب المشاهد","2. Configure the options":"2. اضبط الخيارات","3. Set the first sheet number for each template":"3. حدد رقم اللوحة الأول لكل قالب","4. Create the sheets":"4. أنشئ اللوحات","5. Review the creation report":"5. راجع تقرير الإنشاء","6. Check the generated sheets in Revit":"6. افحص اللوحات التي تم إنشاؤها في Revit","Enter the starting number":"أدخل رقم البداية","First sheet number per template":"رقم اللوحة الأول لكل قالب","Number format":"تنسيق الرقم","Source / Numbers":"المصدر / الأرقام","Select the reference sheet":"حدد اللوحة المرجعية","Select view templates":"حدد قوالب المشاهد","Home": "الرئيسية", "Features": "المميزات", "Tools": "الأدوات", "Gallery": "معرض الصور", "Documentation": "التوثيق", "Download": "تحميل", "Contact": "تواصل معنا", "View Guide →": "عرض الدليل ←", "Read more →": "اقرأ المزيد ←", "View on GitHub ↗": "عرض المشروع على GitHub ↗", "All 17 A-M-T Tools": "جميع أدوات A-M-T الـ17", "17 Revit Productivity Tools": "17 أداة لزيادة الإنتاجية في Revit", "Find the right tool for the task": "اعثر على الأداة المناسبة لمهمتك", "Search tools": "ابحث في الأدوات", "All tools": "كل الأدوات", "Showing 17 of 17 tools": "عرض 17 من 17 أداة", "Sheets & Views": "اللوحات والمشاهد", "Walls & Structure": "الحوائط والإنشاء", "Finishes": "التشطيبات", "Settings": "الإعدادات", "Export": "التصدير", "Contact A-M-T": "تواصل مع A-M-T", "Get in touch for questions, feedback, and collaboration.": "تواصل معنا للاستفسارات والملاحظات والتعاون.", "Phone": "الهاتف", "Email": "البريد الإلكتروني", "LinkedIn": "لينكدإن", "Start here": "ابدأ من هنا", "Essential guides": "الأدلة الأساسية", "Command Guides": "أدلة الأوامر", "Command library": "مكتبة الأوامر", "Explore All 17 Tools": "استكشف الأدوات الـ17", "Latest release": "أحدث إصدار", "Inside the toolkit": "محتويات الحزمة", "Getting started": "البدء", "Compatibility:": "التوافق:", "How the command works": "طريقة عمل الأمر", "Visual walkthrough": "شرح مرئي", "Configure the threshold settings": "اضبط إعدادات العتبة", "Create": "إنشاء", "Cancel": "إلغاء", "Next": "التالي", "OK": "موافق", "Renumber": "إعادة الترقيم", "Create Sheets": "إنشاء اللوحات", "Wet Area Views": "مشاهد المناطق الرطبة", "Curtain Wall": "الحائط الساتر", "Master & Parts": "العناصر والأجزاء", "Snap Walls to Grid": "محاذاة الحوائط مع المحاور", "CW Types": "أنواع الحوائط الساترة", "Join in Views": "وصل العناصر في المشاهد", "Plan Tags & Dims": "تاجات وأبعاد المساقط", "Print": "طباعة", "Column Dims": "أبعاد الأعمدة", "Finishes by Room": "تشطيبات الغرف", "Room Finish": "تشطيب الغرفة", "Create Threshold": "إنشاء العتبة", "Language": "اللغة", "TAP Coloring": "تلوين تبويبات الملفات", "MCP Host": "خادم MCP", "Modeling automation": "أتمتة النمذجة", "Documentation & sheets": "التوثيق واللوحات", "Production & output": "الإنتاج والإخراج", "Your Revit workflow.": "سير عملك في Revit.", "One powerful toolkit.": "حزمة واحدة قوية.", "Download Latest Release": "تحميل أحدث إصدار", "Browse Command Guides →": "تصفح أدلة الأوامر ←", "Open Installation Guide (PDF) →": "فتح دليل التثبيت (PDF) ←", "Open Quick Guide (PDF) →": "فتح دليل المستخدم السريع (PDF) ←", "Online Installation Guide": "دليل التثبيت الإلكتروني", "Read Online Guide →": "قراءة الدليل الإلكتروني ←", "Version 1.8.8": "الإصدار 1.8.8", "Current website version": "إصدار الموقع الحالي", "Integrated Revit tools": "أدوات Revit متكاملة", "Operating system": "نظام التشغيل", "Windows": "ويندوز", "A-M-T — Model. Document. Automate.": "A-M-T — نمذج. وثّق. أتمت.", "Developed by Abdallah Mostafa": "تطوير عبدالله مصطفى", "All rights reserved.": "جميع الحقوق محفوظة.", "Select rooms": "اختر الغرف", "Configure views": "اضبط المشاهد", "Create documentation": "إنشاء التوثيق", "Review the creation report": "راجع تقرير الإنشاء", "Create types": "إنشاء الأنواع", "Dimension": "إنشاء الأبعاد", "First sheet number": "رقم اللوحة الأول", "Sheet name": "اسم اللوحة", "Title block type": "نوع التايتل بلوك", "Level": "المستوى", "Scope": "نطاق التطبيق", "Entire project": "المشروع بالكامل", "Active view": "المشهد الحالي", "Current selection": "العناصر المحددة", "Download the release": "تحميل الإصدار", "Follow the package instructions": "اتبع تعليمات الحزمة", "Open Autodesk Revit": "افتح Autodesk Revit"};
-const key='amt-site-language';
-function addSwitch(){
- const nav=document.querySelector('nav'); if(!nav || nav.querySelector('.language-switch')) return;
- const host=nav.querySelector('.navlinks, .links') || nav;
- const box=document.createElement('div'); box.className='language-switch';box.setAttribute('role','group');box.setAttribute('aria-label','Language');
- box.innerHTML='<button type="button" data-lang="en">EN</button><span aria-hidden="true">|</span><button type="button" data-lang="ar">عربي</button>';
- host.appendChild(box);
- box.addEventListener('click',e=>{const b=e.target.closest('button[data-lang]');if(b)setLang(b.dataset.lang)});
-}
-let originals=[];
-function collect(){if(originals.length)return;const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;while(n=walker.nextNode()){const t=n.nodeValue.trim();if(t && dict[t]) originals.push([n,n.nodeValue,t]);}}
-function setLang(lang){
- collect(); const ar=lang==='ar';
- originals.forEach(([node,raw,trim])=>{if(node.isConnected)node.nodeValue=ar?raw.replace(trim,dict[trim]):raw});
- document.documentElement.lang=ar?'ar':'en';document.documentElement.dir=ar?'rtl':'ltr';
- document.querySelectorAll('.language-switch button').forEach(b=>{b.classList.toggle('active',b.dataset.lang===lang);b.setAttribute('aria-pressed',b.dataset.lang===lang?'true':'false')});
- try{localStorage.setItem(key,lang)}catch(e){}
-}
-document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{lang=localStorage.getItem(key)||'en'}catch(e){}setLang(lang)});
-})();
-</script>
-
+<link rel="canonical" href="https://a-m-t-tools.pages.dev/documentation.html">
+<link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/documentation.html">
+<link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/documentation.html">
+<link rel="alternate" hreflang="x-default" href="https://a-m-t-tools.pages.dev/documentation.html">
+<link rel="stylesheet" href="/amt-site.css">
 </head><body><header><div class="container"><nav>
-<a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
+<a class="brand" href="/"><img src="/Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
 <div class="navlinks">
-<a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a>
-<a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a><a href="download.html">Download</a><a href="contact.html">Contact</a>
-</div></nav></div></header>
+<a href="/">Home</a><a href="/features.html">Features</a><a href="/tools.html">Tools</a>
+<a href="/gallery.html">Gallery</a><a href="/documentation.html">Documentation</a><a href="/download.html">Download</a><a href="/contact.html">Contact</a>
+</div><div class="language-switch" role="group" aria-label="Language"><a href="/documentation.html" hreflang="en" class="active" aria-current="true">EN</a><span aria-hidden="true">|</span><a href="/ar/documentation.html" hreflang="ar" lang="ar">عربي</a></div></nav></div></header>
 <main>
   <section class="docs-hero container">
     <span class="eyebrow">A-M-T Knowledge Center</span>
@@ -416,7 +396,7 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
     <p>Find the right guide to install A-M-T, get familiar with the toolkit, and follow the workflow for each command.</p>
     <div class="docs-stats">
       <div class="docs-stat"><strong>17</strong><span>Individual command guides</span></div>
-      <div class="docs-stat"><strong data-amt="version">1.8.8</strong><span>Documented toolkit version</span></div>
+      <div class="docs-stat"><strong data-amt="version">1.9.1</strong><span>Documented toolkit version</span></div>
       <div class="docs-stat"><strong>PDF + Online</strong><span>Guides and installation help</span></div>
     </div>
   </section>
@@ -432,19 +412,19 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
         <div class="doc-icon">↓</div>
         <h3>Installation Guide</h3>
         <p>Illustrated, step-by-step instructions to install A-M-T and get it ready to use in Revit.</p>
-        <a href="Documentation/AMT_1.8.8_Installation_Guide_Annotated.pdf" target="_blank" rel="noopener">Open Installation Guide (PDF) →</a>
+        <a href="/Documentation/AMT_1.8.8_Installation_Guide_Annotated.pdf" target="_blank" rel="noopener">Open Installation Guide (PDF) →</a>
       </article>
       <article class="docs-primary-card">
         <div class="doc-icon">▤</div>
         <h3>Quick User Guide</h3>
         <p>A concise introduction to the A-M-T toolkit, its commands, and the available workflows.</p>
-        <a href="Documentation/AMT_1.8.8_Quick_Guide.pdf" target="_blank" rel="noopener">Open Quick Guide (PDF) →</a>
+        <a href="/Documentation/AMT_1.8.8_Quick_Guide.pdf" target="_blank" rel="noopener">Open Quick Guide (PDF) →</a>
       </article>
       <article class="docs-primary-card">
         <div class="doc-icon">⌘</div>
         <h3>Online Installation Guide</h3>
         <p>Read the installation instructions as a text document directly from the project documentation.</p>
-        <a href="installation-guide.html">Read Online Guide →</a>
+        <a href="/guides/installation.html">Read Online Guide →</a>
       </article>
       <article class="docs-primary-card">
         <div class="doc-icon">▦</div>
@@ -467,23 +447,23 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
         <a class="btn" href="#command-guide-links">Browse All 17 Online Guides</a>
       </div>
       <div class="docs-command-list" id="command-guide-links">
-<a href="renumber-guide.html">Renumber</a>
-<a href="create-sheets-guide.html">Create Sheets</a>
-<a href="wet-area-views-guide.html">Wet Area Views</a>
-<a href="curtain-wall-guide.html">Curtain Wall</a>
-<a href="master-and-parts-guide.html">Master &amp; Parts</a>
-<a href="snap-walls-to-grid-guide.html">Snap Walls to Grid</a>
-<a href="cw-types-guide.html">CW Types</a>
-<a href="join-in-views-guide.html">Join in Views</a>
-<a href="plan-tags-and-dims-guide.html">Plan Tags &amp; Dims</a>
-<a href="print-guide.html">Print</a>
-<a href="column-dims-guide.html">Column Dims</a>
-<a href="finishes-by-room-guide.html">Finishes by Room</a>
-<a href="room-finish-guide.html">Room Finish</a>
-<a href="create-threshold-guide.html">Create Threshold</a>
-<a href="language-guide.html">Language</a>
-<a href="tap-coloring-guide.html">TAP Coloring</a>
-<a href="mcp-host-guide.html">MCP Host</a>
+<a href="/guides/renumber.html">Renumber</a>
+<a href="/guides/create-sheets.html">Create Sheets</a>
+<a href="/guides/wet-area-views.html">Wet Area Views</a>
+<a href="/guides/curtain-wall.html">Curtain Wall</a>
+<a href="/guides/master-and-parts.html">Master &amp; Parts</a>
+<a href="/guides/snap-walls-to-grid.html">Snap Walls to Grid</a>
+<a href="/guides/cw-types.html">CW Types</a>
+<a href="/guides/join-in-views.html">Join in Views</a>
+<a href="/guides/dims-ex-in.html">DIMS EX&amp;IN</a>
+<a href="/guides/print.html">Print</a>
+<a href="/guides/column-dims.html">Column Dims</a>
+<a href="/guides/finishes-by-room.html">Finishes by Room</a>
+<a href="/guides/room-finish.html">Room Finish</a>
+<a href="/guides/create-threshold.html">Create Threshold</a>
+<a href="/guides/language.html">Language</a>
+<a href="/guides/tap-coloring.html">TAP Coloring</a>
+<a href="/guides/mcp-host.html">MCP Host</a>
 </div>
       <p class="docs-note">Open the Command Guides collection above to access the individual PDF files.</p>
     </div>
@@ -520,16 +500,16 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
       <h2>Need the latest A-M-T release?</h2>
       <p>Visit the official releases page to download the current version.</p>
       <a class="btn" href="https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest" target="_blank" rel="noopener">Download A-M-T</a>
-      <a class="btn secondary" href="tools.html">Explore All Tools</a>
+      <a class="btn secondary" href="/tools.html">Explore All Tools</a>
     </div>
   </section>
 </main>
 <footer>
   <div class="container">
     <strong>A-M-T — Model. Document. Automate.</strong>
-    <p>Developed by Abdallah Mostafa | <span data-amt="version-text">Version 1.8.8</span></p>
+    <p>Developed by Abdallah Mostafa | <span data-amt="version-text">Version 1.9.1</span></p>
     <p>© 2026 A-M-T. All rights reserved.</p>
-  </div>
+  <p class="footer-links"><a href="/changelog.html">Changelog</a> · <a href="/faq.html">FAQ</a> · <a href="/privacy.html">Privacy</a> · <a href="https://github.com/abdallahmostafataha6-blip/A-M-T/issues/new/choose">Report an issue</a></p></div>
 </footer>
 <script>
 (() => {
@@ -561,5 +541,5 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
 })();
 </script>
 
-<script src="amt-release.js" defer></script>
+<script src="/amt-release.js" defer></script>
 </body></html>
