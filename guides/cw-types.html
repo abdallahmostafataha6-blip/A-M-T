@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CW Types Guide | A-M-T Revit Toolkit</title>
+<meta name="description" content="Visual guide for the A-M-T Curtain Wall Types command."/>
+
+<meta name="theme-color" content="#071824"/>
+<style>
+:root{--bg:#071824;--panel:#102838;--panel2:#0c2230;--cyan:#16cce0;--text:#f3f8fc;--muted:#a8bbc8;--line:#ffffff20}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Arial,Helvetica,sans-serif}
+.container{width:min(1080px,92%);margin:auto}header{background:#071824ed;border-bottom:1px solid var(--line)}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.brand{font-size:22px;font-weight:bold;color:var(--text);text-decoration:none}.links{display:flex;gap:18px;flex-wrap:wrap}.links a{color:var(--muted);text-decoration:none;font-size:14px}
+.hero{padding:54px 0 28px;text-align:center}.eyebrow{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(34px,5vw,48px);line-height:1.15;margin:10px 0}h2{font-size:28px;margin:0 0 8px}h3{font-size:20px;margin:0 0 10px;color:var(--cyan)}p{color:var(--muted)}
+.pill{display:inline-block;padding:6px 12px;border-radius:24px;border:1px solid #16cce055;background:#0b3445;color:#b9f5fb;font-size:13px;margin:4px}
+.section{padding:30px 0}.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px;margin-top:16px}
+.explain-row{display:grid;grid-template-columns:1.08fr .92fr;gap:24px;align-items:center;margin:24px 0 34px}
+.explain-row.reverse{grid-template-columns:.92fr 1.08fr}.explain-row.reverse .visual{order:2}
+figure{margin:0}.visual img{display:block;width:100%;height:auto;object-fit:contain;border-radius:10px;border:1px solid var(--line);cursor:zoom-in}
+figcaption{color:var(--muted);font-size:14px;margin-top:9px}.screenshot-explanation{min-height:190px;display:flex;flex-direction:column;justify-content:center}
+.notice{padding:16px;border:1px solid #16cce055;border-radius:10px;color:var(--muted);background:#0c3444}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.step{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:18px}.step b{display:block;color:var(--cyan);margin-bottom:6px}
+video{width:100%;display:block;border-radius:12px;border:1px solid var(--line);background:#000}
+footer{border-top:1px solid var(--line);margin-top:38px;padding:25px 0;text-align:center;color:var(--muted)}
+.lightbox{display:none;position:fixed;inset:0;background:#020b12ed;z-index:20;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lightbox.open{display:flex}.lightbox img{max-width:95vw;max-height:90vh;object-fit:contain}.lightbox button{position:absolute;top:18px;right:20px;border-radius:50%;padding:8px 14px;font-size:24px}
+@media(max-width:760px){nav{padding:12px 0}.explain-row,.explain-row.reverse{grid-template-columns:1fr}.explain-row.reverse .visual{order:0}.steps{grid-template-columns:1fr}}
+
+.brand{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:750;letter-spacing:.2px}
+.brand img{width:42px;height:42px;display:block;object-fit:contain;border-radius:7px}
+.links a{transition:color .2s ease}
+.links a:hover,.links a[aria-current="page"]{color:var(--cyan)}
+@media(max-width:760px){
+  nav{align-items:center}
+  .brand{font-size:20px}
+  .brand img{width:38px;height:38px}
+  .links{width:100%;gap:10px 16px;padding:2px 0 8px}
+}
+</style>
+<style>
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.96)!important;backdrop-filter:blur(12px)}
+html{scroll-padding-top:90px}
+.language-switch{display:inline-flex;align-items:center;gap:7px;margin-inline-start:14px;white-space:nowrap}
+.language-switch button{background:transparent;border:1px solid #16cce055;color:#a8bbc8;border-radius:6px;padding:6px 10px;cursor:pointer;font-weight:700}
+.language-switch button.active{background:#16cce0;color:#061923;border-color:#16cce0}
+html[dir="rtl"] body{text-align:right}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{direction:ltr!important}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{flex-direction:row!important}
+html[dir="rtl"] .hero,html[dir="rtl"] .section-title,html[dir="rtl"] footer{text-align:center}
+html[dir="rtl"] .notice{border-left:0;border-right:3px solid var(--cyan);border-radius:8px 0 0 8px}
+html[dir="rtl"] th,html[dir="rtl"] td{text-align:right}
+@media(max-width:760px){.language-switch{margin:4px 0 0}}
+
+/* Stable navigation: keep the header layout LTR in both site languages */
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.97)!important;backdrop-filter:blur(12px)}
+header nav{direction:ltr!important;flex-direction:row!important; text-align:left!important}
+header nav .brand{direction:ltr!important;order:0!important}
+header nav .navlinks,header nav .links{direction:ltr!important;flex-direction:row!important;order:1!important}
+header nav .language-switch{direction:ltr!important;unicode-bidi:isolate!important;margin-inline-start:14px!important}
+html{scroll-padding-top:90px}
+@media(max-width:760px){header nav{align-items:center!important;flex-direction:row!important;flex-wrap:wrap!important}header nav .navlinks,header nav .links{flex-direction:row!important;flex-wrap:wrap!important}}
+</style>
+<link rel="canonical" href="https://a-m-t-tools.pages.dev/guides/cw-types.html">
+<link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/cw-types.html">
+<link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/cw-types.html">
+<link rel="alternate" hreflang="x-default" href="https://a-m-t-tools.pages.dev/guides/cw-types.html">
+<link rel="stylesheet" href="/amt-site.css">
+</head><body>
+<header><div class="container"><nav><a class="brand" href="/" aria-label="A-M-T Home"><img src="/Assets/A-M-T-LOGO.png" alt="A-M-T logo"/><span>A-M-T</span></a><div class="links"><a href="/">Home</a><a href="/features.html">Features</a><a href="/tools.html">Tools</a><a href="/gallery.html">Gallery</a><a href="/documentation.html">Documentation</a><a href="/download.html">Download</a><a href="/contact.html">Contact</a></div><div class="language-switch" role="group" aria-label="Language"><a href="/guides/cw-types.html" hreflang="en" class="active" aria-current="true">EN</a><span aria-hidden="true">|</span><a href="/ar/guides/cw-types.html" hreflang="ar" lang="ar">عربي</a></div></nav></div></header>
+<main class="container">
+<section class="hero"><div class="eyebrow">A-M-T Command Guide · 07</div><h1>CW Types</h1><p>Automatically create curtain wall types from distinct wall length and height groups.</p><span class="pill">Walls &amp; Structure</span><span class="pill">Visual walkthrough</span></section>
+<section class="section"><div class="panel"><h2>About this command</h2><p>CW Types scans curtain walls, groups them by their distinct length and height, creates a separate curtain wall type for each group, and assigns the generated types to the matching walls. Existing curtain wall types are left unchanged.</p><div class="notice"><b>Example shown:</b> The command detects 10 length / height groups across 14 curtain walls. With the first type mark set to <b>CW01</b>, it previews the generated marks from CW01 onward.</div></div></section>
+<section class="section"><h2>How the command works</h2><div class="steps">
+<div class="step"><b>01 · Scan curtain walls</b>Run CW Types from the A-M-T ribbon. The command identifies curtain walls and reads their length and height.</div>
+<div class="step"><b>02 · Review type groups</b>Enter the first type mark and review the detected length × height groups and the number of walls in each group.</div>
+<div class="step"><b>03 · Create and assign</b>Click <b>Create types</b>. A-M-T creates the new types and assigns them to the matching curtain walls.</div>
+</div></section>
+<section class="section"><h2>Command walkthrough</h2>
+<div class="explain-row"><div class="visual"><figure><img src="/Assets/Screenshots/07-CW-Types-01.png" alt="CW Types dialog showing first type mark and detected curtain wall groups"/><figcaption>CW Types dialog — first type mark and detected groups</figcaption></figure></div><div class="panel screenshot-explanation"><h3>01 · Set the first type mark</h3><p>Enter the starting mark in <b>First type mark</b> (for example, <b>CW01</b>). A-M-T uses this as the beginning of the generated type-mark sequence.</p><p>The summary bar reports the number of distinct length / height groups and the total number of curtain walls detected. The table previews each group with its <b>Type mark</b>, <b>Length × Height</b>, and <b>Walls</b> count.</p></div></div>
+<div class="explain-row reverse"><div class="visual"><figure><img src="/Assets/Screenshots/07-CW-Types-02.png" alt="CW Types creation report showing new types and assigned walls"/><figcaption>Creation report — generated types and assigned walls</figcaption></figure></div><div class="panel screenshot-explanation"><h3>02 · Review the creation report</h3><p>After clicking <b>Create types</b>, the result dialog confirms how many new types were created, how many walls were assigned, and whether any existing curtain wall types were left unchanged.</p><p>In this example, <b>10</b> new types were created and assigned to <b>14</b> walls. Existing CW types were left unchanged.</p></div></div>
+<div class="explain-row"><div class="visual"><figure><img src="/Assets/Screenshots/07-CW-Types-03.png" alt="Curtain wall views and sheets dialog with view templates and sheet settings"/><figcaption>Related workflow shown in the demonstration — curtain wall views and sheets</figcaption></figure></div><div class="panel screenshot-explanation"><h3>03 · Continue with curtain wall documentation</h3><p>The demonstration also shows the related <b>Curtain wall views and sheets</b> command. It lets you choose templates for plan callouts, elevations, and sections, then define the first type mark, first sheet number, sheet name, and title block.</p><p>The <b>Include curtain walls from links</b> option controls whether linked-model curtain walls are included in that documentation workflow.</p><p><i>Note: this is a separate command from CW Types; it is shown here as the next step in the recorded workflow.</i></p></div></div>
+</section>
+<section class="section"><h2>Watch CW Types in Action</h2><div class="panel"><video controls preload="metadata" poster="Assets/Screenshots/07-CW-Types-01.png"><source src="/Assets/Videos/07-CW-Types-Demo.mp4" type="video/mp4"/>Your browser does not support HTML video.</video><p class="caption">The video demonstrates selecting curtain walls, reviewing detected groups, creating the types, and checking the resulting curtain wall properties.</p></div></section>
+<section class="section"><h2>Quick checklist</h2><div class="panel"><p>✓ Open a Revit view containing the curtain walls you want to process.</p><p>✓ Run <b>CW Types</b> from the A-M-T ribbon.</p><p>✓ Enter the first type mark and review the length / height groups.</p><p>✓ Click <b>Create types</b> and check the creation report.</p><p>✓ Select a curtain wall and verify its assigned type in Revit Properties / Type Properties.</p></div></section>
+</main><footer><div class="container">A-M-T · Architectural Modeling Toolkit<p class="footer-links"><a href="/changelog.html">Changelog</a> · <a href="/faq.html">FAQ</a> · <a href="/privacy.html">Privacy</a> · <a href="https://github.com/abdallahmostafataha6-blip/A-M-T/issues/new/choose">Report an issue</a></p></div></footer>
+<div class="lightbox" id="lightbox"><button aria-label="Close">×</button><img alt="Expanded screenshot"/></div>
+<script>
+document.querySelectorAll('.visual img').forEach(img=>img.addEventListener('click',()=>{const box=document.getElementById('lightbox');box.querySelector('img').src=img.src;box.classList.add('open')}));
+document.getElementById('lightbox').addEventListener('click',()=>document.getElementById('lightbox').classList.remove('open'));
+</script><script src="/amt-release.js" defer></script>
+</body></html>

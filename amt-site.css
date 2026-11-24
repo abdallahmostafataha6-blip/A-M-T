@@ -1,0 +1,46 @@
+/* Shared by every page (English and /ar/). Page-specific styles stay in each page. */
+
+/* language switch: EN | عربي (real links to the other language's page) */
+.language-switch{display:inline-flex;align-items:center;gap:7px;margin-inline-start:14px;white-space:nowrap;direction:ltr}
+.language-switch a{display:inline-block;border:1px solid #16cce055;color:#a8bbc8;border-radius:6px;padding:5px 10px;font-weight:700;text-decoration:none;line-height:1.2}
+.language-switch a:hover{color:#16cce0;border-color:#16cce0}
+.language-switch a.active{background:#16cce0;color:#061923;border-color:#16cce0}
+.language-switch span{color:#4d6575}
+
+/* Arabic pages */
+html[dir="rtl"] body{font-family:"Segoe UI","Tahoma","Noto Kufi Arabic","Noto Sans Arabic",Arial,sans-serif;text-align:right;line-height:1.75}
+html[dir="rtl"] h1,html[dir="rtl"] h2,html[dir="rtl"] h3{letter-spacing:0}
+html[dir="rtl"] ul,html[dir="rtl"] ol{padding-right:1.3em;padding-left:0}
+html[dir="rtl"] code,html[dir="rtl"] kbd,html[dir="rtl"] .ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+html[dir="rtl"] .pill,html[dir="rtl"] .eyebrow{letter-spacing:0}
+
+/* release data filled by amt-release.js */
+.amt-release-notes h2,.amt-release-notes h3{margin:1.1em 0 .4em}
+.amt-release-notes ul{margin:.3em 0 .8em}
+.amt-release-notes li{margin:.25em 0}
+.amt-sha{font-family:Consolas,"Courier New",monospace;font-size:.82em;word-break:break-all;direction:ltr;unicode-bidi:isolate}
+.amt-changelog-item{border:1px solid #16cce033;border-radius:14px;padding:20px 22px;margin:0 0 18px;background:#0b2230aa}
+.amt-changelog-item header{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:baseline;margin-bottom:8px;position:static!important;background:none!important;backdrop-filter:none!important}
+.amt-changelog-item h2{margin:0;font-size:1.35rem}
+.amt-changelog-item .meta{color:#8fa6b5;font-size:.92rem}
+.amt-badge{display:inline-block;background:#16cce0;color:#061923;border-radius:20px;padding:2px 10px;font-size:.78rem;font-weight:800}
+
+/* simple content pages (FAQ, privacy, changelog) */
+.amt-doc{max-width:900px;margin:0 auto;padding:40px 0 70px}
+.amt-doc h1{font-size:clamp(2rem,4vw,2.8rem);margin:.2em 0 .3em}
+.amt-doc h2{margin:1.8em 0 .5em}
+.amt-doc p,.amt-doc li{color:#c3d2dc}
+.amt-doc details{border:1px solid #16cce033;border-radius:12px;padding:14px 18px;margin:0 0 12px;background:#0b2230aa}
+.amt-doc summary{cursor:pointer;font-weight:700;color:#e8f3f8}
+.amt-doc details[open] summary{margin-bottom:8px}
+.amt-doc .lead{font-size:1.1rem;color:#a8bbc8}
+footer .footer-links{margin-top:6px;font-size:.92em}
+footer .footer-links a{color:#7fdbe9;text-decoration:none}
+footer .footer-links a:hover{text-decoration:underline}
+
+/* RTL header: Home on the right, brand on the right (older page styles force left-to-right) */
+html[dir="rtl"] header nav{direction:rtl!important}
+html[dir="rtl"] header nav .navlinks,html[dir="rtl"] header nav .links{direction:rtl!important}
+html[dir="rtl"] .amt-doc .eyebrow,html[dir="rtl"] .amt-doc .lead{text-align:right}
+.amt-doc .eyebrow{display:inline-block;color:#16cce0;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+.amt-doc a{color:#16cce0}

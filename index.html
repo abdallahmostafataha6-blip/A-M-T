@@ -7,7 +7,7 @@
 <title>A-M-T | Revit Plugin for Architectural Modeling &amp; BIM Automation</title>
 <meta name="description" content="Discover A-M-T, a Revit add-in with 17 practical tools for architectural modeling, sheet creation, BIM documentation, productivity and optional MCP integration.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://a-m-t-tools.pages.dev/">
+
 <meta name="theme-color" content="#071824">
 <meta property="og:type" content="website"><meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
 <meta property="og:title" content="A-M-T | Revit Plugin for Architectural Modeling &amp; BIM Automation"><meta property="og:description" content="Explore 17 practical Revit tools for architectural modeling, sheet creation, BIM documentation and productivity.">
@@ -17,7 +17,7 @@
 <meta name="twitter:description" content="17 practical Revit tools for architectural modeling, sheet creation, BIM documentation and productivity.">
 <meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A-M-T — Architectural Modeling Toolkit","alternateName":"A-M-T Revit Plugin","applicationCategory":"DesignApplication","operatingSystem":"Windows","softwareVersion":"1.8.8","description":"A Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.","url":"https://a-m-t-tools.pages.dev/","author":{"@type":"Person","name":"Abdallah Mostafa"},"downloadUrl":"https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest"}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A-M-T — Architectural Modeling Toolkit","alternateName":"A-M-T Revit Plugin","applicationCategory":"DesignApplication","softwareVersion":"1.9.1","description":"A Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.","url":"https://a-m-t-tools.pages.dev/","author":{"@type":"Person","name":"Abdallah Mostafa"},"downloadUrl":"https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"isAccessibleForFree":true,"softwareRequirements":"Autodesk Revit 2023, 2024, 2025 or 2026","operatingSystem":"Windows 10, Windows 11","image":"https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png"}
 </script>
 <style>
 :root{
@@ -397,57 +397,33 @@ header nav .language-switch{direction:ltr!important;unicode-bidi:isolate!importa
 html{scroll-padding-top:90px}
 @media(max-width:760px){header nav{align-items:center!important;flex-direction:row!important;flex-wrap:wrap!important}header nav .navlinks,header nav .links{flex-direction:row!important;flex-wrap:wrap!important}}
 </style>
-<script id="amt-bilingual">
-(function(){
-const dict={"Run the command":"تنفيذ الأمر","A final checklist before using Create Sheets in your project.":"قائمة مراجعة أخيرة قبل استخدام أمر إنشاء اللوحات في مشروعك.","Prepare an existing reference sheet with the layout you want to reuse.":"جهّز لوحة مرجعية موجودة بالتنسيق الذي تريد إعادة استخدامه.","Open Create Sheets from the A-M-T ribbon.":"افتح أمر Create Sheets من شريط أدوات A-M-T.","Select the reference sheet and the view templates to process.":"حدد اللوحة المرجعية وقوالب المشاهد المطلوب معالجتها.","Set the optional exclusion and legend/dependent-view options.":"اضبط خيارات الاستبعاد الاختيارية وخيارات الـ Legends والمشاهد التابعة.","Click Next and enter the first sheet number for each template.":"اضغط Next وأدخل رقم اللوحة الأول لكل قالب.","Click Create Sheets, then review the completion report and inspect the generated sheets.":"اضغط Create Sheets، ثم راجع تقرير الإكمال وافحص اللوحات التي تم إنشاؤها.","Tip:":"نصيحة:","Test the workflow on a controlled project copy first, and verify the reference sheet layout and numbering convention before generating a large batch of sheets.":"اختبر سير العمل أولًا على نسخة من المشروع، وتأكد من تنسيق اللوحة المرجعية ونظام الترقيم قبل إنشاء عدد كبير من اللوحات.","Back to All Tools":"العودة إلى جميع الأدوات","Open PDF Guide":"فتح دليل PDF","Your browser does not support video playback.":"متصفحك لا يدعم تشغيل الفيديو.","Watch Create Sheets in Action":"شاهد أمر Create Sheets أثناء العمل","Follow the command workflow inside Autodesk Revit.":"تابع خطوات تنفيذ الأمر داخل Autodesk Revit.","Create Sheets":"إنشاء اللوحات","Cancel":"إلغاء","Next":"التالي","OK":"موافق","Sheets created":"اللوحات التي تم إنشاؤها","Views placed":"المشاهد التي تم وضعها","Issues":"المشكلات","What to verify":"ما يجب التحقق منه","Confirm the new sheets appear in the Project Browser.":"تأكد من ظهور اللوحات الجديدة في متصفح المشروع.","Check that the sheet numbers follow the intended sequence.":"تحقق من أن أرقام اللوحات تتبع التسلسل المطلوب.","Open representative sheets and verify the view placement and reused layout.":"افتح بعض اللوحات وتحقق من مواضع المشاهد والتنسيق المعاد استخدامه.","Check the completion report for any issues that may need attention.":"راجع تقرير الإكمال للتأكد من عدم وجود مشكلات تحتاج إلى معالجة.","Understand the result":"فهم النتائج","Review the creation report":"راجع تقرير الإنشاء","Create the sheets":"إنشاء اللوحات","Check the generated sheets in Revit":"افحص اللوحات التي تم إنشاؤها في Revit","1. Choose the reference sheet and view templates":"1. اختر اللوحة المرجعية وقوالب المشاهد","2. Configure the options":"2. اضبط الخيارات","3. Set the first sheet number for each template":"3. حدد رقم اللوحة الأول لكل قالب","4. Create the sheets":"4. أنشئ اللوحات","5. Review the creation report":"5. راجع تقرير الإنشاء","6. Check the generated sheets in Revit":"6. افحص اللوحات التي تم إنشاؤها في Revit","Enter the starting number":"أدخل رقم البداية","First sheet number per template":"رقم اللوحة الأول لكل قالب","Number format":"تنسيق الرقم","Source / Numbers":"المصدر / الأرقام","Select the reference sheet":"حدد اللوحة المرجعية","Select view templates":"حدد قوالب المشاهد","Home": "الرئيسية", "Features": "المميزات", "Tools": "الأدوات", "Gallery": "معرض الصور", "Documentation": "التوثيق", "Download": "تحميل", "Contact": "تواصل معنا", "View Guide →": "عرض الدليل ←", "Read more →": "اقرأ المزيد ←", "View on GitHub ↗": "عرض المشروع على GitHub ↗", "All 17 A-M-T Tools": "جميع أدوات A-M-T الـ17", "17 Revit Productivity Tools": "17 أداة لزيادة الإنتاجية في Revit", "Find the right tool for the task": "اعثر على الأداة المناسبة لمهمتك", "Search tools": "ابحث في الأدوات", "All tools": "كل الأدوات", "Showing 17 of 17 tools": "عرض 17 من 17 أداة", "Sheets & Views": "اللوحات والمشاهد", "Walls & Structure": "الحوائط والإنشاء", "Finishes": "التشطيبات", "Settings": "الإعدادات", "Export": "التصدير", "Contact A-M-T": "تواصل مع A-M-T", "Get in touch for questions, feedback, and collaboration.": "تواصل معنا للاستفسارات والملاحظات والتعاون.", "Phone": "الهاتف", "Email": "البريد الإلكتروني", "LinkedIn": "لينكدإن", "Start here": "ابدأ من هنا", "Essential guides": "الأدلة الأساسية", "Command Guides": "أدلة الأوامر", "Command library": "مكتبة الأوامر", "Explore All 17 Tools": "استكشف الأدوات الـ17", "Latest release": "أحدث إصدار", "Inside the toolkit": "محتويات الحزمة", "Getting started": "البدء", "Compatibility:": "التوافق:", "How the command works": "طريقة عمل الأمر", "Visual walkthrough": "شرح مرئي", "Configure the threshold settings": "اضبط إعدادات العتبة", "Create": "إنشاء", "Cancel": "إلغاء", "Next": "التالي", "OK": "موافق", "Renumber": "إعادة الترقيم", "Create Sheets": "إنشاء اللوحات", "Wet Area Views": "مشاهد المناطق الرطبة", "Curtain Wall": "الحائط الساتر", "Master & Parts": "العناصر والأجزاء", "Snap Walls to Grid": "محاذاة الحوائط مع المحاور", "CW Types": "أنواع الحوائط الساترة", "Join in Views": "وصل العناصر في المشاهد", "Plan Tags & Dims": "تاجات وأبعاد المساقط", "Print": "طباعة", "Column Dims": "أبعاد الأعمدة", "Finishes by Room": "تشطيبات الغرف", "Room Finish": "تشطيب الغرفة", "Create Threshold": "إنشاء العتبة", "Language": "اللغة", "TAP Coloring": "تلوين تبويبات الملفات", "MCP Host": "خادم MCP", "Modeling automation": "أتمتة النمذجة", "Documentation & sheets": "التوثيق واللوحات", "Production & output": "الإنتاج والإخراج", "Your Revit workflow.": "سير عملك في Revit.", "One powerful toolkit.": "حزمة واحدة قوية.", "Download Latest Release": "تحميل أحدث إصدار", "Browse Command Guides →": "تصفح أدلة الأوامر ←", "Open Installation Guide (PDF) →": "فتح دليل التثبيت (PDF) ←", "Open Quick Guide (PDF) →": "فتح دليل المستخدم السريع (PDF) ←", "Online Installation Guide": "دليل التثبيت الإلكتروني", "Read Online Guide →": "قراءة الدليل الإلكتروني ←", "Version 1.8.8": "الإصدار 1.8.8", "Current website version": "إصدار الموقع الحالي", "Integrated Revit tools": "أدوات Revit متكاملة", "Operating system": "نظام التشغيل", "Windows": "ويندوز", "A-M-T — Model. Document. Automate.": "A-M-T — نمذج. وثّق. أتمت.", "Developed by Abdallah Mostafa": "تطوير عبدالله مصطفى", "All rights reserved.": "جميع الحقوق محفوظة.", "Select rooms": "اختر الغرف", "Configure views": "اضبط المشاهد", "Create documentation": "إنشاء التوثيق", "Review the creation report": "راجع تقرير الإنشاء", "Create types": "إنشاء الأنواع", "Dimension": "إنشاء الأبعاد", "First sheet number": "رقم اللوحة الأول", "Sheet name": "اسم اللوحة", "Title block type": "نوع التايتل بلوك", "Level": "المستوى", "Scope": "نطاق التطبيق", "Entire project": "المشروع بالكامل", "Active view": "المشهد الحالي", "Current selection": "العناصر المحددة", "Download the release": "تحميل الإصدار", "Follow the package instructions": "اتبع تعليمات الحزمة", "Open Autodesk Revit": "افتح Autodesk Revit"};
-const key='amt-site-language';
-function addSwitch(){
- const nav=document.querySelector('nav'); if(!nav || nav.querySelector('.language-switch')) return;
- const host=nav.querySelector('.navlinks, .links') || nav;
- const box=document.createElement('div'); box.className='language-switch';box.setAttribute('role','group');box.setAttribute('aria-label','Language');
- box.innerHTML='<button type="button" data-lang="en">EN</button><span aria-hidden="true">|</span><button type="button" data-lang="ar">عربي</button>';
- host.appendChild(box);
- box.addEventListener('click',e=>{const b=e.target.closest('button[data-lang]');if(b)setLang(b.dataset.lang)});
-}
-let originals=[];
-function collect(){if(originals.length)return;const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;while(n=walker.nextNode()){const t=n.nodeValue.trim();if(t && dict[t]) originals.push([n,n.nodeValue,t]);}}
-function setLang(lang){
- collect(); const ar=lang==='ar';
- originals.forEach(([node,raw,trim])=>{if(node.isConnected)node.nodeValue=ar?raw.replace(trim,dict[trim]):raw});
- document.documentElement.lang=ar?'ar':'en';document.documentElement.dir=ar?'rtl':'ltr';
- document.querySelectorAll('.language-switch button').forEach(b=>{b.classList.toggle('active',b.dataset.lang===lang);b.setAttribute('aria-pressed',b.dataset.lang===lang?'true':'false')});
- try{localStorage.setItem(key,lang)}catch(e){}
-}
-document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{lang=localStorage.getItem(key)||'en'}catch(e){}setLang(lang)});
-})();
-</script>
-
+<link rel="canonical" href="https://a-m-t-tools.pages.dev/">
+<link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/">
+<link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/">
+<link rel="alternate" hreflang="x-default" href="https://a-m-t-tools.pages.dev/">
+<link rel="stylesheet" href="/amt-site.css">
 </head><body><header><div class="container"><nav>
-<a class="brand" href="index.html"><img src="Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
+<a class="brand" href="/"><img src="/Assets/A-M-T-LOGO.png" alt="A-M-T Logo"><span>A-M-T</span></a>
 <div class="navlinks">
-<a href="index.html">Home</a><a href="features.html">Features</a><a href="tools.html">Tools</a>
-<a href="gallery.html">Gallery</a><a href="documentation.html">Documentation</a><a href="download.html">Download</a><a href="contact.html">Contact</a>
-<div class="language-switch" role="group" aria-label="Language">
-<button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-<span aria-hidden="true">|</span>
-<button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">عربي</button>
-</div></div></nav></div></header>
+<a href="/">Home</a><a href="/features.html">Features</a><a href="/tools.html">Tools</a>
+<a href="/gallery.html">Gallery</a><a href="/documentation.html">Documentation</a><a href="/download.html">Download</a><a href="/contact.html">Contact</a>
+</div><div class="language-switch" role="group" aria-label="Language"><a href="/" hreflang="en" class="active" aria-current="true">EN</a><span aria-hidden="true">|</span><a href="/ar/" hreflang="ar" lang="ar">عربي</a></div></nav></div></header>
 <main>
   <section class="hero container">
-    <img class="hero-banner" src="Assets/A-M-T-Website-Hero.png" alt="A-M-T Architectural Modeling Toolkit for Revit">
+    <img class="hero-banner" src="/Assets/A-M-T-Website-Hero.png" alt="A-M-T Architectural Modeling Toolkit for Revit">
     <h1>Automate Repetitive Revit Work. Focus on Design.</h1>
     <p>A-M-T brings practical architectural modeling, documentation and productivity tools together in one Revit add-in — helping BIM teams spend less time on repetitive tasks and more time delivering coordinated work.</p>
     <div class="hero-actions">
       <a class="btn secondary" href="https://github.com/abdallahmostafataha6-blip/A-M-T" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
-      <a class="btn" href="download.html">Download A-M-T</a>
-      <a class="btn secondary" href="tools.html">Explore 17 Tools</a>
+      <a class="btn" href="/download.html">Download A-M-T — Free</a>
+      <a class="btn secondary" href="/tools.html">Explore 17 Tools</a>
     </div>
   </section>
 
   <section class="section container">
     <div class="stats-grid">
       <div class="stat-card"><strong>17</strong><span>Integrated Revit tools</span></div>
-      <div class="stat-card"><strong data-amt="version">1.8.8</strong><span>Current A-M-T version</span></div>
+      <div class="stat-card"><strong data-amt="version">1.9.1</strong><span>Current A-M-T version</span></div>
       <div class="stat-card"><strong>BIM</strong><span>Modeling · Documentation · Automation</span></div>
     </div>
   </section>
@@ -463,10 +439,10 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
           <li>Keep documentation workflows more consistent</li>
           <li>Access focused tools from one dedicated ribbon</li>
         </ul>
-        <a class="text-link" href="features.html">Discover what A-M-T can do →</a>
+        <a class="text-link" href="/features.html">Discover what A-M-T can do →</a>
       </div>
       <div>
-        <img class="feature-image" src="Assets/Screenshots/01-AMT-Ribbon.png" alt="A-M-T tools organized in the Revit ribbon" loading="lazy">
+        <img class="feature-image" src="/Assets/Screenshots/01-AMT-Ribbon.png" alt="A-M-T tools organized in the Revit ribbon" loading="lazy">
       </div>
     </div>
   </section>
@@ -479,36 +455,49 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
     </div>
     <div class="showcase-grid">
       <article class="showcase-card">
-        <img src="Assets/Screenshots/06-Curtain-Wall-Output.png" alt="Curtain wall automation output in Revit" loading="lazy">
-        <div class="showcase-copy"><h3>Curtain Wall Automation</h3><p>Generate coordinated curtain wall views and sheets from selected types, with templates and naming settings.</p><a href="tools.html">Explore tools →</a></div>
+        <img src="/Assets/Screenshots/06-Curtain-Wall-Output.png" alt="Curtain wall automation output in Revit" loading="lazy">
+        <div class="showcase-copy"><h3>Curtain Wall Automation</h3><p>Generate coordinated curtain wall views and sheets from selected types, with templates and naming settings.</p><a href="/tools.html">Explore tools →</a></div>
       </article>
       <article class="showcase-card">
-        <img src="Assets/Screenshots/08-Create-Sheets-Result.png" alt="Automatically generated Revit sheets" loading="lazy">
-        <div class="showcase-copy"><h3>Automated Sheet Creation</h3><p>Create organized sheets and place views through a repeatable workflow instead of building each sheet manually.</p><a href="tools.html">Explore tools →</a></div>
+        <img src="/Assets/Screenshots/08-Create-Sheets-Result.png" alt="Automatically generated Revit sheets" loading="lazy">
+        <div class="showcase-copy"><h3>Automated Sheet Creation</h3><p>Create organized sheets and place views through a repeatable workflow instead of building each sheet manually.</p><a href="/tools.html">Explore tools →</a></div>
       </article>
       <article class="showcase-card">
-        <img src="Assets/Screenshots/04-MCP-Host.png" alt="A-M-T MCP Host settings window" loading="lazy">
-        <div class="showcase-copy"><h3>AI Integration with MCP</h3><p>Connect a supported AI client to the local A-M-T bridge and choose how model changes are approved.</p><a href="features.html">Explore integration →</a></div>
+        <img src="/Assets/Screenshots/04-MCP-Host.png" alt="A-M-T MCP Host settings window" loading="lazy">
+        <div class="showcase-copy"><h3>AI Integration with MCP</h3><p>Connect a supported AI client to the local A-M-T bridge and choose how model changes are approved.</p><a href="/guides/mcp-host.html">Explore integration →</a></div>
       </article>
     </div>
   </section>
 
   <section class="section container">
+    <div class="section-title">
+      <span class="section-kicker">What's new</span>
+      <h2>New in A-M-T <span data-amt="version">1.9.1</span></h2>
+      <p>The highlights of the latest releases. Every change is listed in the changelog.</p>
+    </div>
+    <div class="showcase-grid">
+      <article class="showcase-card"><div class="showcase-copy"><h3>DIMS EX&amp;IN</h3><p>Interior and exterior dimensions for plans, sections and elevations, on several views at once, with every dimension checked.</p><a href="/guides/dims-ex-in.html">Read the guide →</a></div></article>
+      <article class="showcase-card"><div class="showcase-copy"><h3>Preview before changes</h3><p>Renumber, Rename, Numbering with Line and Room Finish show every new value first, with duplicates in red.</p><a href="/guides/renumber.html">Read the guide →</a></div></article>
+      <article class="showcase-card"><div class="showcase-copy"><h3>Faster, lighter AI</h3><p>New read tools, long jobs that never time out, and far less usage of your AI app's plan.</p><a href="/guides/mcp-host.html">Read the guide →</a></div></article>
+    </div>
+    <p style="text-align:center;margin-top:18px"><a class="text-link" href="/changelog.html">See every change →</a></p>
+  </section>
+  <section class="section container">
     <div class="center-cta">
       <span class="section-kicker">Start exploring</span>
       <h2>Bring your Revit workflow together with A-M-T.</h2>
       <p>Explore the complete toolkit, browse the guides, or get the latest release.</p>
-      <a class="btn" href="tools.html">View All Tools</a>
-      <a class="btn secondary" href="documentation.html">Read Documentation</a>
+      <a class="btn" href="/tools.html">View All Tools</a>
+      <a class="btn secondary" href="/documentation.html">Read Documentation</a>
     </div>
   </section>
 </main>
 <footer>
   <div class="container">
     <strong>A-M-T — Model. Document. Automate.</strong>
-    <p>Developed by Abdallah Mostafa | <span data-amt="version-text">Version 1.8.8</span></p>
+    <p>Developed by Abdallah Mostafa | <span data-amt="version-text">Version 1.9.1</span></p>
     <p>© 2026 A-M-T. All rights reserved.</p>
-  </div>
+  <p class="footer-links"><a href="/changelog.html">Changelog</a> · <a href="/faq.html">FAQ</a> · <a href="/privacy.html">Privacy</a> · <a href="https://github.com/abdallahmostafataha6-blip/A-M-T/issues/new/choose">Report an issue</a></p></div>
 </footer>
 <script>
 (() => {
@@ -539,41 +528,5 @@ document.addEventListener('DOMContentLoaded',()=>{addSwitch();let lang='en';try{
   items.forEach(el => observer.observe(el));
 })();
 </script>
-
-
-<script id="amt-language-system">
-(() => {
- const translations = {"Home": "الرئيسية", "Features": "المميزات", "Tools": "الأدوات", "Gallery": "معرض الصور", "Documentation": "التوثيق", "Download": "تحميل", "Contact": "تواصل معنا", "Automate Repetitive Revit Work. Focus on Design.": "أتمت أعمال Revit المتكررة وركّز على التصميم.", "A-M-T brings practical architectural modeling, documentation and productivity tools together in one Revit add-in — helping BIM teams spend less time on repetitive tasks and more time delivering coordinated work.": "يجمع A-M-T أدوات عملية للنمذجة المعمارية والتوثيق ورفع الإنتاجية داخل إضافة واحدة لبرنامج Revit، لمساعدة فرق BIM على تقليل المهام المتكررة والتركيز على تقديم أعمال منسقة.", "View on GitHub ↗": "عرض المشروع على GitHub ↗", "Download A-M-T": "تحميل A-M-T", "Explore 17 Tools": "استكشف 17 أداة", "Integrated Revit tools": "أداة متكاملة لـ Revit", "Current A-M-T version": "إصدار A-M-T الحالي", "Modeling · Documentation · Automation": "النمذجة · التوثيق · الأتمتة", "Built for production": "مصمم لبيئة العمل الفعلية", "Less repetitive work. More reliable workflows.": "مهام متكررة أقل وسير عمل أكثر موثوقية.", "A-M-T is designed around everyday architectural BIM tasks: organizing views and sheets, automating curtain wall documentation, managing finishes, and streamlining model operations.": "صُمم A-M-T لمهام BIM المعمارية اليومية، مثل تنظيم الـ Views والـ Sheets، وأتمتة توثيق Curtain Walls، وإدارة التشطيبات، وتسهيل عمليات النموذج.", "Reduce repetitive manual steps in Revit": "تقليل الخطوات اليدوية المتكررة في Revit", "Keep documentation workflows more consistent": "الحفاظ على اتساق أعمال التوثيق", "Access focused tools from one dedicated ribbon": "الوصول إلى الأدوات من شريط أدوات موحد", "Discover what A-M-T can do →": "اكتشف إمكانيات A-M-T ←", "Featured workflows": "سير العمل المميز", "See A-M-T in action": "شاهد A-M-T أثناء العمل", "A closer look at three workflows that help turn repetitive tasks into guided operations.": "نظرة أقرب على ثلاثة مسارات عمل تحوّل المهام المتكررة إلى عمليات منظمة.", "Curtain Wall Automation": "أتمتة Curtain Wall", "Generate coordinated curtain wall views and sheets from selected types, with templates and naming settings.": "إنشاء Views وSheets منسقة للـ Curtain Walls وفق الأنواع المحددة والقوالب وإعدادات التسمية.", "Explore tools →": "استكشف الأدوات ←", "Automated Sheet Creation": "إنشاء Sheets تلقائيًا", "Create organized sheets and place views through a repeatable workflow instead of building each sheet manually.": "إنشاء Sheets منظمة ووضع الـ Views من خلال خطوات قابلة للتكرار بدلًا من إعداد كل Sheet يدويًا.", "AI Integration with MCP": "التكامل مع الذكاء الاصطناعي عبر MCP", "Connect a supported AI client to the local A-M-T bridge and choose how model changes are approved.": "ربط عميل ذكاء اصطناعي مدعوم بجسر A-M-T المحلي وتحديد آلية الموافقة على تغييرات النموذج.", "Explore integration →": "استكشف التكامل ←", "Start exploring": "ابدأ الاستكشاف", "Bring your Revit workflow together with A-M-T.": "اجمع مهام Revit اليومية في مكان واحد مع A-M-T.", "Explore the complete toolkit, browse the guides, or get the latest release.": "استكشف الأدوات، وتصفح الأدلة، أو احصل على أحدث إصدار.", "View All Tools": "عرض كل الأدوات", "Read Documentation": "قراءة التوثيق", "A-M-T — Model. Document. Automate.": "A-M-T — نمذجة. توثيق. أتمتة.", "Developed by Abdallah Mostafa | Version 1.8.8": "تطوير: عبد الله مصطفى | الإصدار 1.8.8", "© 2026 A-M-T. All rights reserved.": "© 2026 A-M-T. جميع الحقوق محفوظة."};
- const reverse = Object.fromEntries(Object.entries(translations).map(([en,ar])=>[ar,en]));
- const buttons = [...document.querySelectorAll('.lang-btn')];
- const originalTitle = document.title;
- function apply(lang) {
-   const ar = lang === 'ar';
-   document.documentElement.lang = ar ? 'ar' : 'en';
-   document.documentElement.dir = ar ? 'rtl' : 'ltr';
-   document.title = ar ? 'A-M-T | إضافة Revit للنمذجة المعمارية وأتمتة BIM' : originalTitle;
-   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-   let n;
-   while ((n = walker.nextNode())) {
-     if (!n.parentElement || n.parentElement.closest('script,style,noscript')) continue;
-     const t = n.nodeValue.trim();
-     if (!t) continue;
-     const replacement = ar ? translations[t] : reverse[t];
-     if (replacement) n.nodeValue = n.nodeValue.replace(t, replacement);
-   }
-   buttons.forEach(b => {
-     const active = b.dataset.lang === lang;
-     b.classList.toggle('active', active);
-     b.setAttribute('aria-pressed', active ? 'true' : 'false');
-   });
-   try { localStorage.setItem('amt-site-language', lang); } catch(e) {}
- }
- buttons.forEach(b => b.addEventListener('click', () => apply(b.dataset.lang)));
- let lang = 'en';
- try { lang = localStorage.getItem('amt-site-language') || 'en'; } catch(e) {}
- apply(lang);
-})();
-</script>
-
-<script src="amt-release.js" defer></script>
+<script src="/amt-release.js" defer></script>
 </body></html>

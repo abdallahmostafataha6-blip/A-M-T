@@ -1,0 +1,12 @@
+name: Suggest an idea
+description: A new tool or an improvement to an existing one
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / الفكرة
+      description: What should A-M-T do, and in which part of your work would it help?
+    validations:
+      required: true

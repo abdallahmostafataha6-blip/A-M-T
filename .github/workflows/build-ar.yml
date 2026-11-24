@@ -1,0 +1,33 @@
+# Rebuilds the Arabic site (/ar) and sitemap.xml whenever an English page or the Arabic dictionary changes.
+# Texts without a translation stay in English and are listed in i18n/missing.txt.
+name: Build Arabic pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.html'
+      - 'guides/**'
+      - 'i18n/ar.json'
+      - 'tools/build_ar.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-ar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build /ar
+        run: python tools/build_ar.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ar sitemap.xml i18n/missing.txt
+          git diff --cached --quiet && echo "Arabic pages already up to date" || (git commit -m "Rebuild Arabic pages" && git push)

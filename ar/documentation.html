@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>توثيق A-M-T | الأدلة والتثبيت</title>
+<meta name="description" content="تصفح توثيق A-M-T لبرنامج Revit: تعليمات التثبيت، والدليل السريع، و17 دليلًا مستقلًا للأوامر لسير عمل BIM المعماري.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<meta name="theme-color" content="#071824">
+<meta property="og:type" content="website"><meta property="og:site_name" content="A-M-T | Architectural Modeling Toolkit">
+<meta property="og:title" content="توثيق A-M-T | الأدلة والتثبيت"><meta property="og:description" content="ستجد مساعدة التثبيت، والدليل السريع لـ A-M-T، و17 دليلًا مستقلًا لأوامر Revit.">
+<meta property="og:url" content="https://a-m-t-tools.pages.dev/ar/documentation.html">
+<meta property="og:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="توثيق A-M-T | الأدلة والتثبيت">
+<meta name="twitter:description" content="مساعدة التثبيت، والدليل السريع لـ A-M-T، و17 دليلًا مستقلًا لأوامر Revit.">
+<meta name="twitter:image" content="https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"A-M-T — Architectural Modeling Toolkit","alternateName":"A-M-T Revit Plugin","applicationCategory":"DesignApplication","softwareVersion":"1.9.1","description":"A Revit add-in with 17 tools for architectural modeling, BIM automation, documentation, and AI integration.","url":"https://a-m-t-tools.pages.dev/","author":{"@type":"Person","name":"Abdallah Mostafa"},"downloadUrl":"https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"isAccessibleForFree":true,"softwareRequirements":"Autodesk Revit 2023, 2024, 2025 or 2026","operatingSystem":"Windows 10, Windows 11","image":"https://a-m-t-tools.pages.dev/Assets/A-M-T-Website-Hero.png"}
+</script>
+<style>
+:root{
+  --bg:#071824;
+  --panel:#102838;
+  --cyan:#16cce0;
+  --text:#f3f8fc;
+  --muted:#a8bbc8;
+  --line:#ffffff18;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,90%);margin:auto}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#071824ed;
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(12px);
+}
+nav{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:23px;
+  font-weight:bold;
+  flex-shrink:0;
+}
+.brand img{width:45px;height:45px;object-fit:contain}
+.navlinks{
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+  color:var(--muted);
+  font-size:14px;
+}
+.navlinks a:hover{color:var(--cyan)}
+
+.hero{padding:85px 0 75px;text-align:center}
+.hero-banner{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:14px;
+  border:1px solid #ffffff20;
+  margin:0 auto 28px;
+}
+.hero p{
+  color:var(--muted);
+  font-size:18px;
+  max-width:700px;
+  margin:20px auto 30px;
+}
+.btn{
+  display:inline-block;
+  padding:13px 25px;
+  border-radius:7px;
+  background:var(--cyan);
+  color:#061923;
+  font-weight:bold;
+  margin:6px;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #16cce044}
+.btn.secondary{
+  background:transparent;
+  color:var(--text);
+  border:1px solid #ffffff50;
+}
+
+.section{padding:75px 0}
+.section-title{text-align:center;margin-bottom:42px}
+.section-title h2{font-size:34px;margin:0 0 8px}
+.section-title p{color:var(--muted);margin:0}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.feature-card{
+  background:var(--panel);
+  padding:25px;
+  border:1px solid var(--line);
+  border-radius:12px;
+}
+.feature-card h3{color:var(--cyan);margin-top:0}
+.feature-card p{color:var(--muted);margin-bottom:0}
+
+/* Tool cards and icon panels */
+.tools-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+.tool-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.tool-card:hover{
+  transform:translateY(-5px);
+  border-color:var(--cyan);
+  box-shadow:0 12px 28px #00000025;
+}
+.tool-icon-panel{
+  height:185px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:linear-gradient(135deg,#102838 0%,#0b3548 55%,#07536a 100%);
+  background-size:150% 150%;
+  transition:background-position .45s ease,background-color .45s ease;
+}
+.tool-card:hover .tool-icon-panel{
+  background-position:100% 100%;
+}
+.tool-icon-panel img{
+  display:block;
+  width:112px;
+  height:112px;
+  object-fit:contain;
+  transition:transform .4s ease, filter .4s ease;
+}
+
+.tool-card:hover .tool-icon-panel img{
+  animation: iconFloat .9s ease-in-out infinite alternate;
+  filter:drop-shadow(0 8px 12px #16cce055);
+}
+
+@keyframes iconFloat{
+  0%{
+    transform:translateY(0) rotate(-3deg) scale(1.08);
+  }
+  100%{
+    transform:translateY(-12px) rotate(4deg) scale(1.2);
+  }
+}.tool-info{padding:18px}
+.tool-info h3{margin:0 0 8px;font-size:18px}
+.tool-info p{
+  color:var(--muted);
+  font-size:14px;
+  min-height:42px;
+}
+.tool-info a{
+  display:inline-block;
+  color:var(--cyan);
+  font-weight:bold;
+  font-size:14px;
+}
+.tool-info a:hover{text-decoration:underline}
+
+/* Screenshot gallery */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.gallery-item img{
+  width:100%;
+  border-radius:10px;
+  border:1px solid #ffffff25;
+  display:block;
+}
+.gallery-item h3{font-size:17px;margin:10px 0 0}
+
+.docs{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:15px;
+}
+.doc{
+  background:var(--panel);
+  padding:20px;
+  border-radius:9px;
+  border:1px solid var(--line);
+}
+.doc a{color:var(--cyan);font-weight:bold}
+.doc p{color:var(--muted);margin-bottom:0}
+
+.cta{
+  background:linear-gradient(120deg,#103347,#07536a);
+  padding:55px 25px;
+  border-radius:15px;
+  text-align:center;
+}
+.cta p{color:var(--muted)}
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 0;
+  color:var(--muted);
+  text-align:center;
+}
+footer p{margin:5px 0}
+
+@media(max-width:850px){
+  .tools-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .features{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  nav{padding:12px 0;align-items:flex-start;flex-direction:column}
+  .navlinks{gap:14px;font-size:13px}
+  .brand{font-size:20px}
+  .gallery,.docs{grid-template-columns:1fr}
+  .hero{padding:55px 0}
+  .section{padding:55px 0}
+  .section-title h2{font-size:28px}
+}
+@media(max-width:550px){
+  .tools-grid{grid-template-columns:1fr}
+  .tool-icon-panel{height:170px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    scroll-behavior:auto!important;
+    transition:none!important;
+    animation:none!important;
+  }
+}
+
+.page-heading{padding:38px 0 0;text-align:center}.page-heading h1{font-size:clamp(28px,4vw,40px);margin:0}
+.navlinks a{white-space:nowrap}.feature-card a{color:var(--cyan);font-weight:bold}
+
+/* A-M-T Motion System */
+@keyframes amt-page-enter {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes amt-slide-left {
+  from { opacity: 0; transform: translateX(-42px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes amt-slide-right {
+  from { opacity: 0; transform: translateX(42px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes amt-rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+body { animation: amt-page-enter .45s ease-out both; }
+.gallery-item, .tool-card, .feature-card, .doc, .contact-card {
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+  will-change: transform;
+}
+.gallery-item:hover, .tool-card:hover, .feature-card:hover, .doc:hover, .contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px #00000030;
+  border-color: #16cce080;
+}
+.tool-icon-panel img, .tool-card img, .brand img, .btn {
+  transition: transform .28s ease, filter .28s ease, box-shadow .28s ease;
+}
+.tool-card:hover .tool-icon-panel img { transform: scale(1.09) rotate(-3deg); }
+.brand:hover img { transform: rotate(-5deg) scale(1.06); }
+.btn:hover { transform: translateY(-3px) scale(1.02); }
+.amt-reveal { opacity: 0; }
+.amt-reveal.amt-visible { animation: amt-rise .65s cubic-bezier(.2,.7,.2,1) both; }
+.gallery-item.amt-from-left.amt-visible { animation: amt-slide-left .72s cubic-bezier(.2,.7,.2,1) both; }
+.gallery-item.amt-from-right.amt-visible { animation: amt-slide-right .72s cubic-bezier(.2,.7,.2,1) both; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  .amt-reveal { opacity: 1 !important; }
+}
+
+
+/* Documentation page refresh */
+.docs-hero{padding:58px 0 24px;text-align:center}
+.docs-hero .eyebrow{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.docs-hero h1{font-size:clamp(30px,4vw,44px);margin:8px 0}
+.docs-hero p{max-width:720px;margin:10px auto 0;color:var(--muted);font-size:17px}
+.docs-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px auto 0}
+.docs-stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+.docs-stat strong{display:block;color:var(--cyan);font-size:24px}
+.docs-stat span{color:var(--muted);font-size:13px}
+.docs-section-head{margin-bottom:24px}
+.docs-section-head .eyebrow{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.docs-section-head h2{font-size:28px;margin:4px 0}
+.docs-section-head p{color:var(--muted);margin:0}
+.docs-primary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.docs-primary-card{position:relative;background:linear-gradient(145deg,#102838,#0b2a3a);border:1px solid var(--line);border-radius:14px;padding:25px;min-height:205px;display:flex;flex-direction:column;align-items:flex-start}
+.docs-primary-card .doc-icon{width:44px;height:44px;border-radius:10px;background:#0c5367;color:var(--cyan);display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+.docs-primary-card h3{font-size:19px;margin:0 0 7px}
+.docs-primary-card p{color:var(--muted);font-size:14px;margin:0 0 18px;max-width:480px}
+.docs-primary-card a{color:var(--cyan);font-weight:700;margin-top:auto}
+.docs-command-panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px}
+.docs-command-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.docs-command-top h3{margin:0;font-size:21px}
+.docs-command-top p{color:var(--muted);margin:4px 0 0;font-size:14px}
+.docs-command-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.docs-command-list span{display:block;padding:11px 13px;border:1px solid var(--line);border-radius:8px;background:#0a202e;color:var(--text);font-size:13px}
+
+.docs-command-list span:before{content:"✓";color:var(--cyan);margin-right:8px}
+.docs-note{color:var(--muted);font-size:13px;margin:16px 0 0}
+.docs-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.docs-step{border-left:2px solid var(--cyan);padding:5px 0 5px 16px}
+.docs-step strong{display:block;margin-bottom:4px}
+.docs-step span{color:var(--muted);font-size:14px}
+.docs-faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.docs-faq details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.docs-faq summary{font-weight:700;cursor:pointer}
+.docs-faq details p{color:var(--muted);font-size:14px;margin:10px 0 0}
+.docs-cta{background:linear-gradient(120deg,#103347,#07536a);border:1px solid #16cce044;border-radius:15px;text-align:center;padding:38px 22px}
+.docs-cta p{color:var(--muted)}
+@media(max-width:800px){.docs-command-list{grid-template-columns:repeat(2,minmax(0,1fr))}.docs-steps{grid-template-columns:1fr}}
+@media(max-width:600px){.docs-stats,.docs-primary-grid,.docs-faq{grid-template-columns:1fr}.docs-command-list{grid-template-columns:1fr}.docs-hero{padding-top:42px}}
+
+
+.docs-command-list a{display:block;padding:11px 13px;border:1px solid var(--line);border-radius:8px;background:#0a202e;color:var(--text);font-size:13px;text-decoration:none;transition:border-color .2s ease,color .2s ease,transform .2s ease}
+.docs-command-list a:before{content:"↗";color:var(--cyan);margin-right:8px}
+.docs-command-list a:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
+
+</style>
+<style>
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.96)!important;backdrop-filter:blur(12px)}
+html{scroll-padding-top:90px}
+.language-switch{display:inline-flex;align-items:center;gap:7px;margin-inline-start:14px;white-space:nowrap}
+.language-switch button{background:transparent;border:1px solid #16cce055;color:#a8bbc8;border-radius:6px;padding:6px 10px;cursor:pointer;font-weight:700}
+.language-switch button.active{background:#16cce0;color:#061923;border-color:#16cce0}
+html[dir="rtl"] body{text-align:right}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{direction:ltr!important}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{flex-direction:row!important}
+html[dir="rtl"] .hero,html[dir="rtl"] .section-title,html[dir="rtl"] footer{text-align:center}
+html[dir="rtl"] .notice{border-left:0;border-right:3px solid var(--cyan);border-radius:8px 0 0 8px}
+html[dir="rtl"] th,html[dir="rtl"] td{text-align:right}
+@media(max-width:760px){.language-switch{margin:4px 0 0}}
+
+/* Stable navigation: keep the header layout LTR in both site languages */
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.97)!important;backdrop-filter:blur(12px)}
+header nav{direction:ltr!important;flex-direction:row!important; text-align:left!important}
+header nav .brand{direction:ltr!important;order:0!important}
+header nav .navlinks,header nav .links{direction:ltr!important;flex-direction:row!important;order:1!important}
+header nav .language-switch{direction:ltr!important;unicode-bidi:isolate!important;margin-inline-start:14px!important}
+html{scroll-padding-top:90px}
+@media(max-width:760px){header nav{align-items:center!important;flex-direction:row!important;flex-wrap:wrap!important}header nav .navlinks,header nav .links{flex-direction:row!important;flex-wrap:wrap!important}}
+</style>
+<link rel="canonical" href="https://a-m-t-tools.pages.dev/ar/documentation.html">
+<link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/documentation.html">
+<link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/documentation.html">
+<link rel="alternate" hreflang="x-default" href="https://a-m-t-tools.pages.dev/documentation.html">
+<link rel="stylesheet" href="/amt-site.css">
+</head><body><header><div class="container"><nav>
+<a class="brand" href="/ar/"><img src="/Assets/A-M-T-LOGO.png" alt="شعار A-M-T"><span>A-M-T</span></a>
+<div class="navlinks">
+<a href="/ar/">الرئيسية</a><a href="/ar/features.html">المميزات</a><a href="/ar/tools.html">الأدوات</a>
+<a href="/ar/gallery.html">المعرض</a><a href="/ar/documentation.html">التوثيق</a><a href="/ar/download.html">تحميل</a><a href="/ar/contact.html">تواصل معنا</a>
+</div><div class="language-switch" role="group" aria-label="اللغة"><a href="/documentation.html" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><a href="/ar/documentation.html" hreflang="ar" class="active" aria-current="true">عربي</a></div></nav></div></header>
+<main>
+  <section class="docs-hero container">
+    <span class="eyebrow">مركز معرفة A-M-T</span>
+    <h1>التوثيق والأدلة</h1>
+    <p>اعثر على الدليل المناسب لتثبيت A-M-T، والتعرف على الأدوات، واتباع خطوات كل أمر.</p>
+    <div class="docs-stats">
+      <div class="docs-stat"><strong>17</strong><span>أدلة الأوامر المستقلة</span></div>
+      <div class="docs-stat"><strong data-amt="version">1.9.1</strong><span>إصدار الأدوات الموثّق</span></div>
+      <div class="docs-stat"><strong>PDF + على الإنترنت</strong><span>الأدلة ومساعدة التثبيت</span></div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="docs-section-head">
+      <span class="eyebrow">ابدأ من هنا</span>
+      <h2>الأدلة الأساسية</h2>
+      <p>اختر الدليل المناسب لما تريد عمله.</p>
+    </div>
+    <div class="docs-primary-grid">
+      <article class="docs-primary-card">
+        <div class="doc-icon">↓</div>
+        <h3>دليل التثبيت</h3>
+        <p>تعليمات مصوّرة خطوة بخطوة لتثبيت A-M-T وتجهيزه للاستخدام في Revit.</p>
+        <a href="/Documentation/AMT_1.8.8_Installation_Guide_Annotated.pdf" target="_blank" rel="noopener">افتح دليل التثبيت (PDF) ←</a>
+      </article>
+      <article class="docs-primary-card">
+        <div class="doc-icon">▤</div>
+        <h3>الدليل السريع للمستخدم</h3>
+        <p>مقدمة مختصرة عن أدوات A-M-T وأوامرها ومسارات العمل المتاحة.</p>
+        <a href="/Documentation/AMT_1.8.8_Quick_Guide.pdf" target="_blank" rel="noopener">افتح الدليل السريع (PDF) ←</a>
+      </article>
+      <article class="docs-primary-card">
+        <div class="doc-icon">⌘</div>
+        <h3>دليل التثبيت على الإنترنت</h3>
+        <p>اقرأ تعليمات التثبيت كمستند نصي مباشرة من توثيق المشروع.</p>
+        <a href="/ar/guides/installation.html">اقرأ الدليل على الإنترنت ←</a>
+      </article>
+      <article class="docs-primary-card">
+        <div class="doc-icon">▦</div>
+        <h3>أدلة الأوامر</h3>
+        <p>أدلة PDF تفصيلية مستقلة للأوامر الـ17 في A-M-T.</p>
+        <a href="#command-library">تصفح أدلة الأوامر ←</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="docs-section-head">
+      <span class="eyebrow">مكتبة الأوامر</span>
+      <h2>استكشف أدلة الأوامر الـ17</h2>
+      <p>تعرض المجموعة التالية الأوامر الـ17 الموثّقة. افتح مجموعة الأدلة لاختيار ملف PDF المناسب.</p>
+    </div>
+    <div class="docs-command-panel" id="command-library">
+      <div class="docs-command-top">
+        <div><h3>مكتبة أوامر A-M-T</h3><p>17 أداة · دليل PDF لكل أداة</p></div>
+        <a class="btn" href="#command-guide-links">تصفح الأدلة الـ17 على الإنترنت</a>
+      </div>
+      <div class="docs-command-list" id="command-guide-links">
+<a href="/ar/guides/renumber.html">Renumber</a>
+<a href="/ar/guides/create-sheets.html">Create Sheets</a>
+<a href="/ar/guides/wet-area-views.html">Wet Area Views</a>
+<a href="/ar/guides/curtain-wall.html">Curtain Wall</a>
+<a href="/ar/guides/master-and-parts.html">Master &amp; Parts</a>
+<a href="/ar/guides/snap-walls-to-grid.html">Snap Walls to Grid</a>
+<a href="/ar/guides/cw-types.html">CW Types</a>
+<a href="/ar/guides/join-in-views.html">Join in Views</a>
+<a href="/ar/guides/dims-ex-in.html">DIMS EX&amp;IN</a>
+<a href="/ar/guides/print.html">Print</a>
+<a href="/ar/guides/column-dims.html">Column Dims</a>
+<a href="/ar/guides/finishes-by-room.html">Finishes by Room</a>
+<a href="/ar/guides/room-finish.html">Room Finish</a>
+<a href="/ar/guides/create-threshold.html">Create Threshold</a>
+<a href="/ar/guides/language.html">اللغة</a>
+<a href="/ar/guides/tap-coloring.html">TAP Coloring</a>
+<a href="/ar/guides/mcp-host.html">MCP Host</a>
+</div>
+      <p class="docs-note">افتح مجموعة أدلة الأوامر أعلاه للوصول إلى ملفات PDF المستقلة.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="docs-section-head">
+      <span class="eyebrow">المسار المقترح</span>
+      <h2>جديد على A-M-T؟</h2>
+      <p>اتبع هذا التسلسل البسيط للبدء.</p>
+    </div>
+    <div class="docs-steps">
+      <div class="docs-step"><strong>01 · التثبيت</strong><span>اتبع دليل التثبيت المصوّر.</span></div>
+      <div class="docs-step"><strong>02 · تعرّف على الأدوات</strong><span>استخدم الدليل السريع لاستكشاف الأدوات.</span></div>
+      <div class="docs-step"><strong>03 · تعلّم أمرًا</strong><span>افتح الدليل المستقل للأداة التي تريد استخدامها.</span></div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="docs-section-head">
+      <span class="eyebrow">المساعدة</span>
+      <h2>الأسئلة الشائعة</h2>
+    </div>
+    <div class="docs-faq">
+      <details><summary>من أين أبدأ إذا لم يكن A-M-T مثبتًا؟</summary><p>ابدأ بدليل التثبيت المصوّر، ثم استخدم الدليل السريع للتعرف على الأدوات.</p></details>
+      <details><summary>أين أجد تعليمات أمر معين؟</summary><p>افتح مجموعة أدلة الأوامر واختر ملف PDF المطابق لاسم الأمر.</p></details>
+      <details><summary>هل أدلة الأوامر منفصلة عن الدليل السريع؟</summary><p>نعم. يقدم الدليل السريع نظرة عامة، بينما تحتوي أدلة الأوامر على توثيق مستقل لكل أمر من الأوامر الـ17.</p></details>
+      <details><summary>ما الإصدار الذي تغطيه هذه الأدلة؟</summary><p>دليل التثبيت والدليل السريع المرتبطان هنا هما مستندات الإصدار 1.8.8 من A-M-T.</p></details>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="docs-cta">
+      <h2>تحتاج أحدث إصدار من A-M-T؟</h2>
+      <p>زر صفحة الإصدارات الرسمية لتحميل الإصدار الحالي.</p>
+      <a class="btn" href="https://github.com/abdallahmostafataha6-blip/A-M-T/releases/latest" target="_blank" rel="noopener">تحميل A-M-T</a>
+      <a class="btn secondary" href="/ar/tools.html">استكشف كل الأدوات</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <strong>A-M-T — نمذجة. توثيق. أتمتة.</strong>
+    <p>تطوير عبدالله مصطفى | <span data-amt="version-text">الإصدار 1.9.1</span></p>
+    <p>© 2026 A-M-T. جميع الحقوق محفوظة.</p>
+  <p class="footer-links"><a href="/ar/changelog.html">سجل الإصدارات</a> · <a href="/ar/faq.html">الأسئلة الشائعة</a> · <a href="/ar/privacy.html">الخصوصية</a> · <a href="https://github.com/abdallahmostafataha6-blip/A-M-T/issues/new/choose">أبلغ عن مشكلة</a></p></div>
+</footer>
+<script>
+(() => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealSelectors = '.tool-card, .feature-card, .doc, .contact-card, .gallery-item, .section-title, .cta, .docs-primary-card, .docs-command-panel, .docs-step, .docs-faq details, .docs-stat';
+  const items = [...document.querySelectorAll(revealSelectors)];
+  items.forEach((el, i) => {
+    el.classList.add('amt-reveal');
+    if (el.classList.contains('gallery-item')) {
+      el.classList.add(i % 2 === 0 ? 'amt-from-left' : 'amt-from-right');
+    }
+    const siblings = el.parentElement ? [...el.parentElement.children].filter(x => x.matches && x.matches(revealSelectors)) : [];
+    const index = Math.max(0, siblings.indexOf(el));
+    el.style.animationDelay = `${Math.min(index * 90, 450)}ms`;
+  });
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    items.forEach(el => el.classList.add('amt-visible'));
+    return;
+  }
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('amt-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+  items.forEach(el => observer.observe(el));
+})();
+</script>
+
+<script src="/amt-release.js" defer></script>
+</body></html>

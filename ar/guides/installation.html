@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل تثبيت A-M-T على الإنترنت</title>
+<meta name="description" content="اقرأ تعليمات تثبيت A-M-T على الإنترنت، وتشمل اختيار إصدار Revit، وإعداد تطبيقات الذكاء الاصطناعي الاختياري، وإنهاء التثبيت، والتحقق من شريط الأدوات.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+:root{--bg:#071824;--panel:#102838;--cyan:#16cce0;--text:#f3f8fc;--muted:#a8bbc8;--line:#ffffff18}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.container{width:min(980px,90%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#071824ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-size:23px;font-weight:bold;flex-shrink:0}
+.brand img{width:45px;height:45px;object-fit:contain}
+.navlinks{display:flex;flex-wrap:wrap;gap:22px;color:var(--muted);font-size:14px}
+.navlinks a:hover{color:var(--cyan)}
+main{padding:60px 0 80px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(30px,4vw,44px);line-height:1.15;margin:10px 0}
+.intro{color:var(--muted);font-size:17px;max-width:760px;margin-bottom:30px}
+.step{background:linear-gradient(145deg,#102838,#0b2a3a);border:1px solid var(--line);border-radius:14px;padding:25px 28px;margin:16px 0}
+.step-label{color:var(--cyan);font-size:13px;font-weight:700;letter-spacing:1px;margin-bottom:12px}
+ol{margin:0;padding-left:22px}li{padding:4px 0}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;background:var(--cyan);color:#061923;font-weight:bold}
+.btn.secondary{background:transparent;color:var(--text);border:1px solid #ffffff50}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);text-align:center;font-size:13px}
+@media(max-width:700px){nav{padding:12px 0;align-items:flex-start;flex-direction:column}.navlinks{gap:14px;font-size:13px}.step{padding:20px}}
+</style>
+
+<style>
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.96)!important;backdrop-filter:blur(12px)}
+html{scroll-padding-top:90px}
+.language-switch{display:inline-flex;align-items:center;gap:7px;margin-inline-start:14px;white-space:nowrap}
+.language-switch button{background:transparent;border:1px solid #16cce055;color:#a8bbc8;border-radius:6px;padding:6px 10px;cursor:pointer;font-weight:700}
+.language-switch button.active{background:#16cce0;color:#061923;border-color:#16cce0}
+html[dir="rtl"] body{text-align:right}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{direction:ltr!important}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .links{flex-direction:row!important}
+html[dir="rtl"] .hero,html[dir="rtl"] .section-title,html[dir="rtl"] footer{text-align:center}
+html[dir="rtl"] .notice{border-left:0;border-right:3px solid var(--cyan);border-radius:8px 0 0 8px}
+html[dir="rtl"] th,html[dir="rtl"] td{text-align:right}
+@media(max-width:760px){.language-switch{margin:4px 0 0}}
+
+/* Stable navigation: keep the header layout LTR in both site languages */
+header{position:sticky!important;top:0!important;z-index:1000!important;width:100%;background:rgba(7,24,36,.97)!important;backdrop-filter:blur(12px)}
+header nav{direction:ltr!important;flex-direction:row!important; text-align:left!important}
+header nav .brand{direction:ltr!important;order:0!important}
+header nav .navlinks,header nav .links{direction:ltr!important;flex-direction:row!important;order:1!important}
+header nav .language-switch{direction:ltr!important;unicode-bidi:isolate!important;margin-inline-start:14px!important}
+html{scroll-padding-top:90px}
+@media(max-width:760px){header nav{align-items:center!important;flex-direction:row!important;flex-wrap:wrap!important}header nav .navlinks,header nav .links{flex-direction:row!important;flex-wrap:wrap!important}}
+</style>
+<link rel="canonical" href="https://a-m-t-tools.pages.dev/ar/guides/installation.html">
+<link rel="alternate" hreflang="en" href="https://a-m-t-tools.pages.dev/guides/installation.html">
+<link rel="alternate" hreflang="ar" href="https://a-m-t-tools.pages.dev/ar/guides/installation.html">
+<link rel="alternate" hreflang="x-default" href="https://a-m-t-tools.pages.dev/guides/installation.html">
+<link rel="stylesheet" href="/amt-site.css">
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="brand" href="/ar/"><img src="/Assets/A-M-T-LOGO.png" alt="شعار A-M-T"><span>A-M-T</span></a>
+<div class="navlinks">
+<a href="/ar/">الرئيسية</a><a href="/ar/features.html">المميزات</a><a href="/ar/tools.html">الأدوات</a>
+<a href="/ar/gallery.html">المعرض</a><a href="/ar/documentation.html">التوثيق</a><a href="/ar/download.html">تحميل</a><a href="/ar/contact.html">تواصل معنا</a>
+</div><div class="language-switch" role="group" aria-label="اللغة"><a href="/guides/installation.html" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><a href="/ar/guides/installation.html" hreflang="ar" class="active" aria-current="true">عربي</a></div></nav></div></header>
+<main class="container">
+<span class="eyebrow">مركز معرفة A-M-T · <span data-amt="version-text">الإصدار 1.9.1</span></span>
+<h1>دليل التثبيت على الإنترنت</h1>
+<p class="intro">اتبع هذه الخطوات الأربع لتثبيت A-M-T، واختيار مكونات التكامل الاختيارية مع الذكاء الاصطناعي، والتأكد من ظهور الإضافة في Autodesk Revit.</p>
+<section class="step"><div class="step-label">قبل البدء — تحذير Windows</div><ol><li>1. حمّل ملف التثبيت من صفحة التحميل (يعرض دائمًا أحدث إصدار).</li><li>2. المثبّت غير موقّع بشهادة مدفوعة، لذلك قد يظهر في Windows "Windows protected your PC". اضغط <b>More info</b>، ثم <b>Run anyway</b>.</li><li>3. للتأكد أن الملف هو الأصلي، قارن قيمة SHA-256 (الظاهرة في صفحة التحميل) بالملف الذي حمّلته: شغّل في PowerShell الأمر <code>Get-FileHash .\A-M-T-Setup-1.9.1.exe</code>.</li></ol></section>
+<section class="step"><div class="step-label">الخطوة 01 — اختر إصدارات Revit</div><ol><li>1. اختر كل إصدارات Revit المثبتة على هذا الجهاز. يمكن اختيار أكثر من إصدار.</li><li>2. يوضح المثال اختيار Revit 2024 و2025، بينما لم يتم اختيار 2023 و2026.</li><li>3. أغلق Revit قبل التثبيت. ينبّه المثبّت إلى أن ملفات A-M-T المختارة سيتم استبدالها.</li><li>4. التثبيت لكل مستخدم على حدة، ولا يحتاج إلى صلاحيات المسؤول.</li></ol></section><section class="step"><div class="step-label">الخطوة 02 — اختر تطبيقات الذكاء الاصطناعي</div><ol><li>1. هذا الخيار اختياري. فعّله فقط إذا أردت أن يثبّت المثبّت تطبيقات الذكاء الاصطناعي المدعومة ويضبطها مع جسر A-M-T MCP المحلي.</li><li>2. التطبيقات المتاحة: ChatGPT + Codex وClaude Desktop وDeepSeek Harness وOpenCode وCursor.</li><li>3. المتطلبات الظاهرة: Python و.NET SDK 8. أما Node.js فمطلوب لـ OpenCode فقط.</li><li>4. التطبيقات المثبتة مسبقًا يتم تخطي تثبيتها، ويتم فقط كتابة إعدادات A-M-T الخاصة بها (Claude وCursor وCodex وOpenCode).</li><li>5. إذا كان Claude أو Cursor أو ChatGPT أو Codex مفتوحًا، يعرض المثبّت إغلاقه وإعادة فتحه بعد الانتهاء حتى يحمّل أدوات A-M-T الجديدة.</li></ol></section><section class="step"><div class="step-label">الخطوة 03 — اكتمال التثبيت</div><ol><li>1. تؤكد رسالة الإنهاء أن A-M-T تم تثبيته بنجاح، مع سطر لكل تطبيق ذكاء اصطناعي.</li><li>2. تعرض منطقة التقدم في المثبّت عبارة Installation complete مع شريط تقدم مكتمل.</li><li>3. يتم تثبيت الملفات في %APPDATA%\Autodesk\Revit\Addins\&lt;year&gt;\A-M-T، وخادم MCP في %LOCALAPPDATA%\A-M-T\mcp. تُحذف ملفات EL-T0P القديمة وتُحفظ إعداداتك.</li><li>4. يمكن تثبيت التحديثات اللاحقة من داخل Revit عبر Settings ← Check for Updates.</li></ol></section><section class="step"><div class="step-label">الخطوة 04 — تحقق من شريط أدوات A-M-T في Revit</div><ol><li>1. افتح Autodesk Revit بعد التثبيت وابحث عن تبويب A-M-T في شريط الأدوات.</li><li>2. تأكد من ظهور مجموعات الأدوات المتوقعة: Sheets &amp; Views وExport وWalls &amp; Structure وFinishes وSettings وMCP.</li><li>3. تُظهر الصورة تبويب A-M-T محمّلًا في Autodesk Revit 2025.</li></ol></section>
+<div class="actions">
+<a class="btn" href="/Documentation/AMT_1.8.8_Installation_Guide_Annotated.pdf" target="_blank" rel="noopener">افتح دليل PDF المصوّر</a>
+<a class="btn secondary" href="/ar/documentation.html">العودة إلى التوثيق</a>
+</div>
+</main>
+<footer><div class="container">A-M-T · أدوات النمذجة المعمارية<p class="footer-links"><a href="/ar/changelog.html">سجل الإصدارات</a> · <a href="/ar/faq.html">الأسئلة الشائعة</a> · <a href="/ar/privacy.html">الخصوصية</a> · <a href="https://github.com/abdallahmostafataha6-blip/A-M-T/issues/new/choose">أبلغ عن مشكلة</a></p></div></footer>
+<script src="/amt-release.js" defer></script>
+</body>
+</html>
