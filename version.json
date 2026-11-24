@@ -1,5 +1,5 @@
 {
-  "version": "1.9.1",
+  "version": "1.9.2",
   "released": "2026-11-24",
   "notes": [
     "One button for interior and exterior dimensions on plans, sections and elevations, including linked models (architectural + structural).",
@@ -51,8 +51,8 @@
     "Check for Updates بيقرا آخر Release من GitHub وبيتأكد من بصمة SHA-256 للملف، وشاشته بقت أكبر.",
     "ألوان هادية للوحات الريبون."
   ],
-  "installer": "https://github.com/abdallahmostafataha6-blip/A-M-T/releases/download/V.1.9.1/A-M-T-Setup-1.9.1.exe",
-  "release_url": "https://github.com/abdallahmostafataha6-blip/A-M-T/releases/tag/V.1.9.1",
-  "sha256": "e04744042f69785f43d19606ff00a5e9a1b58bebbd2ee8a4a93b031793f99416",
-  "size": 2763776
+  "installer": "https://github.com/abdallahmostafataha6-blip/A-M-T/releases/download/V.1.9.2/A-M-T-Setup-1.9.2.exe",
+  "release_url": "https://github.com/abdallahmostafataha6-blip/A-M-T/releases/tag/V.1.9.2",
+  "sha256": "b453e01b06a3d84c029c0692fedb616dda50c34c09cf13c6bc80c829e0f71732",
+  "size": 2813952
 }
