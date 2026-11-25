@@ -29,7 +29,7 @@
   var REPO = 'abdallahmostafataha6-blip/A-M-T';
   var API = 'https://api.github.com/repos/' + REPO + '/releases';
   var RELEASES = 'https://github.com/' + REPO + '/releases';
-  var CACHE_KEY = 'amt-github-releases-v2';
+  var CACHE_KEY = 'amt-github-releases-v3';
   var TTL = 30 * 60 * 1000;
 
   function isAr() { return (document.documentElement.lang || '').toLowerCase().indexOf('ar') === 0; }
@@ -83,6 +83,16 @@
   function versionFromTag(tag) {
     var match = String(tag || '').match(/(\d+(?:\.\d+){1,3})/);
     return match ? match[1] : '';
+  }
+
+  /* Newest first by version number (1.10.2 > 1.9.4), then by publish date. GitHub's own order is by creation date. */
+  function compareVersions(a, b) {
+    var x = String(a || '').split('.'), y = String(b || '').split('.');
+    for (var i = 0; i < Math.max(x.length, y.length); i++) {
+      var d = (parseInt(x[i], 10) || 0) - (parseInt(y[i], 10) || 0);
+      if (d) return d;
+    }
+    return 0;
   }
 
   function dateText(iso) {
@@ -209,6 +219,7 @@
           all.push(r);
         }
         if (!all.length) throw new Error('no release');
+        all.sort(function (a, b) { return compareVersions(b.version, a.version) || String(b.date).localeCompare(String(a.date)); });
         data = { latest: all[0], all: all, total: total, counts: true };
         saveCache();
         apply();
