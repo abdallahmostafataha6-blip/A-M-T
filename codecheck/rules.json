@@ -1,5 +1,5 @@
 {
- "version": "202611281341",
+ "version": "202611281623",
  "rules": [
   {
    "id": "PK-SA-01",
@@ -2722,6 +2722,947 @@
    "approved": true,
    "approved_on": "2026-11-28",
    "sheet": "السلامة"
+  },
+  {
+   "id": "SR-SA-01",
+   "key": "str.column.special",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 300
+   },
+   "item": "أقل بُعد للعمود في إطار مقاوم للعزوم خاص (مقاوم للزلازل)",
+   "clause": "18.7.2.1(a)",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-02",
+   "key": "str.column.special",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "ratio": 0.4
+   },
+   "item": "نسبة البُعد الصغير للبُعد العمودي عليه في العمود (إطار خاص)",
+   "clause": "18.7.2.1(b)",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-03",
+   "key": "str.wall.bearing",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 100,
+    "ratio": 25
+   },
+   "item": "سُمك الحائط الخرساني الحامل (طريقة التصميم المبسطة)",
+   "clause": "جدول 11.3.1.1 حاشية 1، 11.5.3",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط: لو الحائط متصمم بالتحليل ممكن يبقى أرفع",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-04",
+   "key": "str.wall.basement",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 190
+   },
+   "item": "سُمك حائط البدروم الخارجي وحائط الأساس (طريقة التصميم المبسطة)",
+   "clause": "جدول 11.3.1.1 حاشية 1",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط: التصميم بالتحليل ممكن يسمح بأقل",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-05",
+   "key": "str.slab.oneway",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "simple": 20,
+    "one": 24,
+    "both": 28,
+    "cant": 10
+   },
+   "item": "سُمك البلاطة المصمتة اتجاه واحد من غير حساب ترخيم: بسيطة / طرف مستمر / طرفين مستمرين / كابولي",
+   "clause": "جدول 7.3.1.1، 7.3.2",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح (حديد 420، خرسانة عادية الوزن)",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-06",
+   "key": "str.beam.depth",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "simple": 16,
+    "one": 18.5,
+    "both": 21,
+    "cant": 8
+   },
+   "item": "عمق الكمرة الكلي من غير حساب ترخيم: بسيطة / طرف مستمر / طرفين مستمرين / كابولي",
+   "clause": "جدول 9.3.1.1، 9.3.2",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح (حديد 420)",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-07",
+   "key": "str.slab.flat",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "ext": 30,
+    "int": 33,
+    "min": 125
+   },
+   "item": "سُمك البلاطة المسطحة من غير Drop: طرفية من غير كمرة حافة / داخلية أو بكمرة حافة / أقل سُمك",
+   "clause": "8.3.1.1 وجدوله",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط: Ln الاتجاه الطويل بين وشوش الركايز، نسبة البحرين حتى 2، كمرة الحافة αf ≥ 0.8",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-08",
+   "key": "str.slab.flatdrop",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "ext": 33,
+    "int": 36,
+    "min": 100
+   },
+   "item": "سُمك البلاطة المسطحة مع Drop panel: طرفية من غير كمرة حافة / داخلية أو بكمرة حافة / أقل سُمك",
+   "clause": "8.2.4، 8.3.1.1 وجدوله",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط: أبعاد الـ Drop مستوفية 8.2.4",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-09",
+   "key": "str.opening.column",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "h": 10,
+    "strip": 1
+   },
+   "item": "فتحة في بلاطة قريبة من العمود (بتقلل محيط مقاومة الاختراق)",
+   "clause": "22.6.4.3",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح: نسخة 2018 بتقول 10h أو داخل شريحة العمود",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-10",
+   "key": "str.cover",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "soil": 75,
+    "ext_large": 50,
+    "ext_small": 40,
+    "int_slab": 20,
+    "int_beam": 40
+   },
+   "item": "الغطاء الخرساني: صب على التربة / معرض للجو أو للتربة 18 مم فأكبر / معرض 16 مم فأقل / داخلي بلاطات وحوائط / داخلي كمرات وأعمدة",
+   "clause": "جدول 20.6.1.3.1",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح: الأقطار السعودية 18-50؛ البلاطات بأسياخ 40 و50 مم = 40",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-11",
+   "key": "str.bar.spacing",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 25
+   },
+   "item": "أقل مسافة صافية بين أسياخ الطبقة الواحدة (كمرات وبلاطات)",
+   "clause": "25.2.1، 25.2.2",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح؛ المسافة الرأسية بين الطبقات ليها بند مستقل",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-12",
+   "key": "str.col.bar.spacing",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 40
+   },
+   "item": "أقل مسافة صافية بين أسياخ العمود الطولية",
+   "clause": "25.2.3",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-13",
+   "key": "str.slab.bar.spacing",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "h": 3,
+    "max": 450
+   },
+   "item": "أقصى تباعد (محور لمحور) لحديد البلاطة الرئيسي اتجاه واحد",
+   "clause": "7.7.2.2 - 7.7.2.3",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح؛ ممكن يحكم حد أصغر للتشقق",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-14",
+   "key": "str.slab2.bar.spacing",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "crit": 2,
+    "other": 3,
+    "max": 450
+   },
+   "item": "أقصى تباعد لحديد البلاطة ذات الاتجاهين: عند القطاع الحرج / باقي القطاعات",
+   "clause": "8.7.2.2",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-15",
+   "key": "str.column.steel",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 1,
+    "max": 8,
+    "max_special": 6
+   },
+   "item": "نسبة حديد العمود الطولي: أدنى / أقصى عادي / أقصى إطار خاص",
+   "clause": "10.6.1.1، 18.7.4.1",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-16",
+   "key": "str.column.bars",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "rect": 4,
+    "round": 6
+   },
+   "item": "أقل عدد أسياخ طولية في العمود: بكانات مستطيلة أو دائرية / بحلزون أو أطواق إطار خاص",
+   "clause": "10.7.3.1، 18.7.4.2",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-SA-17",
+   "key": "str.footing",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "d": 150
+   },
+   "item": "العمق الفعّال للقاعدة المسلحة (من وش الضغط لمركز الحديد السفلي)",
+   "clause": "13.3.1.2",
+   "doc": "كود البناء السعودي SBC 304-CR-2018 - المنشآت الخرسانية (مبني على ACI 318-14)",
+   "url": "https://sbc.gov.sa",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح الوصف: d مش السُمك الكلي",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-01",
+   "key": "str.column.min",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "rect": 200,
+    "round": 200
+   },
+   "item": "أقل بُعد للعمود المستطيل / قطر العمود الدائري",
+   "clause": "6-4-7 هـ",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح: الدائري 200 مش 250",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-02",
+   "key": "str.column.special",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 300,
+    "ratio": 0.4
+   },
+   "item": "أقل بُعد للعمود في الإطارات ذات الممطولية الكافية / نسبته للبُعد الأكبر",
+   "clause": "6-8-2-3-2 أ",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط: للإطارات الممطولة بس، مش لكل عمود في مبنى متصمم للزلازل",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-03",
+   "key": "str.slab.min",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 80,
+    "dynamic": 120
+   },
+   "item": "أقل سُمك للبلاطة المصمتة المصبوبة في الموقع: أحمال استاتيكية / أحمال ديناميكية أو متحركة",
+   "clause": "6-2-1-2-1 فقرة 3",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-04",
+   "key": "str.slab.oneway",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "simple": 25,
+    "one": 28,
+    "both": 31,
+    "cant": 10
+   },
+   "item": "سُمك البلاطة المصمتة اتجاه واحد من غير حساب ترخيم (البحر الخالص): بسيطة / طرف مستمر / طرفين مستمرين / كابولي",
+   "clause": "جدول 4-10",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح: 28 و31 مش 30 و36؛ للمباني العادية والحمل الحي حتى 5 كن/م2",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-04B",
+   "key": "str.slab.oneway.eff",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "simple": 30,
+    "one": 35,
+    "both": 40
+   },
+   "item": "حد البلاطة المصمتة اتجاه واحد على البحر الفعّال: بسيطة / طرف مستمر / طرفين مستمرين",
+   "clause": "6-2-1-2-1",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - بند جديد من المراجعة",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-05",
+   "key": "str.beam.depth",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "simple": 12,
+    "one": 14,
+    "both": 16,
+    "cant": 5
+   },
+   "item": "عمق الكمرة المستطيلة الجاسئة من غير حساب ترخيم (البحر الخالص): بسيطة / طرف مستمر / طرفين مستمرين / كابولي",
+   "clause": "جدول 4-10، شكل 4-32",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح: 12 / 14 / 16 / 5؛ القطاع T ليه معامل تعديل",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-05B",
+   "key": "str.beam.hidden",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "simple": 20,
+    "one": 23,
+    "both": 24,
+    "cant": 8
+   },
+   "item": "عمق الكمرة المدفونة من غير حساب ترخيم: بسيطة / طرف مستمر / طرفين مستمرين / كابولي",
+   "clause": "جدول 4-10",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - بند جديد من المراجعة",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-06",
+   "key": "str.slab.flat",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "ext": 30,
+    "int": 33
+   },
+   "item": "سُمك البلاطة اللاكمرية من غير Drop (حديد 420): طرفية من غير كمرة طرفية / طرفية بكمرة مؤهلة أو داخلية",
+   "clause": "6-2-5-2 أ، جدول 6-3",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح: مفيش حد ثابت 150 مم في الجدول؛ الكمرة الطرفية المؤهلة عمقها ≥ 3 × سُمك البلاطة",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-07",
+   "key": "str.cover.eg",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "vdry": 20,
+    "dry": 25,
+    "wet": 35,
+    "moist": 35,
+    "cyclic": 40
+   },
+   "item": "الغطاء الخرساني حسب بيئة التعرض (كربنة): جاف جدًا / جاف أو مبلول دائمًا / مبلول نادر الجفاف / رطوبة معتدلة / بلل وجفاف دوري",
+   "clause": "2-3-4-2-7، جداول 2-21 إلى 2-23",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح: بيعتمد على بيئة التعرض مش نوع العنصر؛ لازم كمان متطلبات الحريق",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-08",
+   "key": "str.cover.cl",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "c1": 45,
+    "c2": 50,
+    "c3": 60
+   },
+   "item": "الغطاء الخرساني مع الكلوريدات حسب البيئة (ماء البحر جدول منفصل)",
+   "clause": "2-3-4-2-7، جداول 2-21 إلى 2-23",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-09",
+   "key": "str.column.steel",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 0.6,
+    "max": 4,
+    "max_edge": 5,
+    "max_corner": 6
+   },
+   "item": "نسبة حديد العمود الطولي: أدنى من القطاع الفعلي / أقصى داخلي / طرفي / ركني",
+   "clause": "6-4-7 أ، ب",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح جزئيًا: الأدنى 0.8% من المطلوب حسابيًا و0.6% من الفعلي؛ عند وصلات التراكب 8%",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-10",
+   "key": "str.column.bars",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "dia": 12,
+    "rect": 4,
+    "round": 6,
+    "spacing": 250
+   },
+   "item": "أقل قطر سيخ طولي في العمود / أقل عدد: مستطيل / دائري / أقصى تباعد",
+   "clause": "6-4-7 ج - و",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط: الضلع أكبر من 300 مم محتاج أسياخ في النص",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-11",
+   "key": "str.slab.bars",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "max_spacing": 200,
+    "dia": 6,
+    "dia_bent": 8
+   },
+   "item": "حديد البلاطة المصمتة الرئيسي: أقصى تباعد / أقل قطر مستقيم / مكسّح",
+   "clause": "6-2-1-2-3 فقرتا 4 و8",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح: الفحص على التباعد مباشرة",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-12",
+   "key": "str.bar.spacing",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "agg": 1.5
+   },
+   "item": "أقل مسافة صافية بين أسياخ الكمرة: أفقي / رأسي",
+   "clause": "7-3-3-1، شكل 7-2",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح: مفيش 25 مم ثابتة",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-13",
+   "key": "str.wall.bearing",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 120,
+    "ratio": 25
+   },
+   "item": "سُمك الحائط الخرساني المسلح الحامل (الطريقة المبسطة)",
+   "clause": "6-5-1، 6-5-2-1-2 ج",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-14",
+   "key": "str.footing",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 300,
+    "cap": 400
+   },
+   "item": "السُمك الكلي للقاعدة المسلحة / لهامة الخوازيق",
+   "clause": "6-7-1 فقرة 5",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتكمل",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-EG-15",
+   "key": "str.opening.column",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "pct": 10
+   },
+   "item": "فتحات عند تقاطع شريحتي العمود في البلاطة اللاكمرية: مجموع أطوالها في كل اتجاه",
+   "clause": "6-2-5-10، شكلا 6-17 و6-18",
+   "doc": "الكود المصري لتصميم وتنفيذ المنشآت الخرسانية ECP 203-2020 (التحديث الخامس) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتكمل: مع تحقق مقاومة العزوم والقص",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-01",
+   "key": "str.column.special",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 300
+   },
+   "item": "أقل بُعد للعمود في إطار مقاوم للعزوم خاص",
+   "clause": "18.7.2.1(a)",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-02",
+   "key": "str.column.special",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "ratio": 0.4
+   },
+   "item": "نسبة البُعد الصغير للبُعد العمودي عليه (إطار خاص)",
+   "clause": "18.7.2.1(b)",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-03",
+   "key": "str.wall.bearing",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 100,
+    "ratio": 25
+   },
+   "item": "سُمك الحائط الخرساني الحامل (طريقة التصميم المبسطة)",
+   "clause": "جدول 11.3.1.1 حاشية 1، 11.5.3",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-04",
+   "key": "str.wall.basement",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 190
+   },
+   "item": "سُمك حائط البدروم الخارجي وحائط الأساس (طريقة التصميم المبسطة)",
+   "clause": "جدول 11.3.1.1 حاشية 1",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-05",
+   "key": "str.slab.oneway",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "simple": 20,
+    "one": 24,
+    "both": 28,
+    "cant": 10
+   },
+   "item": "سُمك البلاطة المصمتة اتجاه واحد: بسيطة / طرف مستمر / طرفين مستمرين / كابولي",
+   "clause": "جدول 7.3.1.1، 7.3.2",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح (fy 420)",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-06",
+   "key": "str.beam.depth",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "simple": 16,
+    "one": 18.5,
+    "both": 21,
+    "cant": 8
+   },
+   "item": "عمق الكمرة الكلي: بسيطة / طرف مستمر / طرفين مستمرين / كابولي",
+   "clause": "جدول 9.3.1.1، 9.3.2",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح (fy 420)",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-07",
+   "key": "str.slab.flat",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "ext": 30,
+    "int": 33,
+    "min": 125
+   },
+   "item": "سُمك البلاطة المسطحة من غير Drop: طرفية من غير كمرة حافة / داخلية أو بكمرة حافة / أقل سُمك",
+   "clause": "8.3.1.1 وجدوله",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط: Ln الاتجاه الطويل، نسبة البحرين حتى 2، كمرة الحافة αf ≥ 0.8",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-08",
+   "key": "str.slab.flatdrop",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "ext": 33,
+    "int": 36,
+    "min": 100
+   },
+   "item": "سُمك البلاطة المسطحة مع Drop panel: طرفية / داخلية أو بكمرة حافة / أقل سُمك",
+   "clause": "8.2.4، 8.3.1.1 وجدوله",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-09",
+   "key": "str.opening.column",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "h": 4
+   },
+   "item": "فتحة في بلاطة قريبة من العمود (بتقلل محيط مقاومة الاختراق)",
+   "clause": "8.5.4.2(d)، 22.6.4.3",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط: القرب محتاج حساب",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-10",
+   "key": "str.cover",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "soil": 75,
+    "ext_large": 50,
+    "ext_small": 40,
+    "int_slab": 20,
+    "int_beam": 40
+   },
+   "item": "الغطاء الخرساني: صب على التربة / معرض للجو أو للتربة 19 مم فأكبر / معرض 16 مم فأقل / داخلي بلاطات وحوائط / داخلي كمرات وأعمدة",
+   "clause": "جدول 20.5.1.3.1",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح: البلاطات بأسياخ No.43 و57 = 40",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-11",
+   "key": "str.bar.spacing",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 25
+   },
+   "item": "أقل مسافة صافية بين أسياخ الطبقة الواحدة",
+   "clause": "25.2.1، 25.2.2",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-12",
+   "key": "str.col.bar.spacing",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 40
+   },
+   "item": "أقل مسافة صافية بين أسياخ العمود",
+   "clause": "25.2.3",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-13",
+   "key": "str.slab.bar.spacing",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "h": 3,
+    "max": 450
+   },
+   "item": "أقصى تباعد (محور لمحور) لحديد البلاطة الرئيسي اتجاه واحد",
+   "clause": "7.7.2.2 - 7.7.2.3",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-14",
+   "key": "str.slab2.bar.spacing",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "crit": 2,
+    "other": 3,
+    "max": 450
+   },
+   "item": "أقصى تباعد لحديد البلاطة ذات الاتجاهين: عند القطاع الحرج / باقي القطاعات",
+   "clause": "8.7.2.2",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-15",
+   "key": "str.column.steel",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 1,
+    "max": 8,
+    "max_special": 6
+   },
+   "item": "نسبة حديد العمود الطولي: أدنى / أقصى عادي / أقصى إطار خاص",
+   "clause": "10.6.1.1، 18.7.4.1",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-16",
+   "key": "str.column.bars",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "rect": 4,
+    "round": 6
+   },
+   "item": "أقل عدد أسياخ طولية في العمود: بكانات / بحلزون أو أطواق إطار خاص",
+   "clause": "10.7.3.1، 18.7.4.2",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - صحيح بشروط",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
+  },
+  {
+   "id": "SR-INT-17",
+   "key": "str.footing",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "d": 150
+   },
+   "item": "العمق الفعّال للقاعدة المسلحة (لمركز الحديد السفلي)",
+   "clause": "13.3.1.2",
+   "doc": "ACI 318M-19 Building Code Requirements for Structural Concrete (SI)",
+   "url": "https://www.concrete.org/store/productdetail.aspx?ItemID=318U19",
+   "source_status": "روجع على نص الكود (مراجعة خارجية 2026-11-28) - اتصحح الوصف: d مش السُمك الكلي",
+   "approved": true,
+   "approved_on": "2026-11-28",
+   "sheet": "الإنشائي"
   }
  ]
 }
