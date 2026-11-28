@@ -1,0 +1,2571 @@
+{
+ "version": "202611280037",
+ "rules": [
+  {
+   "id": "PK-SA-01",
+   "key": "parking.stall.perp",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "w": 2800.0
+   },
+   "item": "عرض الموقف العمودي والمائل",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم - فيه تعارض بين نص الدليل وجداوله ورسوماته",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-02",
+   "key": "parking.stall.perp",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "l": 5500.0
+   },
+   "item": "طول الموقف العمودي والمائل",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم - فيه تعارض بين نص الدليل وجداوله ورسوماته",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-03",
+   "key": "parking.stall.parallel",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "w": 2500.0
+   },
+   "item": "عرض الموقف الموازي",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-04",
+   "key": "parking.stall.parallel",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "l": 6500.0
+   },
+   "item": "طول الموقف الموازي",
+   "clause": "أبعاد المواقف - بند 1 (شكل 3)",
+   "doc": "وزارة البلديات والإسكان - دليل المعايير التخطيطية والتصميمية لمواقف السيارات: المعايير التصميمية العامة",
+   "url": "https://istitlaa.scbc.gov.sa/ar/Municipality/momra/planning/Pages/Article_007.aspx",
+   "source_status": "نص رسمي مقروء - اعتمده المستخدم بدل 5000 الموجودة في الدليل",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-07",
+   "key": "parking.aisle.90",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 7500.0,
+    "two": 7500.0
+   },
+   "item": "عرض الممر - موقف 90°: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-08",
+   "key": "parking.aisle.60",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 5000.0,
+    "two": 7200.0
+   },
+   "item": "عرض الممر - موقف 60°: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-09",
+   "key": "parking.aisle.45",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 5000.0,
+    "two": 7200.0
+   },
+   "item": "عرض الممر - موقف 45°: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-10",
+   "key": "parking.aisle.30",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 5000.0,
+    "two": 7200.0
+   },
+   "item": "عرض الممر - موقف 30°: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-11",
+   "key": "parking.aisle.parallel",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 4000.0,
+    "two": 7000.0
+   },
+   "item": "عرض الممر - موقف موازي: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-12",
+   "key": "parking.ramp.slope.straight",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "max": 18.0
+   },
+   "item": "أقصى ميل للرامب المستقيم",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-13",
+   "key": "parking.ramp.slope.curved",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "max": 12.0
+   },
+   "item": "أقصى ميل للرامب المنحني أحادي الاتجاه",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-14",
+   "key": "parking.ramp.width.straight",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 3500.0,
+    "two": 7000.0
+   },
+   "item": "عرض الرامب المستقيم: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-15",
+   "key": "parking.ramp.width.curved.cw",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 6100.0,
+    "two": 12200.0
+   },
+   "item": "عرض الرامب المنحني مع عقارب الساعة: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-16",
+   "key": "parking.ramp.width.curved.ccw",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 4570.0,
+    "two": 9140.0
+   },
+   "item": "عرض الرامب المنحني عكس عقارب الساعة: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-17",
+   "key": "parking.ramp.radius.inner",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 5180.0
+   },
+   "item": "نصف القطر الداخلي للرامب المنحني",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم - فيه تعارض بين نص الدليل وجداوله ورسوماته",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-18",
+   "key": "parking.ramp.radius.outer.cw",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 11280.0,
+    "two": 17280.0
+   },
+   "item": "نصف القطر الخارجي - مع عقارب الساعة: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم - فيه تعارض بين نص الدليل وجداوله ورسوماته",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-19",
+   "key": "parking.ramp.radius.outer.ccw",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 9570.0,
+    "two": 14230.0
+   },
+   "item": "نصف القطر الخارجي - عكس عقارب الساعة: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم - فيه تعارض بين نص الدليل وجداوله ورسوماته",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-20",
+   "key": "parking.ramp.transition.slope",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "max": 10.0
+   },
+   "item": "ميل الانتقال في أول الرامب وآخره",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم - فيه تعارض بين نص الدليل وجداوله ورسوماته",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-21",
+   "key": "parking.ramp.transition.length",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 5000.0
+   },
+   "item": "طول الانتقال لكل طرف",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-22",
+   "key": "parking.clearheight",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 2500.0
+   },
+   "item": "الارتفاع الصافي للجراج",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-23",
+   "key": "parking.ramp.clearheight",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 2500.0
+   },
+   "item": "الارتفاع الصافي للرامب",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم - توصية مش إلزام",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-24",
+   "key": "parking.turn.inner",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 2600.0
+   },
+   "item": "نصف قطر الدوران الداخلي للممر",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-SA-25",
+   "key": "parking.turn.outer",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "one": 6100.0,
+    "two": 10600.0
+   },
+   "item": "نصف قطر الدوران الخارجي: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "دليل تصميم مواقف السيارات - وزارة البلديات والإسكان (1441هـ / 2019) - القيم من المستخدم",
+   "url": "https://sbc.gov.sa/ar/BC/Lists/SBCTechnicalEvidence/Attachments/168/20.pdf",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-01",
+   "key": "parking.stall.perp",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "w": 2200.0,
+    "l": 4700.0
+   },
+   "item": "مقاس الموقف العمودي: العرض × الطول",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم - الكود بيدي مدى 2200-2500 × 4700-5000، والمستخدم اعتمد الحد الأدنى",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-02",
+   "key": "parking.stall.angled",
+   "code": "EG",
+   "use": "res",
+   "values": {
+    "w": 2300.0,
+    "l": 5000.0
+   },
+   "item": "مقاس الموقف المائل (سكني / إداري): العرض × الطول",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم - متعدد الاستخدام 2400 × 5000",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-02B",
+   "key": "parking.stall.angled",
+   "code": "EG",
+   "use": "nonres",
+   "values": {
+    "w": 2500.0,
+    "l": 5000.0
+   },
+   "item": "مقاس الموقف المائل (تجاري / انتظار قصير): العرض × الطول",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم - الإداري 2300 × 5000",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-03",
+   "key": "parking.stall.parallel",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "w": 2500.0,
+    "l": 6500.0
+   },
+   "item": "مقاس الموقف الموازي: العرض × الطول",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-04",
+   "key": "parking.aisle.90",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "one": 6000.0,
+    "two": 7000.0
+   },
+   "item": "عرض الممر - موقف 90°: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-05",
+   "key": "parking.aisle.60",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "one": 5000.0,
+    "two": 7920.0
+   },
+   "item": "عرض الممر - موقف 60°: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم - الاتجاهين من جدول المواقف العام",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-06",
+   "key": "parking.aisle.45",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "one": 4500.0,
+    "two": 6710.0
+   },
+   "item": "عرض الممر - موقف 45°: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم - الاتجاهين من جدول المواقف العام",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-07",
+   "key": "parking.aisle.30",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "one": 4250.0,
+    "two": 6710.0
+   },
+   "item": "عرض الممر - موقف 30°: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم - الاتجاهين من جدول المواقف العام",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-08",
+   "key": "parking.aisle.parallel",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "one": 5500.0,
+    "two": 6710.0
+   },
+   "item": "عرض الممر - موقف موازي: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-09",
+   "key": "parking.aisle.nomaneuver",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "one": 3000.0,
+    "two": 6000.0
+   },
+   "item": "ممر حركة بدون مناورات: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-10",
+   "key": "parking.ramp.slope.straight",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "max": 15.0
+   },
+   "item": "أقصى ميل للرامب المستقيم",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-11",
+   "key": "parking.ramp.slope.curved",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "max": 12.0
+   },
+   "item": "أقصى ميل للرامب المنحني",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-12",
+   "key": "parking.ramp.crossslope",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "max": 4.0
+   },
+   "item": "أقصى ميل عرضي للرامب المنحني",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-13",
+   "key": "parking.ramp.width.straight",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "one": 3000.0,
+    "two": 6000.0
+   },
+   "item": "عرض الرامب المستقيم: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-14",
+   "key": "parking.ramp.width.curved",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "one": 4500.0,
+    "two": 9600.0
+   },
+   "item": "عرض الرامب المنحني: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-15",
+   "key": "parking.ramp.radius.inner",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 5300.0
+   },
+   "item": "نصف القطر الداخلي للرامب المنحني",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-16",
+   "key": "parking.ramp.radius.outer",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "one": 9800.0,
+    "two": 14900.0
+   },
+   "item": "نصف القطر الخارجي: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-17",
+   "key": "parking.ramp.transition.slope",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "half": 1
+   },
+   "item": "ميل الانتقال في أول الرامب وآخره",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-18",
+   "key": "parking.ramp.transition.length",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 3000.0
+   },
+   "item": "طول الانتقال لكل طرف",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-19",
+   "key": "parking.ramp.transition.required",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "above": 10.0
+   },
+   "item": "الانتقال مطلوب لما ميل الرامب يزيد عن",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-20",
+   "key": "parking.clearheight",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 2200.0
+   },
+   "item": "الارتفاع الصافي للجراج",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم - مسموح 2050 بعيد عن مسارات الحركة",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-21",
+   "key": "parking.ramp.clearheight",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 2200.0
+   },
+   "item": "الارتفاع الصافي للرامب",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-22",
+   "key": "parking.turn.inner",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 5300.0
+   },
+   "item": "نصف قطر الدوران الداخلي في الملفات",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم - نفس قيمة المنحدرات الحلزونية",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-22B",
+   "key": "parking.turn.outer",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "one": 9800.0,
+    "two": 14900.0
+   },
+   "item": "نصف قطر الدوران الخارجي: اتجاه واحد / اتجاهين",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-EG-23",
+   "key": "door.garage",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 2800.0
+   },
+   "item": "عرض باب الجراج",
+   "clause": "المادة 97",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "PK-INT-02",
+   "key": "parking.clearheight",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 2134.0
+   },
+   "item": "الارتفاع الصافي في الجراج (كل دور)",
+   "clause": "406.2.2",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الباركينج"
+  },
+  {
+   "id": "ST-SA-01",
+   "key": "stairs.riser",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "max": 178.0
+   },
+   "item": "ارتفاع القائمة",
+   "clause": "1011.5.2",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-SA-02",
+   "key": "stairs.riser",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 102.0
+   },
+   "item": "ارتفاع القائمة",
+   "clause": "1011.5.2",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-SA-03",
+   "key": "stairs.tread",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 279.0
+   },
+   "item": "عمق النائمة",
+   "clause": "1011.5.2",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-SA-05",
+   "key": "stairs.width",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 1118.0,
+    "min_small": 914.0
+   },
+   "item": "عرض السلم: عام / سلالم سكنية محدودة الاستخدام",
+   "clause": "1011.2",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC) - 914 حسب نوع السلم وعدد المستخدمين",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-SA-06",
+   "key": "stairs.headroom",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 2032.0
+   },
+   "item": "الارتفاع الصافي فوق السلم",
+   "clause": "1011.3",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "قيمة IBC المقابلة - لازم تتطابق مع نص SBC",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-SA-07",
+   "key": "stairs.flight.rise",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "max": 3658.0
+   },
+   "item": "أقصى ارتفاع للقلبة الواحدة",
+   "clause": "1011.8",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "قيمة IBC المقابلة - لازم تتطابق مع نص SBC",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-EG-01",
+   "key": "stairs.riser",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "max": 170.0
+   },
+   "item": "ارتفاع القائمة",
+   "clause": "المادة 100",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-EG-02",
+   "key": "stairs.tread",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 270.0
+   },
+   "item": "عمق النائمة",
+   "clause": "المادة 100",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-EG-03",
+   "key": "stairs.flight.risers",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "max": 14.0
+   },
+   "item": "عدد القوائم المتتالية قبل البسطة",
+   "clause": "المادة 100",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-EG-04",
+   "key": "stairs.landing",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "treads": 4.0
+   },
+   "item": "عمق البسطة",
+   "clause": "المادة 100",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-EG-05",
+   "key": "stairs.headroom",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 2100.0
+   },
+   "item": "الارتفاع الصافي فوق السلم",
+   "clause": "المادة 100",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-EG-06",
+   "key": "stairs.width",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 1100.0,
+    "min_large": 1300.0
+   },
+   "item": "عرض السلم (الطول الظاهر للدرجة): 4 وحدات أو أقل في الدور / أكتر من 4 (السلم الرئيسي)",
+   "clause": "المادة 100",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "من المستخدم - السلم الثانوي 1100",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-INT-01",
+   "key": "stairs.riser",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "max": 178.0,
+    "min": 102.0
+   },
+   "item": "ارتفاع القائمة",
+   "clause": "1011.5.2",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-INT-02",
+   "key": "stairs.tread",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 279.0
+   },
+   "item": "عمق النائمة",
+   "clause": "1011.5.2",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-INT-03",
+   "key": "stairs.dwelling",
+   "code": "INT",
+   "use": "res",
+   "values": {
+    "riser_max": 197.0,
+    "tread_min": 254.0
+   },
+   "item": "استثناء داخل الوحدة السكنية: قائمة / نائمة",
+   "clause": "1011.5.2 استثناء",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-INT-04",
+   "key": "stairs.width",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 1118.0,
+    "min_small": 914.0
+   },
+   "item": "عرض السلم",
+   "clause": "1011.2",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-INT-05",
+   "key": "stairs.headroom",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 2032.0
+   },
+   "item": "الارتفاع الصافي فوق السلم",
+   "clause": "1011.3",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-INT-06",
+   "key": "stairs.landing",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "cap": 1219.0
+   },
+   "item": "عمق البسطة",
+   "clause": "1011.6",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "ST-INT-07",
+   "key": "stairs.flight.rise",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "max": 3658.0
+   },
+   "item": "أقصى ارتفاع للقلبة الواحدة",
+   "clause": "1011.8",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلالم"
+  },
+  {
+   "id": "GR-SA-01",
+   "key": "guard.height",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 1067.0
+   },
+   "item": "ارتفاع الحاجز (Guard)",
+   "clause": "1015.3",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "GR-SA-04",
+   "key": "guard.required.drop",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 762.0
+   },
+   "item": "الحاجز مطلوب لما فرق المنسوب أكبر من",
+   "clause": "1015.2",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "GR-SA-02",
+   "key": "guard.opening",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "max": 102.0
+   },
+   "item": "فتحات الحاجز (كرة لا تعدي)",
+   "clause": "1015.4",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "قيمة IBC المقابلة - لازم تتطابق مع نص SBC",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "GR-SA-03",
+   "key": "handrail.height",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 864.0,
+    "max": 965.0
+   },
+   "item": "ارتفاع الهاندريل",
+   "clause": "1014.2",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "قيمة IBC المقابلة - لازم تتطابق مع نص SBC",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "GR-EG-01",
+   "key": "guard.height.stair",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 900.0
+   },
+   "item": "ارتفاع درابزين السلم",
+   "clause": "المادة 100",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "GR-EG-02",
+   "key": "guard.height.balcony",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 900.0,
+    "floors": 5.0,
+    "step": 50.0,
+    "cap": 1200.0
+   },
+   "item": "ارتفاع درابزين البلكونات والتراسات",
+   "clause": "المادة 103",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "GR-EG-03",
+   "key": "guard.opening",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "max": 100.0
+   },
+   "item": "فتحات الدرابزين",
+   "clause": "المادة 103",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "GR-INT-01",
+   "key": "guard.height",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 1067.0,
+    "min_dwelling": 914.0
+   },
+   "item": "ارتفاع الحاجز",
+   "clause": "1015.3",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "GR-INT-02",
+   "key": "guard.opening",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "max": 102.0
+   },
+   "item": "فتحات الحاجز",
+   "clause": "1015.4",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "GR-INT-03",
+   "key": "guard.required.drop",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 762.0
+   },
+   "item": "الحاجز مطلوب لما فرق المنسوب أكبر من",
+   "clause": "1015.2",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "GR-INT-04",
+   "key": "handrail.height",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 864.0,
+    "max": 965.0
+   },
+   "item": "ارتفاع الهاندريل",
+   "clause": "1014.2",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الدرابزين والهاندريل"
+  },
+  {
+   "id": "RM-SA-01",
+   "key": "room.bedroom",
+   "code": "SA",
+   "use": "res",
+   "values": {
+    "area": 6.5,
+    "width": 2100.0
+   },
+   "item": "غرفة نوم: المساحة / أقل عرض",
+   "clause": "",
+   "doc": "اشتراطات البناء السعودية للمساكن (الغرف السكنية) - القيم من المستخدم",
+   "url": "",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-SA-01B",
+   "key": "room.living",
+   "code": "SA",
+   "use": "res",
+   "values": {
+    "area": 11.2,
+    "width": 2800.0
+   },
+   "item": "معيشة / صالة / مجلس / طعام: المساحة / أقل عرض",
+   "clause": "",
+   "doc": "اشتراطات البناء السعودية للمساكن (الغرف السكنية) - القيم من المستخدم",
+   "url": "",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-SA-01C",
+   "key": "room.kitchen",
+   "code": "SA",
+   "use": "res",
+   "values": {
+    "area": 5.0,
+    "width": 1800.0
+   },
+   "item": "مطبخ: المساحة / أقل عرض",
+   "clause": "",
+   "doc": "اشتراطات البناء السعودية للمساكن (الغرف السكنية) - القيم من المستخدم",
+   "url": "",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-SA-01D",
+   "key": "room.bath",
+   "code": "SA",
+   "use": "res",
+   "values": {
+    "area": 2.8,
+    "width": 1400.0
+   },
+   "item": "حمام: المساحة / أقل عرض",
+   "clause": "",
+   "doc": "اشتراطات البناء السعودية للمساكن (الغرف السكنية) - القيم من المستخدم",
+   "url": "",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-SA-01E",
+   "key": "room.wc",
+   "code": "SA",
+   "use": "res",
+   "values": {
+    "area": 2.0,
+    "width": 1200.0
+   },
+   "item": "دورة مياه: المساحة / أقل عرض",
+   "clause": "",
+   "doc": "اشتراطات البناء السعودية للمساكن (الغرف السكنية) - القيم من المستخدم",
+   "url": "",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-SA-02",
+   "key": "room.height",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 2286.0
+   },
+   "item": "الارتفاع الصافي للأدوار",
+   "clause": "1208.2",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-EG-01",
+   "key": "room.height",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 2700.0
+   },
+   "item": "الارتفاع الصافي للدور",
+   "clause": "المادة 93",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-EG-02",
+   "key": "room.height.service",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 2300.0
+   },
+   "item": "الارتفاع الصافي للمداخل والممرات والحمامات والغسيل وغرف الحراس",
+   "clause": "المادة 93",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-EG-03",
+   "key": "room.habitable",
+   "code": "EG",
+   "use": "res",
+   "values": {
+    "area": 7.5
+   },
+   "item": "غرفة سكنية (نوم / معيشة): المساحة",
+   "clause": "المادة 94",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-EG-04",
+   "key": "room.habitable",
+   "code": "EG",
+   "use": "res",
+   "values": {
+    "width": 2500.0
+   },
+   "item": "غرفة سكنية: أقل ضلع",
+   "clause": "المادة 94",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-EG-05",
+   "key": "room.kitchen",
+   "code": "EG",
+   "use": "res",
+   "values": {
+    "area": 3.0,
+    "width": 1500.0
+   },
+   "item": "مطبخ: المساحة / أقل ضلع",
+   "clause": "المادة 94",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-EG-06",
+   "key": "room.bath",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "area": 1.5,
+    "width": 1200.0
+   },
+   "item": "حمام: المساحة / أقل ضلع",
+   "clause": "المادة 94",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-EG-07",
+   "key": "room.wc",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "area": 0.8,
+    "width": 800.0
+   },
+   "item": "دورة مياه: المساحة / أقل ضلع",
+   "clause": "المادة 94",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-EG-08",
+   "key": "room.guard",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "area": 5.0,
+    "width": 2000.0
+   },
+   "item": "غرفة حارس: المساحة / أقل ضلع",
+   "clause": "المادة 94",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-INT-01",
+   "key": "room.height",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 2286.0
+   },
+   "item": "الارتفاع الصافي للغرف المشغولة",
+   "clause": "1208.2",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-INT-02",
+   "key": "room.habitable",
+   "code": "INT",
+   "use": "res",
+   "values": {
+    "width": 2134.0
+   },
+   "item": "أقل بُعد للغرفة السكنية المشغولة",
+   "clause": "1208.1",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-INT-03",
+   "key": "room.largest",
+   "code": "INT",
+   "use": "res",
+   "values": {
+    "area": 11.1
+   },
+   "item": "غرفة واحدة على الأقل في الوحدة السكنية",
+   "clause": "1208.3",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "RM-INT-04",
+   "key": "room.habitable",
+   "code": "INT",
+   "use": "res",
+   "values": {
+    "area": 6.5
+   },
+   "item": "باقي الغرف المشغولة (غير المطبخ)",
+   "clause": "1208.3",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الغرف"
+  },
+  {
+   "id": "LV-SA-01",
+   "key": "light.glazing",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "pct": 8.0
+   },
+   "item": "مساحة الزجاج للإضاءة الطبيعية",
+   "clause": "1204.2",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "الإضاءة والتهوية"
+  },
+  {
+   "id": "LV-SA-02",
+   "key": "vent.open",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "pct": 4.0
+   },
+   "item": "المساحة القابلة للفتح للتهوية الطبيعية",
+   "clause": "1202.5.1",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "الإضاءة والتهوية"
+  },
+  {
+   "id": "LV-EG-01",
+   "key": "light.glazing",
+   "code": "EG",
+   "use": "res",
+   "values": {
+    "pct": 8.0
+   },
+   "item": "فتحات غرف النوم والمعيشة",
+   "clause": "المادة 96",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الإضاءة والتهوية"
+  },
+  {
+   "id": "LV-EG-02",
+   "key": "light.glazing.service",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "pct": 10.0
+   },
+   "item": "فتحات الخدمات (حمام، مطبخ، دورة مياه، سلم)",
+   "clause": "المادة 96",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الإضاءة والتهوية"
+  },
+  {
+   "id": "LV-EG-03",
+   "key": "window.minarea",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "habitable": 0.5,
+    "service": 0.25
+   },
+   "item": "أقل مساحة للفتحة الواحدة: غرف ومكاتب وسلالم / خدمات",
+   "clause": "المادة 96",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الإضاءة والتهوية"
+  },
+  {
+   "id": "LV-EG-04",
+   "key": "window.sill",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 900.0
+   },
+   "item": "جلسة الشباك (لو مفيش بلكونة أو درابزين 0.9)",
+   "clause": "المادة 96",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الإضاءة والتهوية"
+  },
+  {
+   "id": "LV-INT-01",
+   "key": "light.glazing",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "pct": 8.0
+   },
+   "item": "الإضاءة الطبيعية: مساحة الزجاج",
+   "clause": "1204.2",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الإضاءة والتهوية"
+  },
+  {
+   "id": "LV-INT-02",
+   "key": "vent.open",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "pct": 4.0
+   },
+   "item": "التهوية الطبيعية: المساحة القابلة للفتح",
+   "clause": "1202.5.1",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الإضاءة والتهوية"
+  },
+  {
+   "id": "CO-SA-01",
+   "key": "corridor.width",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 1118.0
+   },
+   "item": "عرض الطرقة (عام)",
+   "clause": "1020.3",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "الطرقات واللوبي"
+  },
+  {
+   "id": "CO-SA-02",
+   "key": "corridor.width",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "small": 914.0
+   },
+   "item": "عرض الطرقة لإشغال أقل من 50",
+   "clause": "1020.3",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "قيمة IBC المقابلة - لازم تتطابق مع نص SBC",
+   "approved": false,
+   "sheet": "الطرقات واللوبي"
+  },
+  {
+   "id": "CO-EG-01",
+   "key": "corridor.width",
+   "code": "EG",
+   "use": "res",
+   "values": {
+    "min": 1200.0
+   },
+   "item": "عرض الطرقة / اللوبي (الطرقات الداخلية في السكني)",
+   "clause": "",
+   "doc": "الكود المصري - قيم بعتها المستخدم",
+   "url": "",
+   "source_status": "من المستخدم - حد شائع، مع مراعاة اشتراطات الهروب",
+   "approved": false,
+   "sheet": "الطرقات واللوبي"
+  },
+  {
+   "id": "CO-EG-02",
+   "key": "elevator.required",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "res": 17.0,
+    "nonres": 10.0
+   },
+   "item": "المصعد مطلوب لو منسوب آخر دور أعلى من",
+   "clause": "المادة 147",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الطرقات واللوبي"
+  },
+  {
+   "id": "CO-INT-01",
+   "key": "corridor.width",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 1118.0
+   },
+   "item": "عرض الطرقة (عام)",
+   "clause": "1020.3",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الطرقات واللوبي"
+  },
+  {
+   "id": "CO-INT-02",
+   "key": "corridor.width",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "small": 914.0
+   },
+   "item": "عرض الطرقة: إشغال أقل من 50 / داخل الوحدة السكنية",
+   "clause": "1020.3",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الطرقات واللوبي"
+  },
+  {
+   "id": "DR-SA-01",
+   "key": "door.width",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 813.0
+   },
+   "item": "العرض الصافي للباب",
+   "clause": "1010.1.1",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "الأبواب"
+  },
+  {
+   "id": "DR-SA-02",
+   "key": "door.height",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 2032.0
+   },
+   "item": "ارتفاع الباب",
+   "clause": "1010.1.1",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "قيمة IBC المقابلة - لازم تتطابق مع نص SBC",
+   "approved": false,
+   "sheet": "الأبواب"
+  },
+  {
+   "id": "DR-EG-01",
+   "key": "door.width",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 800.0
+   },
+   "item": "أبواب الغرف والمكاتب",
+   "clause": "المادة 97",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الأبواب"
+  },
+  {
+   "id": "DR-EG-02",
+   "key": "door.width.service",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 700.0
+   },
+   "item": "أبواب المطابخ والحمامات ودورات المياه",
+   "clause": "المادة 97",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الأبواب"
+  },
+  {
+   "id": "DR-EG-03",
+   "key": "door.width.shop",
+   "code": "EG",
+   "use": "nonres",
+   "values": {
+    "min": 1000.0
+   },
+   "item": "أبواب المحلات",
+   "clause": "المادة 97",
+   "doc": "اللائحة التنفيذية لقانون البناء الموحد 119 لسنة 2008 (قرار 144 لسنة 2009)",
+   "url": "https://lawyeregypt.net/?p=3758",
+   "source_status": "ملخص للنص - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الأبواب"
+  },
+  {
+   "id": "DR-INT-01",
+   "key": "door.width",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 813.0
+   },
+   "item": "العرض الصافي للباب",
+   "clause": "1010.1.1",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الأبواب"
+  },
+  {
+   "id": "DR-INT-02",
+   "key": "door.height",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 2032.0
+   },
+   "item": "ارتفاع الباب",
+   "clause": "1010.1.1",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "الأبواب"
+  },
+  {
+   "id": "AC-SA-01",
+   "key": "access.stall.parallel",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "w": 3900.0,
+    "l": 5400.0
+   },
+   "item": "موقف ذوي الإعاقة الموازي",
+   "clause": "",
+   "doc": "كود الرياض لمواقف ذوي الإعاقة - القيم من المستخدم",
+   "url": "",
+   "source_status": "من المستخدم - نفس رقم صفحة المعايير التصميمية",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-SA-02",
+   "key": "access.stall.perp",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "w": 2400.0,
+    "l": 6100.0
+   },
+   "item": "موقف ذوي الإعاقة العمودي",
+   "clause": "",
+   "doc": "كود الرياض لمواقف ذوي الإعاقة - القيم من المستخدم",
+   "url": "",
+   "source_status": "من المستخدم - معتمد من المستخدم (كود الرياض) بدل 2900 × 6400 في صفحة الوزارة",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-SA-03",
+   "key": "access.stall.angled",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "w": 2900.0,
+    "l": 6350.0
+   },
+   "item": "موقف ذوي الإعاقة المائل",
+   "clause": "",
+   "doc": "كود الرياض لمواقف ذوي الإعاقة - القيم من المستخدم",
+   "url": "",
+   "source_status": "من المستخدم - معتمد من المستخدم (كود الرياض) بدل 2900 × 6400 في صفحة الوزارة",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-SA-03B",
+   "key": "access.aisle",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "min": 1200.0
+   },
+   "item": "ممر الوصول جنب موقف ذوي الإعاقة",
+   "clause": "",
+   "doc": "كود الرياض لمواقف ذوي الإعاقة - القيم من المستخدم",
+   "url": "",
+   "source_status": "من المستخدم - معتمد من المستخدم (كود الرياض) بدل 1500 - 2100 في صفحة الوزارة",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-SA-04",
+   "key": "access.count",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "pct": 5.0,
+    "min": 2.0
+   },
+   "item": "عدد مواقف ذوي الإعاقة",
+   "clause": "مواقف ذوي الإعاقة - بند 4",
+   "doc": "وزارة البلديات والإسكان - دليل المعايير التخطيطية والتصميمية لمواقف السيارات: المعايير التصميمية العامة",
+   "url": "https://istitlaa.scbc.gov.sa/ar/Municipality/momra/planning/Pages/Article_007.aspx",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-EG-01",
+   "key": "access.door.width",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 850.0
+   },
+   "item": "العرض الصافي للأبواب",
+   "clause": "",
+   "doc": "اللائحة التنفيذية لقانون 10 لسنة 2018 / الكود المصري لذوي الإعاقة - مصدر صحفي",
+   "url": "https://nosaed.com/%D8%A7%D9%84%D9%83%D9%88%D8%AF-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A-%D9%84%D9%84%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5-%D8%B0%D9%88%D9%8A-%D8%A7%D9%84%D8%A5%D8%B9%D8%A7%D9%82%D8%A9/",
+   "source_status": "مصدر صحفي - يحتاج تحقق",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-EG-03",
+   "key": "access.stall.perp",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "w": 3600.0,
+    "l": 5500.0
+   },
+   "item": "مقاس موقف ذوي الإعاقة: العرض × الطول",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم - كان 3600 × 5000 في القيم الأولى",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-EG-04",
+   "key": "access.aisle",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "min": 1200.0
+   },
+   "item": "ممر الوصول جنب موقف ذوي الإعاقة",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-EG-05",
+   "key": "access.count",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "pct": 5.0,
+    "min": 2.0
+   },
+   "item": "عدد مواقف ذوي الإعاقة: نسبة من الإجمالي / أقل عدد",
+   "clause": "",
+   "doc": "الكود المصري لاشتراطات الأمان للمنشآت متعددة الأغراض - الجزء الأول الجراجات (قرار 139 لسنة 2024) - المركز القومي لبحوث الإسكان والبناء",
+   "url": "https://www.hbrc.edu.eg",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-EG-06",
+   "key": "access.ramp.slope",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "max": 8.333
+   },
+   "item": "أقصى ميل لمنحدر المشاة لذوي الإعاقة",
+   "clause": "",
+   "doc": "الكود المصري - قيم بعتها المستخدم",
+   "url": "",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-EG-07",
+   "key": "access.ramp.width",
+   "code": "EG",
+   "use": "res",
+   "values": {
+    "min": 1000.0
+   },
+   "item": "أقل عرض لمنحدر ذوي الإعاقة (سكني)",
+   "clause": "",
+   "doc": "الكود المصري - قيم بعتها المستخدم",
+   "url": "",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-EG-08",
+   "key": "access.ramp.width",
+   "code": "EG",
+   "use": "nonres",
+   "values": {
+    "min": 1500.0
+   },
+   "item": "أقل عرض لمنحدر ذوي الإعاقة (مباني عامة)",
+   "clause": "",
+   "doc": "الكود المصري - قيم بعتها المستخدم",
+   "url": "",
+   "source_status": "من المستخدم",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-INT-01",
+   "key": "access.turn",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 1524.0
+   },
+   "item": "دائرة الدوران للكرسي المتحرك",
+   "clause": "304.3.1",
+   "doc": "2010 ADA Standards for Accessible Design",
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-INT-03",
+   "key": "access.route.width",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 914.0
+   },
+   "item": "عرض مسار الحركة",
+   "clause": "403.5.1",
+   "doc": "2010 ADA Standards for Accessible Design",
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-INT-04",
+   "key": "access.door.width",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 813.0
+   },
+   "item": "العرض الصافي للباب",
+   "clause": "404.2.3",
+   "doc": "2010 ADA Standards for Accessible Design",
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-INT-07",
+   "key": "access.ramp.slope",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "max": 8.333
+   },
+   "item": "ميل المنحدر",
+   "clause": "405.2",
+   "doc": "2010 ADA Standards for Accessible Design",
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-INT-08",
+   "key": "access.ramp.rise",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "max": 762.0
+   },
+   "item": "أقصى ارتفاع للقلبة الواحدة من المنحدر",
+   "clause": "405.6",
+   "doc": "2010 ADA Standards for Accessible Design",
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-INT-09",
+   "key": "access.ramp.width",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 914.0
+   },
+   "item": "عرض المنحدر الصافي",
+   "clause": "405.5",
+   "doc": "2010 ADA Standards for Accessible Design",
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-INT-10",
+   "key": "access.ramp.landing",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 1524.0
+   },
+   "item": "طول بسطة المنحدر",
+   "clause": "405.7.3",
+   "doc": "2010 ADA Standards for Accessible Design",
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-INT-11",
+   "key": "access.stall.perp",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "w": 2438.0,
+    "w_van": 3353.0
+   },
+   "item": "موقف ذوي الإعاقة: سيارة / فان",
+   "clause": "502.2",
+   "doc": "2010 ADA Standards for Accessible Design",
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-INT-12",
+   "key": "access.aisle",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "min": 1524.0
+   },
+   "item": "ممر الانتقال جنب الموقف",
+   "clause": "502.3.1",
+   "doc": "2010 ADA Standards for Accessible Design",
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "AC-INT-14",
+   "key": "access.count",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "ada_table": 1
+   },
+   "item": "عدد مواقف ذوي الإعاقة (1-25:1 / 26-50:2 / 51-75:3 / 76-100:4 / 101-150:5 / 151-200:6 / 201-300:7 / 301-400:8 / 401-500:9 / 501-1000: 2% / فوق 1000: 20 + 1 لكل 100)",
+   "clause": "208.2",
+   "doc": "2010 ADA Standards for Accessible Design",
+   "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+   "source_status": "نص رسمي مقروء",
+   "approved": false,
+   "sheet": "ذوي الهمم"
+  },
+  {
+   "id": "LS-SA-01",
+   "key": "egress.travel",
+   "code": "SA",
+   "use": "res",
+   "values": {
+    "plain": 61.0,
+    "sprinklered": 76.0
+   },
+   "item": "أقصى مسافة هروب لباب السلم - سكني: بدون رشاشات / مع رشاشات",
+   "clause": "1017.2",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-SA-02",
+   "key": "egress.travel",
+   "code": "SA",
+   "use": "nonres",
+   "values": {
+    "plain": 61.0,
+    "sprinklered": 91.0
+   },
+   "item": "أقصى مسافة هروب - إداري: بدون / مع رشاشات",
+   "clause": "1017.2",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)؛ التجاري 61 / 76",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-SA-03",
+   "key": "fire.stair.high",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "wall": 120.0,
+    "door": 90.0
+   },
+   "item": "مقاومة حريق بيت السلم - 4 أدوار أو أكتر: الحيطة / الباب",
+   "clause": "1023.2 / 716.1",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-SA-04",
+   "key": "fire.stair.low",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "wall": 60.0,
+    "door": 60.0
+   },
+   "item": "مقاومة حريق بيت السلم - أقل من 4 أدوار: الحيطة / الباب",
+   "clause": "1023.2 / 716.1",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-SA-05",
+   "key": "fire.shaft.high",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "wall": 120.0,
+    "door": 90.0
+   },
+   "item": "مقاومة حريق الشافت - 4 أدوار أو أكتر: الحيطة / الباب",
+   "clause": "713.4 / 716.1",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-SA-06",
+   "key": "fire.shaft.low",
+   "code": "SA",
+   "use": "all",
+   "values": {
+    "wall": 60.0,
+    "door": 60.0
+   },
+   "item": "مقاومة حريق الشافت - أقل من 4 أدوار: الحيطة / الباب",
+   "clause": "713.4 / 716.1",
+   "doc": "كود البناء السعودي SBC 201 (مبني على IBC) - النص الرسمي يحتاج حساب على sbc.gov.sa",
+   "url": "https://sbc.gov.sa",
+   "source_status": "من المستخدم - أكّده المستخدم (نفس قيمة IBC)",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-EG-01",
+   "key": "egress.travel",
+   "code": "EG",
+   "use": "res",
+   "values": {
+    "plain": 30.0,
+    "sprinklered": 45.0
+   },
+   "item": "أقصى مسافة هروب لباب السلم - سكني وإداري: بدون رشاشات / مع رشاشات",
+   "clause": "",
+   "doc": "الكود المصري - قيم بعتها المستخدم",
+   "url": "",
+   "source_status": "من المستخدم - الجدول المصري مكتوب بترتيب مع رشاشات / بدون",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-EG-02",
+   "key": "egress.travel",
+   "code": "EG",
+   "use": "nonres",
+   "values": {
+    "plain": 30.0,
+    "sprinklered": 60.0
+   },
+   "item": "أقصى مسافة هروب - تجاري: بدون / مع رشاشات",
+   "clause": "",
+   "doc": "الكود المصري - قيم بعتها المستخدم",
+   "url": "",
+   "source_status": "من المستخدم - الإداري 30 / 45",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-EG-03",
+   "key": "fire.stair.high",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "wall": 120.0,
+    "door": 90.0
+   },
+   "item": "مقاومة حريق بيت السلم: الحيطة / الباب",
+   "clause": "",
+   "doc": "الكود المصري - قيم بعتها المستخدم",
+   "url": "",
+   "source_status": "من المستخدم - القيمة العملية الشائعة",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-EG-04",
+   "key": "fire.shaft.high",
+   "code": "EG",
+   "use": "all",
+   "values": {
+    "wall": 120.0,
+    "door": 90.0
+   },
+   "item": "مقاومة حريق الشافت: الحيطة / الباب",
+   "clause": "",
+   "doc": "الكود المصري - قيم بعتها المستخدم",
+   "url": "",
+   "source_status": "من المستخدم - القيمة العملية الشائعة",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-INT-01",
+   "key": "egress.travel",
+   "code": "INT",
+   "use": "res",
+   "values": {
+    "plain": 61.0,
+    "sprinklered": 76.0
+   },
+   "item": "أقصى مسافة هروب - سكني R: بدون / مع رشاشات",
+   "clause": "1017.2",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-INT-02",
+   "key": "egress.travel",
+   "code": "INT",
+   "use": "nonres",
+   "values": {
+    "plain": 61.0,
+    "sprinklered": 91.0
+   },
+   "item": "أقصى مسافة هروب - إداري B: بدون / مع رشاشات",
+   "clause": "1017.2",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق؛ التجاري M 61 / 76",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-INT-03",
+   "key": "fire.stair.high",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "wall": 120.0,
+    "door": 90.0
+   },
+   "item": "مقاومة حريق بيت السلم - 4 أدوار أو أكتر: الحيطة / الباب",
+   "clause": "1023.2 / 716.1",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-INT-04",
+   "key": "fire.stair.low",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "wall": 60.0,
+    "door": 60.0
+   },
+   "item": "مقاومة حريق بيت السلم - أقل من 4 أدوار: الحيطة / الباب",
+   "clause": "1023.2 / 716.1",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-INT-05",
+   "key": "fire.shaft.high",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "wall": 120.0,
+    "door": 90.0
+   },
+   "item": "مقاومة حريق الشافت - 4 أدوار أو أكتر: الحيطة / الباب",
+   "clause": "713.4 / 716.1",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلامة"
+  },
+  {
+   "id": "LS-INT-06",
+   "key": "fire.shaft.low",
+   "code": "INT",
+   "use": "all",
+   "values": {
+    "wall": 60.0,
+    "door": 60.0
+   },
+   "item": "مقاومة حريق الشافت - أقل من 4 أدوار: الحيطة / الباب",
+   "clause": "713.4 / 716.1",
+   "doc": "International Building Code 2021 (ICC)",
+   "url": "https://codes.iccsafe.org/content/IBC2021P2",
+   "source_status": "من المعرفة - موقع ICC منع القراءة الآلية - يحتاج تحقق",
+   "approved": false,
+   "sheet": "السلامة"
+  }
+ ]
+}
